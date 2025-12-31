@@ -1,0 +1,350 @@
+{
+  "on": [
+    {
+      "word": "MAISON",
+      "image": "🏠",
+      "definition": "Endroit où on habite avec sa famille",
+      "pronunciation": "/mè-zon/",
+      "options": ["MAISON", "MEZON", "MAZON"]
+    },
+    {
+      "word": "GARÇON",
+      "image": "👦",
+      "definition": "Enfant de sexe masculin",
+      "pronunciation": "/gar-son/",
+      "options": ["GARÇON", "GARSON", "GARCON"]
+    },
+    {
+      "word": "BALLON",
+      "image": "⚽",
+      "definition": "Objet rond pour jouer",
+      "pronunciation": "/ba-lon/",
+      "options": ["BALLON", "BALON", "BALONS"]
+    },
+    {
+      "word": "MOUTON",
+      "image": "🐑",
+      "definition": "Animal qui fait bêê et donne de la laine",
+      "pronunciation": "/mou-ton/",
+      "options": ["MOUTON", "MOUSTON", "MOTON"]
+    },
+    {
+      "word": "BONBON",
+      "image": "🍬",
+      "definition": "Friandise sucrée et délicieuse",
+      "pronunciation": "/bon-bon/",
+      "options": ["BONBON", "BOMBON", "BONBONS"]
+    },
+    {
+      "word": "COCHON",
+      "image": "🐷",
+      "definition": "Animal rose qui grogne",
+      "pronunciation": "/ko-chon/",
+      "options": ["COCHON", "COSSON", "COCHONS"]
+    },
+    {
+      "word": "CAMION",
+      "image": "🚚",
+      "definition": "Gros véhicule pour transporter des marchandises",
+      "pronunciation": "/ka-mion/",
+      "options": ["CAMION", "CAMIONS", "KAMION"]
+    },
+    {
+      "word": "MELON",
+      "image": "🍈",
+      "definition": "Gros fruit juteux et sucré",
+      "pronunciation": "/me-lon/",
+      "options": ["MELON", "MELONS", "MELLON"]
+    }
+  ],
+  "ou": [
+    {
+      "word": "LOUP",
+      "image": "🐺",
+      "definition": "Animal sauvage qui hurle à la lune",
+      "pronunciation": "/lou/",
+      "options": ["LOUP", "LOU", "LOUE"]
+    },
+    {
+      "word": "CHOU",
+      "image": "🥬",
+      "definition": "Légume vert qui pousse dans le jardin",
+      "pronunciation": "/chou/",
+      "options": ["CHOU", "CHOUX", "SHOU"]
+    },
+    {
+      "word": "BIJOU",
+      "image": "💍",
+      "definition": "Objet précieux pour se décorer",
+      "pronunciation": "/bi-jou/",
+      "options": ["BIJOU", "BIJOUX", "BISOU"]
+    },
+    {
+      "word": "GENOU",
+      "image": "🦵",
+      "definition": "Partie du corps qui plie la jambe",
+      "pronunciation": "/je-nou/",
+      "options": ["GENOU", "GENOUX", "JENOU"]
+    },
+    {
+      "word": "JOUE",
+      "image": "😊",
+      "definition": "Partie du visage sous les yeux",
+      "pronunciation": "/jou/",
+      "options": ["JOUE", "JOU", "JOUES"]
+    },
+    {
+      "word": "ROUE",
+      "image": "⚙️",
+      "definition": "Partie ronde d'un vélo ou d'une voiture",
+      "pronunciation": "/rou/",
+      "options": ["ROUE", "ROU", "ROUES"]
+    },
+    {
+      "word": "SOUPE",
+      "image": "🍲",
+      "definition": "Plat chaud et liquide qu'on mange l'hiver",
+      "pronunciation": "/soupe/",
+      "options": ["SOUPE", "SOUP", "SOUPΕ"]
+    },
+    {
+      "word": "POULE",
+      "image": "🐔",
+      "definition": "Oiseau de la ferme qui pond des œufs",
+      "pronunciation": "/poule/",
+      "options": ["POULE", "POUL", "POLE"]
+    }
+  ],
+  "an": [
+    {
+      "word": "MAMAN",
+      "image": "👩",
+      "definition": "Celle qui nous a donné la vie",
+      "pronunciation": "/ma-man/",
+      "options": ["MAMAN", "MAMANS", "MAMMAN"]
+    },
+    {
+      "word": "ENFANT",
+      "image": "👶",
+      "definition": "Garçon ou fille qui n'est pas encore adulte",
+      "pronunciation": "/an-fan/",
+      "options": ["ENFANT", "ANFAN", "ENFANTS"]
+    },
+    {
+      "word": "DENT",
+      "image": "🦷",
+      "definition": "Petits os blancs dans la bouche pour manger",
+      "pronunciation": "/dan/",
+      "options": ["DENT", "DAN", "DENTS"]
+    },
+    {
+      "word": "BANC",
+      "image": "🪑",
+      "definition": "Siège long pour s'asseoir à plusieurs",
+      "pronunciation": "/ban/",
+      "options": ["BANC", "BAN", "BANCS"]
+    },
+    {
+      "word": "BLANC",
+      "image": "⚪",
+      "definition": "Couleur de la neige",
+      "pronunciation": "/blan/",
+      "options": ["BLANC", "BLAN", "BLANCS"]
+    },
+    {
+      "word": "TEMPS",
+      "image": "⏰",
+      "definition": "Ce qui passe : secondes, minutes, heures",
+      "pronunciation": "/tan/",
+      "options": ["TEMPS", "TAN", "TEMP"]
+    },
+    {
+      "word": "VENT",
+      "image": "💨",
+      "definition": "Air qui souffle",
+      "pronunciation": "/van/",
+      "options": ["VENT", "VAN", "VENTS"]
+    },
+    {
+      "word": "GANT",
+      "image": "🧤",
+      "definition": "Vêtement pour protéger les mains du froid",
+      "pronunciation": "/gan/",
+      "options": ["GANT", "GAN", "GANTS"]
+    }
+  ],
+  "in": [
+    {
+      "word": "LAPIN",
+      "image": "🐰",
+      "definition": "Petit animal avec de longues oreilles",
+      "pronunciation": "/la-pin/",
+      "options": ["LAPIN", "LAPEN", "LAPAIN"]
+    },
+    {
+      "word": "PAIN",
+      "image": "🍞",
+      "definition": "Aliment fait avec de la farine",
+      "pronunciation": "/pin/",
+      "options": ["PAIN", "PIN", "PEIN"]
+    },
+    {
+      "word": "MAIN",
+      "image": "✋",
+      "definition": "Partie du corps au bout du bras",
+      "pronunciation": "/min/",
+      "options": ["MAIN", "MIN", "MEIN"]
+    },
+    {
+      "word": "TRAIN",
+      "image": "🚂",
+      "definition": "Moyen de transport sur des rails",
+      "pronunciation": "/trin/",
+      "options": ["TRAIN", "TRIN", "TREIN"]
+    },
+    {
+      "word": "BAIN",
+      "image": "🛁",
+      "definition": "Quand on se lave dans l'eau",
+      "pronunciation": "/bin/",
+      "options": ["BAIN", "BIN", "BEIN"]
+    },
+    {
+      "word": "SAPIN",
+      "image": "🌲",
+      "definition": "Arbre vert de Noël",
+      "pronunciation": "/sa-pin/",
+      "options": ["SAPIN", "SAPEN", "SAPAIN"]
+    },
+    {
+      "word": "DESSIN",
+      "image": "🎨",
+      "definition": "Image faite avec des crayons",
+      "pronunciation": "/dè-sin/",
+      "options": ["DESSIN", "DESIN", "DESSEIN"]
+    },
+    {
+      "word": "JARDIN",
+      "image": "🌻",
+      "definition": "Terrain avec des fleurs et des plantes",
+      "pronunciation": "/jar-din/",
+      "options": ["JARDIN", "JARDAN", "JARDAIN"]
+    }
+  ],
+  "oi": [
+    {
+      "word": "OISEAU",
+      "image": "🐦",
+      "definition": "Animal avec des plumes qui vole",
+      "pronunciation": "/wa-zô/",
+      "options": ["OISEAU", "WAZO", "OIZO"]
+    },
+    {
+      "word": "TOIT",
+      "image": "🏠",
+      "definition": "Ce qui couvre une maison",
+      "pronunciation": "/twa/",
+      "options": ["TOIT", "TWA", "TOI"]
+    },
+    {
+      "word": "POIRE",
+      "image": "🍐",
+      "definition": "Fruit juteux et sucré",
+      "pronunciation": "/pwar/",
+      "options": ["POIRE", "POAR", "POUAR"]
+    },
+    {
+      "word": "DOIGT",
+      "image": "👆",
+      "definition": "Partie de la main (on en a cinq)",
+      "pronunciation": "/dwa/",
+      "options": ["DOIGT", "DOUA", "DOIS"]
+    },
+    {
+      "word": "ÉTOILE",
+      "image": "⭐",
+      "definition": "Point brillant dans le ciel la nuit",
+      "pronunciation": "/é-twal/",
+      "options": ["ÉTOILE", "ETOIL", "ETOILE"]
+    },
+    {
+      "word": "NOIX",
+      "image": "🥜",
+      "definition": "Fruit sec avec une coquille dure",
+      "pronunciation": "/nwa/",
+      "options": ["NOIX", "NWA", "NOI"]
+    },
+    {
+      "word": "BOÎTE",
+      "image": "📦",
+      "definition": "Petit contenant pour ranger des choses",
+      "pronunciation": "/bwat/",
+      "options": ["BOÎTE", "BWAT", "BOITE"]
+    },
+    {
+      "word": "ROIS",
+      "image": "👑",
+      "definition": "Ceux qui commandent dans un royaume",
+      "pronunciation": "/rwa/",
+      "options": ["ROIS", "RWA", "ROI"]
+    }
+  ],
+  "ch": [
+    {
+      "word": "CHAT",
+      "image": "🐱",
+      "definition": "Petit animal qui miaule",
+      "pronunciation": "/cha/",
+      "options": ["CHAT", "CHA", "SHAT"]
+    },
+    {
+      "word": "CHIEN",
+      "image": "🐕",
+      "definition": "Animal fidèle qui aboie",
+      "pronunciation": "/chien/",
+      "options": ["CHIEN", "CHIIN", "SIEN"]
+    },
+    {
+      "word": "VACHE",
+      "image": "🐄",
+      "definition": "Animal de la ferme qui donne du lait",
+      "pronunciation": "/vache/",
+      "options": ["VACHE", "VACH", "VASH"]
+    },
+    {
+      "word": "CHAUD",
+      "image": "🔥",
+      "definition": "Contraire de froid",
+      "pronunciation": "/chô/",
+      "options": ["CHAUD", "CHO", "SHAUD"]
+    },
+    {
+      "word": "MOUCHE",
+      "image": "🪰",
+      "definition": "Petit insecte qui vole et qui bourdonne",
+      "pronunciation": "/mouche/",
+      "options": ["MOUCHE", "MOUCH", "MOUSH"]
+    },
+    {
+      "word": "BOUCHE",
+      "image": "👄",
+      "definition": "Partie du visage pour manger et parler",
+      "pronunciation": "/bouche/",
+      "options": ["BOUCHE", "BOUSH", "BOUCH"]
+    },
+    {
+      "word": "PECHE",
+      "image": "🍑",
+      "definition": "Fruit sucré et doux",
+      "pronunciation": "/pèche/",
+      "options": ["PECHE", "PECH", "PESH"]
+    },
+    {
+      "word": "RUCHE",
+      "image": "🐝",
+      "definition": "Maison des abeilles",
+      "pronunciation": "/ruche/",
+      "options": ["RUCHE", "RUSH", "RUCH"]
+    }
+  ]
+}

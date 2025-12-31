@@ -93,7 +93,17 @@
       <div class="stars">
         <span v-for="star in stars" :key="star" class="star">⭐</span>
       </div>
-      <button @click="restart" class="btn-primary">Recommencer</button>
+      
+      <div class="completion-actions">
+        <button @click="restart" class="btn-secondary">🔄 Recommencer</button>
+        <button 
+          v-if="showNextButton && percentage === 100" 
+          @click="goToNext"
+          class="btn-primary btn-next"
+        >
+          Étape suivante →
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -101,6 +111,26 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { progressStore } from '../utils/progressStore'
+
+// Function to load words data from JSON files
+const loadWordsData = async (level, theme = null) => {
+  try {
+    if (['cp', 'ce1'].includes(level) && theme) {
+      // Load JSON file for CP or CE1 with theme
+      const response = await fetch(`/objectif-einstein/data/french-${level}.json`)
+      const data = await response.json()
+      return data[theme] || []
+    } else if (['ce2', 'cm1', 'cm2'].includes(level)) {
+      // Load JSON file for CE2, CM1, CM2 (returns whole array)
+      const response = await fetch(`/objectif-einstein/data/french-${level}.json`)
+      return await response.json()
+    }
+    return []
+  } catch (error) {
+    console.error('Erreur de chargement des données:', error)
+    return []
+  }
+}
 
 const props = defineProps({
   level: {
@@ -114,8 +144,14 @@ const props = defineProps({
   title: {
     type: String,
     default: 'Exercice d\'orthographe'
+  },
+  showNextButton: {
+    type: Boolean,
+    default: false
   }
 })
+
+const emit = defineEmits(['exercise-complete', 'next-exercise'])
 
 const words = ref([])
 const currentWordIndex = ref(0)
@@ -139,431 +175,24 @@ const stars = computed(() => {
   return 0
 })
 
-// Base de données de mots par niveau et par thème
-const wordsByTheme = {
-  cp: {
-    on: [
-      { word: 'MAISON', image: '🏠', definition: 'Endroit où on habite avec sa famille', pronunciation: '/mè-zon/', options: ['MAISON', 'MEZON', 'MAZON'] },
-      { word: 'GARÇON', image: '👦', definition: 'Enfant de sexe masculin', pronunciation: '/gar-son/', options: ['GARÇON', 'GARSON', 'GARCON'] },
-      { word: 'BALLON', image: '⚽', definition: 'Objet rond pour jouer', pronunciation: '/ba-lon/', options: ['BALLON', 'BALON', 'BALONS'] },
-      { word: 'MOUTON', image: '�양', definition: 'Animal qui fait "bêê" et donne de la laine', pronunciation: '/mou-ton/', options: ['MOUTON', 'MOUSTON', 'MOUTONن'] },
-      { word: 'BONBON', image: '🍬', definition: 'Friandise sucrée et délicieuse', pronunciation: '/bon-bon/', options: ['BONBON', 'BOMBON', 'BONBONS'] },
-      { word: 'COCHON', image: '🐷', definition: 'Animal rose qui grogne', pronunciation: '/ko-chon/', options: ['COCHON', 'COSSON', 'COCHONS'] },
-      { word: 'CAMION', image: '🚚', definition: 'Gros véhicule pour transporter des marchandises', pronunciation: '/ka-mion/', options: ['CAMION', 'CAMIONS', 'KAMION'] },
-      { word: 'MELON', image: '🍈', definition: 'Gros fruit juteux et sucré', pronunciation: '/me-lon/', options: ['MELON', 'MELONS', 'MELLON'] }
-    ],
-    ou: [
-      { word: 'LOUP', image: '🐺', definition: 'Animal sauvage qui hurle à la lune', pronunciation: '/lou/', options: ['LOUP', 'LOU', 'LOUE'] },
-      { word: 'CHOU', image: '🥬', definition: 'Légume vert qui pousse dans le jardin', pronunciation: '/chou/', options: ['CHOU', 'CHOUX', 'SHOU'] },
-      { word: 'BIJOU', image: '💍', definition: 'Objet précieux pour se décorer', pronunciation: '/bi-jou/', options: ['BIJOU', 'BIJOUX', 'BISOU'] },
-      { word: 'GENOU', image: '🦵', definition: 'Partie du corps qui plie la jambe', pronunciation: '/je-nou/', options: ['GENOU', 'GENOUX', 'JENOU'] },
-      { word: 'JOUE', image: '😊', definition: 'Partie du visage sous les yeux', pronunciation: '/jou/', options: ['JOUE', 'JOU', 'JOUES'] },
-      { word: 'ROUE', image: '⚙️', definition: 'Partie ronde d\'un vélo ou d\'une voiture', pronunciation: '/rou/', options: ['ROUE', 'ROU', 'ROUES'] },
-      { word: 'SOUPE', image: '🍲', definition: 'Plat chaud et liquide qu\'on mange l\'hiver', pronunciation: '/soupe/', options: ['SOUPE', 'SOUP', 'SOUPΕ'] },
-      { word: 'POULE', image: '🐔', definition: 'Oiseau de la ferme qui pond des œufs', pronunciation: '/poule/', options: ['POULE', 'POUL', 'POLE'] }
-    ],
-    an: [
-      { word: 'MAMAN', image: '👩', definition: 'Celle qui nous a donné la vie', pronunciation: '/ma-man/', options: ['MAMAN', 'MAMANS', 'MAMMAN'] },
-      { word: 'ENFANT', image: '👶', definition: 'Garçon ou fille qui n\'est pas encore adulte', pronunciation: '/an-fan/', options: ['ENFANT', 'ANFAN', 'ENFANTS'] },
-      { word: 'DENT', image: '🦷', definition: 'Petits os blancs dans la bouche pour manger', pronunciation: '/dan/', options: ['DENT', 'DAN', 'DENTS'] },
-      { word: 'BANC', image: '🪑', definition: 'Siège long pour s\'asseoir à plusieurs', pronunciation: '/ban/', options: ['BANC', 'BAN', 'BANCS'] },
-      { word: 'BLANC', image: '⚪', definition: 'Couleur de la neige', pronunciation: '/blan/', options: ['BLANC', 'BLAN', 'BLANCS'] },
-      { word: 'TEMPS', image: '⏰', definition: 'Ce qui passe : secondes, minutes, heures', pronunciation: '/tan/', options: ['TEMPS', 'TAN', 'TEMP'] },
-      { word: 'VENT', image: '💨', definition: 'Air qui souffle', pronunciation: '/van/', options: ['VENT', 'VAN', 'VENTS'] },
-      { word: 'GANT', image: '🧤', definition: 'Vêtement pour protéger les mains du froid', pronunciation: '/gan/', options: ['GANT', 'GAN', 'GANTS'] }
-    ],
-    in: [
-      { word: 'LAPIN', image: '🐰', definition: 'Petit animal avec de longues oreilles', pronunciation: '/la-pin/', options: ['LAPIN', 'LAPIN', 'LAPEN'] },
-      { word: 'PAIN', image: '🍞', definition: 'Aliment fait avec de la farine', pronunciation: '/pin/', options: ['PAIN', 'PIN', 'PEIN'] },
-      { word: 'MAIN', image: '✋', definition: 'Partie du corps au bout du bras', pronunciation: '/min/', options: ['MAIN', 'MIN', 'MEIN'] },
-      { word: 'TRAIN', image: '🚂', definition: 'Moyen de transport sur des rails', pronunciation: '/trin/', options: ['TRAIN', 'TRIN', 'TREIN'] },
-      { word: 'BAIN', image: '🛁', definition: 'Quand on se lave dans l\'eau', pronunciation: '/bin/', options: ['BAIN', 'BIN', 'BEIN'] },
-      { word: 'SAPIN', image: '🌲', definition: 'Arbre vert de Noël', pronunciation: '/sa-pin/', options: ['SAPIN', 'SAPIN', 'SAPEN'] },
-      { word: 'DESSIN', image: '🎨', definition: 'Image faite avec des crayons', pronunciation: '/dè-sin/', options: ['DESSIN', 'DESIN', 'DESSEIN'] },
-      { word: 'JARDIN', image: '🌻', definition: 'Terrain avec des fleurs et des plantes', pronunciation: '/jar-din/', options: ['JARDIN', 'JARDAN', 'JARDAIN'] }
-    ],
-    oi: [
-      { word: 'OISEAU', image: '🐦', definition: 'Animal avec des plumes qui vole', pronunciation: '/wa-zô/', options: ['OISEAU', 'WAZO', 'OIZO'] },
-      { word: 'TOIT', image: '🏠', definition: 'Ce qui couvre une maison', pronunciation: '/twa/', options: ['TOIT', 'TWA', 'TOI'] },
-      { word: 'POIRE', image: '🍐', definition: 'Fruit juteux et sucré', pronunciation: '/pwar/', options: ['POIRE', 'POAR', 'PWรอ'] },
-      { word: 'DOIGT', image: '👆', definition: 'Partie de la main (on en a cinq)', pronunciation: '/dwa/', options: ['DOIGT', 'DOUA', 'DOIS'] },
-      { word: 'ÉTOILE', image: '⭐', definition: 'Point brillant dans le ciel la nuit', pronunciation: '/é-twal/', options: ['ÉTOILE', 'ETOIL', 'ETOILE'] },
-      { word: 'NOIX', image: '🥜', definition: 'Fruit sec avec une coquille dure', pronunciation: '/nwa/', options: ['NOIX', 'NWA', 'NOI'] },
-      { word: 'BOÎTE', image: '📦', definition: 'Petit contenant pour ranger des choses', pronunciation: '/bwat/', options: ['BOÎTE', 'BWAT', 'BOITE'] },
-      { word: 'ROIS', image: '👑', definition: 'Ceux qui commandent dans un royaume', pronunciation: '/rwa/', options: ['ROIS', 'RWA', 'ROI'] }
-    ],
-    ch: [
-      { word: 'CHAT', image: '🐱', definition: 'Petit animal qui miaule', pronunciation: '/cha/', options: ['CHAT', 'CHA', 'SHAT'] },
-      { word: 'CHIEN', image: '🐕', definition: 'Animal fidèle qui aboie', pronunciation: '/chien/', options: ['CHIEN', 'CHIIN', 'SIEN'] },
-      { word: 'VACHE', image: '🐄', definition: 'Animal de la ferme qui donne du lait', pronunciation: '/vache/', options: ['VACHE', 'VACH', 'VASH'] },
-      { word: 'CHAUD', image: '🔥', definition: 'Contraire de froid', pronunciation: '/chô/', options: ['CHAUD', 'CHO', 'SHAUD'] },
-      { word: 'MOUCHE', image: '🪰', definition: 'Petit insecte qui vole et qui bourdonne', pronunciation: '/mouche/', options: ['MOUCHE', 'MOUCH', 'MOUSH'] },
-      { word: 'BOUCHE', image: '👄', definition: 'Partie du visage pour manger et parler', pronunciation: '/bouche/', options: ['BOUCHE', 'BOUSH', 'BOUCH'] },
-      { word: 'PECHE', image: '🍑', definition: 'Fruit sucré et doux', pronunciation: '/pèche/', options: ['PECHE', 'PECH', 'PESH'] },
-      { word: 'RUCHE', image: '🐝', definition: 'Maison des abeilles', pronunciation: '/ruche/', options: ['RUCHE', 'RUSH', 'RUCH'] }
-    ]
-  },
-  ce1: {
-    on: [
-      { word: 'PAPILLON', image: '🦋', definition: 'Insecte avec de belles ailes colorées', pronunciation: '/pa-pi-yon/', options: ['PAPILLON', 'PAPION', 'PAPIYON'] },
-      { word: 'BALLON', image: '⚽', definition: 'Objet rond pour jouer au football', pronunciation: '/ba-lon/', options: ['BALLON', 'BALON', 'BALONS'] },
-      { word: 'CITRON', image: '🍋', definition: 'Fruit jaune et acide', pronunciation: '/si-tron/', options: ['CITRON', 'SITRON', 'CITRون'] },
-      { word: 'STATION', image: '🚉', definition: 'Endroit où s\'arrêtent les trains', pronunciation: '/sta-sion/', options: ['STATION', 'STASION', 'STATIONS'] },
-      { word: 'CHAMPION', image: '🏆', definition: 'Celui qui gagne une compétition', pronunciation: '/chan-pion/', options: ['CHAMPION', 'CHAMPΙON', 'CHAMPIONS'] },
-      { word: 'DRAGON', image: '🐉', definition: 'Animal imaginaire qui crache du feu', pronunciation: '/dra-gon/', options: ['DRAGON', 'DRAGONON', 'DRAGUN'] },
-      { word: 'CRAYON', image: '✏️', definition: 'Outil pour écrire et dessiner', pronunciation: '/krè-yon/', options: ['CRAYON', 'CRAION', 'CRAYONS'] },
-      { word: 'CARTON', image: '📦', definition: 'Matière épaisse pour faire des boîtes', pronunciation: '/kar-ton/', options: ['CARTON', 'CARTONS', 'KARTون'] }
-    ],
-    ou: [
-      { word: 'HIBOU', image: '🦉', definition: 'Oiseau de nuit avec de grands yeux', pronunciation: '/i-bou/', options: ['HIBOU', 'HIBOUX', 'IIBOU'] },
-      { word: 'KANGOUROU', image: '🦘', definition: 'Animal d\'Australie qui saute', pronunciation: '/kan-gou-rou/', options: ['KANGOUROU', 'KANGOUROUS', 'KANGOURU'] },
-      { word: 'COUCOU', image: '👋', definition: 'Mot pour saluer quelqu\'un', pronunciation: '/kou-kou/', options: ['COUCOU', 'COUKOU', 'KOUCOU'] },
-      { word: 'JOUJOU', image: '🧸', definition: 'Autre nom pour un jouet', pronunciation: '/jou-jou/', options: ['JOUJOU', 'JOUJOUX', 'JOUJOUS'] },
-      { word: 'CAILLOU', image: '🪨', definition: 'Petite pierre ronde', pronunciation: '/ka-you/', options: ['CAILLOU', 'CAILLOUX', 'KAILLOU'] },
-      { word: 'VOYOU', image: '😈', definition: 'Personne qui n\'obéit pas aux règles', pronunciation: '/vwa-you/', options: ['VOYOU', 'VOILLOU', 'VOIOU'] },
-      { word: 'GENOU', image: '🦵', definition: 'Partie de la jambe qui plie', pronunciation: '/je-nou/', options: ['GENOU', 'GENOUX', 'JENOU'] },
-      { word: 'COUTEAU', image: '🔪', definition: 'Ustensile pour couper', pronunciation: '/kou-tô/', options: ['COUTEAU', 'COUTO', 'COUTAU'] }
-    ],
-    an: [
-      { word: 'ELEPHANT', image: '🐘', definition: 'Très grand animal avec une trompe', pronunciation: '/é-lé-fan/', options: ['ELEPHANT', 'ÉLÉPHANT', 'ELEFAN'] },
-      { word: 'RESTAURANT', image: '🍽️', definition: 'Endroit où on mange', pronunciation: '/rès-to-ran/', options: ['RESTAURANT', 'RESTORANT', 'RESTORAN'] },
-      { word: 'MOMENT', image: '⏰', definition: 'Court instant dans le temps', pronunciation: '/mo-man/', options: ['MOMENT', 'MOMAN', 'MOMANS'] },
-      { word: 'VOLANT', image: '🎾', definition: 'Objet pour conduire une voiture', pronunciation: '/vo-lan/', options: ['VOLANT', 'VOLAN', 'VOLANS'] },
-      { word: 'PARENT', image: '👨‍👩‍👦', definition: 'Papa et maman ensemble', pronunciation: '/pa-ran/', options: ['PARENT', 'PARAN', 'PARENTS'] },
-      { word: 'DIAMANT', image: '💎', definition: 'Pierre précieuse très brillante', pronunciation: '/dia-man/', options: ['DIAMANT', 'DIAMAN', 'DIAMANS'] },
-      { word: 'SERPENT', image: '🐍', definition: 'Animal qui rampe et n\'a pas de pattes', pronunciation: '/sèr-pan/', options: ['SERPENT', 'SERPAN', 'SERPENTS'] },
-      { word: 'VACANCES', image: '🏖️', definition: 'Période sans école pour se reposer', pronunciation: '/va-kans/', options: ['VACANCES', 'VAKANS', 'VACANCE'] }
-    ],
-    in: [
-      { word: 'MATIN', image: '🌅', definition: 'Début de la journée', pronunciation: '/ma-tin/', options: ['MATIN', 'MATEN', 'MATAIN'] },
-      { word: 'CHEMIN', image: '🛤️', definition: 'Petite route pour marcher', pronunciation: '/che-min/', options: ['CHEMIN', 'SHEMIN', 'CHEMAIN'] },
-      { word: 'SAPIN', image: '🎄', definition: 'Arbre de Noël', pronunciation: '/sa-pin/', options: ['SAPIN', 'SAPEN', 'SAPAIN'] },
-      { word: 'MARIN', image: '⚓', definition: 'Personne qui travaille sur un bateau', pronunciation: '/ma-rin/', options: ['MARIN', 'MAREN', 'MARAIN'] },
-      { word: 'MOULIN', image: '🏚️', definition: 'Bâtiment pour faire de la farine', pronunciation: '/mou-lin/', options: ['MOULIN', 'MOULEN', 'MOULAIN'] },
-      { word: 'CHAGRIN', image: '😢', definition: 'Grande tristesse', pronunciation: '/cha-grin/', options: ['CHAGRIN', 'CHAGRAIN', 'SHAGREN'] },
-      { word: 'COUSIN', image: '👦', definition: 'Fils de la tante ou de l\'oncle', pronunciation: '/kou-zin/', options: ['COUSIN', 'COUZIN', 'COUZAIN'] },
-      { word: 'REQUIN', image: '🦈', definition: 'Grand poisson dangereux de la mer', pronunciation: '/re-kin/', options: ['REQUIN', 'REKEN', 'REQUAIN'] }
-    ],
-    oi: [
-      { word: 'POISSON', image: '🐟', definition: 'Animal qui vit dans l\'eau', pronunciation: '/pwa-son/', options: ['POISSON', 'POISON', 'POISSONS'] },
-      { word: 'MIROIR', image: '🪞', definition: 'Objet qui reflète notre image', pronunciation: '/mi-rwar/', options: ['MIROIR', 'MIRWAR', 'MIROUAR'] },
-      { word: 'HISTOIRE', image: '📖', definition: 'Récit d\'événements vrais ou imaginaires', pronunciation: '/is-twar/', options: ['HISTOIRE', 'ISTOIRE', 'HISTOAR'] },
-      { word: 'ARMOIRE', image: '🗄️', definition: 'Meuble pour ranger les vêtements', pronunciation: '/ar-mwar/', options: ['ARMOIRE', 'ARMWAR', 'ARMOUAR'] },
-      { word: 'VICTOIRE', image: '🏆', definition: 'Fait de gagner une compétition', pronunciation: '/vik-twar/', options: ['VICTOIRE', 'VIKTOIRE', 'VICTOAR'] },
-      { word: 'PATINOIRE', image: '⛸️', definition: 'Endroit où on patine sur la glace', pronunciation: '/pa-ti-nwar/', options: ['PATINOIRE', 'PATINWAR', 'PATINOAR'] },
-      { word: 'BAIGNOIRE', image: '🛁', definition: 'Grand récipient pour prendre un bain', pronunciation: '/bè-gnwar/', options: ['BAIGNOIRE', 'BAGNOIRE', 'BEIGNOIRE'] },
-      { word: 'MOUCHOIR', image: '🧻', definition: 'Tissu pour se moucher', pronunciation: '/mou-shwar/', options: ['MOUCHOIR', 'MOUCHWAR', 'MUSHOAR'] }
-    ],
-    ch: [
-      { word: 'CHOCOLAT', image: '🍫', definition: 'Friandise sucrée faite avec du cacao', pronunciation: '/cho-ko-la/', options: ['CHOCOLAT', 'CHOCLA', 'SHOKOLAT'] },
-      { word: 'CHAMBRE', image: '🛏️', definition: 'Pièce où on dort', pronunciation: '/chan-bre/', options: ['CHAMBRE', 'SHAMBRE', 'CHANBRE'] },
-      { word: 'CHAUSSURE', image: '👟', definition: 'Ce qu\'on met aux pieds', pronunciation: '/chô-sure/', options: ['CHAUSSURE', 'CHOSURE', 'SHAUSSURE'] },
-      { word: 'MARCHE', image: '🚶', definition: 'Action d\'avancer à pied', pronunciation: '/mar-she/', options: ['MARCHE', 'MARSH', 'MARSHE'] },
-      { word: 'CHEMISE', image: '👔', definition: 'Vêtement avec des manches et des boutons', pronunciation: '/che-mize/', options: ['CHEMISE', 'SHMISE', 'SHEMIZE'] },
-      { word: 'CHANDELLE', image: '🕯️', definition: 'Bougie pour s\'éclairer', pronunciation: '/chan-dèl/', options: ['CHANDELLE', 'SHANDEL', 'CHANDEL'] },
-      { word: 'CHAPEAU', image: '🎩', definition: 'Ce qu\'on met sur la tête', pronunciation: '/cha-pô/', options: ['CHAPEAU', 'SHAPO', 'CHAPAU'] },
-      { word: 'MANCHETTE', image: '📰', definition: 'Titre d\'un journal', pronunciation: '/man-shèt/', options: ['MANCHETTE', 'MANSHET', 'MANCHET'] }
-    ],
-    tion: [
-      { word: 'ATTENTION', image: '⚠️', definition: 'Quand on se concentre bien', pronunciation: '/a-tan-sion/', options: ['ATTENTION', 'ATANSION', 'ATTENSION'] },
-      { word: 'STATION', image: '🚉', definition: 'Lieu où s\'arrêtent les trains', pronunciation: '/sta-sion/', options: ['STATION', 'STASION', 'STATIONS'] },
-      { word: 'QUESTION', image: '❓', definition: 'Ce qu\'on pose pour avoir une réponse', pronunciation: '/kès-tion/', options: ['QUESTION', 'KESTION', 'QESTION'] },
-      { word: 'ADDITION', image: '➕', definition: 'Opération de calcul pour additionner', pronunciation: '/a-di-sion/', options: ['ADDITION', 'ADISION', 'ADDISION'] },
-      { word: 'SOLUTION', image: '💡', definition: 'Réponse à un problème', pronunciation: '/so-lu-sion/', options: ['SOLUTION', 'SOLUSIONE', 'SOLUCION'] },
-      { word: 'ÉMOTION', image: '😊', definition: 'Sentiment comme la joie ou la peur', pronunciation: '/é-mo-sion/', options: ['ÉMOTION', 'EMOSION', 'EMOTION'] },
-      { word: 'NATION', image: '🏳️', definition: 'Pays, ensemble de personnes', pronunciation: '/na-sion/', options: ['NATION', 'NASION', 'NATIONS'] },
-      { word: 'POTION', image: '🧪', definition: 'Boisson magique dans les histoires', pronunciation: '/po-sion/', options: ['POTION', 'POSION', 'POTIONS'] }
-    ]
-  }
-}
-
-// Base de données de mots par niveau (pour CE2, CM1, CM2)
-const wordDatabase = {
-  cp: [
-    { 
-      word: 'CHAT', 
-      image: '🐱', 
-      definition: 'Petit animal domestique qui miaule et ronronne',
-      pronunciation: '/cha/',
-      options: ['CHAT', 'CHA', 'SHAT']
-    },
-    { 
-      word: 'MAISON', 
-      image: '🏠', 
-      definition: 'Endroit où on habite avec sa famille',
-      pronunciation: '/mè-zon/',
-      options: ['MAISON', 'MEZON', 'MAZON']
-    },
-    { 
-      word: 'SOLEIL', 
-      image: '☀️', 
-      definition: 'Étoile qui brille dans le ciel et nous donne de la lumière',
-      pronunciation: '/so-lèy/',
-      options: ['SOLEIL', 'SOLEL', 'SOLEY']
-    },
-    { 
-      word: 'ÉCOLE', 
-      image: '🏫', 
-      definition: 'Lieu où les enfants vont pour apprendre',
-      pronunciation: '/é-kol/',
-      options: ['ÉCOLE', 'ECOLE', 'EKOL']
-    },
-    { 
-      word: 'FLEUR', 
-      image: '🌸', 
-      definition: 'Plante colorée et parfumée qui pousse dans les jardins',
-      pronunciation: '/fleur/',
-      options: ['FLEUR', 'FLEURE', 'FLUR']
-    },
-    { 
-      word: 'PAIN', 
-      image: '🍞', 
-      definition: 'Aliment fait avec de la farine qu\'on mange tous les jours',
-      pronunciation: '/pin/',
-      options: ['PAIN', 'PIN', 'PEIN']
-    },
-    { 
-      word: 'LUNE', 
-      image: '🌙', 
-      definition: 'Astre qui brille dans le ciel la nuit',
-      pronunciation: '/lune/',
-      options: ['LUNE', 'LHUNE', 'LUNNE']
-    },
-    { 
-      word: 'ARBRE', 
-      image: '🌳', 
-      definition: 'Grande plante avec un tronc, des branches et des feuilles',
-      pronunciation: '/arbre/',
-      options: ['ARBRE', 'ABRE', 'ARBE']
-    }
-  ],
-  ce1: [
-    { 
-      word: 'PAPILLON', 
-      image: '🦋', 
-      definition: 'Insecte avec de belles ailes colorées qui vole de fleur en fleur',
-      pronunciation: '/pa-pi-yon/',
-      options: ['PAPILLON', 'PAPION', 'PAPIYON']
-    },
-    { 
-      word: 'BALLON', 
-      image: '⚽', 
-      definition: 'Objet rond qui sert à jouer au football ou au basket',
-      pronunciation: '/ba-lon/',
-      options: ['BALLON', 'BALON', 'BALONS']
-    },
-    { 
-      word: 'CHOCOLAT', 
-      image: '🍫', 
-      definition: 'Friandise sucrée et délicieuse faite avec du cacao',
-      pronunciation: '/cho-ko-la/',
-      options: ['CHOCOLAT', 'CHOCLA', 'CHOCcola']
-    },
-    { 
-      word: 'CHÂTEAU', 
-      image: '🏰', 
-      definition: 'Grande et belle maison où vivaient les rois et les reines',
-      pronunciation: '/châ-tô/',
-      options: ['CHÂTEAU', 'CHATO', 'CHATEAU']
-    },
-    { 
-      word: 'OISEAU', 
-      image: '🐦', 
-      definition: 'Animal avec des plumes et des ailes qui peut voler',
-      pronunciation: '/wa-zô/',
-      options: ['OISEAU', 'WAZO', 'OIZO']
-    },
-    { 
-      word: 'JARDIN', 
-      image: '🌻', 
-      definition: 'Terrain avec des fleurs, des plantes et de l\'herbe',
-      pronunciation: '/jar-din/',
-      options: ['JARDIN', 'JARDAN', 'JARDAIN']
-    },
-    { 
-      word: 'VOYAGE', 
-      image: '✈️', 
-      definition: 'Déplacement pour aller visiter un autre endroit',
-      pronunciation: '/vwa-ya-je/',
-      options: ['VOYAGE', 'VOIAGE', 'VOYAJE']
-    },
-    { 
-      word: 'MONTAGNE', 
-      image: '⛰️', 
-      definition: 'Très grande élévation de terrain, souvent avec de la neige au sommet',
-      pronunciation: '/mon-ta-gne/',
-      options: ['MONTAGNE', 'MONTAIGNE', 'MONTAGN']
-    }
-  ],
-  ce2: [
-    { 
-      word: 'ÉLÉPHANT', 
-      image: '🐘', 
-      definition: 'Très grand animal gris avec une longue trompe',
-      pronunciation: '/é-lé-fan/'
-    },
-    { 
-      word: 'ORDINATEUR', 
-      image: '💻', 
-      definition: 'Machine électronique pour travailler, jouer et chercher des informations',
-      pronunciation: '/or-di-na-teur/'
-    },
-    { 
-      word: 'BIBLIOTHÈQUE', 
-      image: '📚', 
-      definition: 'Lieu où on peut emprunter et lire des livres',
-      pronunciation: '/bi-bli-o-tèk/'
-    },
-    { 
-      word: 'DINOSAURE', 
-      image: '🦕', 
-      definition: 'Animal préhistorique géant qui vivait il y a très longtemps',
-      pronunciation: '/di-no-zor/'
-    },
-    { 
-      word: 'TÉLÉPHONE', 
-      image: '📱', 
-      definition: 'Appareil pour parler avec quelqu\'un qui est loin',
-      pronunciation: '/té-lé-fon/'
-    },
-    { 
-      word: 'KANGOUROU', 
-      image: '🦘', 
-      definition: 'Animal d\'Australie qui saute et porte son bébé dans une poche',
-      pronunciation: '/kan-gou-rou/'
-    },
-    { 
-      word: 'CHAMPIGNON', 
-      image: '🍄', 
-      definition: 'Plante avec un chapeau qu\'on peut manger (si elle n\'est pas toxique)',
-      pronunciation: '/chan-pi-gnon/'
-    },
-    { 
-      word: 'ACCIDENT', 
-      image: '⚠️', 
-      definition: 'Événement malheureux qui arrive sans qu\'on le veuille',
-      pronunciation: '/ak-si-dan/'
-    }
-  ],
-  cm1: [
-    { 
-      word: 'EXTRAORDINAIRE', 
-      image: '✨', 
-      definition: 'Quelque chose d\'exceptionnel, de remarquable, qui sort de l\'ordinaire',
-      pronunciation: '/èks-tra-or-di-nèr/'
-    },
-    { 
-      word: 'ARCHITECTURE', 
-      image: '🏛️', 
-      definition: 'Art de concevoir et de construire des bâtiments',
-      pronunciation: '/ar-chi-tek-tur/'
-    },
-    { 
-      word: 'MYSTÉRIEUX', 
-      image: '🔮', 
-      definition: 'Qui est difficile à comprendre ou à expliquer',
-      pronunciation: '/mis-té-ri-eu/'
-    },
-    { 
-      word: 'ENCYCLOPÉDIE', 
-      image: '📖', 
-      definition: 'Grand livre qui contient beaucoup de connaissances sur différents sujets',
-      pronunciation: '/an-si-klo-pé-di/'
-    },
-    { 
-      word: 'AGRICULTURE', 
-      image: '🚜', 
-      definition: 'Culture de la terre pour produire des plantes et élever des animaux',
-      pronunciation: '/a-gri-kul-tur/'
-    },
-    { 
-      word: 'AQUARIUM', 
-      image: '🐠', 
-      definition: 'Réservoir transparent rempli d\'eau où vivent des poissons',
-      pronunciation: '/a-kwa-ri-om/'
-    },
-    { 
-      word: 'PHARMACIE', 
-      image: '💊', 
-      definition: 'Magasin où on achète des médicaments',
-      pronunciation: '/far-ma-si/'
-    },
-    { 
-      word: 'ORCHESTRE', 
-      image: '🎻', 
-      definition: 'Groupe de musiciens qui jouent ensemble',
-      pronunciation: '/or-kès-tre/'
-    }
-  ],
-  cm2: [
-    { 
-      word: 'RESPONSABILITÉ', 
-      image: '🎯', 
-      definition: 'Obligation morale de répondre de ses actes et de leurs conséquences',
-      pronunciation: '/rès-pon-sa-bi-li-té/'
-    },
-    { 
-      word: 'DÉMOCRATIQUE', 
-      image: '🗳️', 
-      definition: 'Qui concerne un système où le peuple a le pouvoir',
-      pronunciation: '/dé-mo-kra-tik/'
-    },
-    { 
-      word: 'ENVIRONNEMENT', 
-      image: '🌍', 
-      definition: 'Ensemble des éléments naturels et artificiels qui nous entourent',
-      pronunciation: '/an-vi-ro-ne-man/'
-    },
-    { 
-      word: 'RECONNAISSANCE', 
-      image: '🙏', 
-      definition: 'Sentiment de gratitude envers quelqu\'un',
-      pronunciation: '/re-ko-nè-san-se/'
-    },
-    { 
-      word: 'DÉVELOPPEMENT', 
-      image: '📈', 
-      definition: 'Action de grandir, de progresser, d\'évoluer',
-      pronunciation: '/dé-ve-lo-pe-man/'
-    },
-    { 
-      word: 'COMMUNICATION', 
-      image: '📡', 
-      definition: 'Action de transmettre des informations à quelqu\'un',
-      pronunciation: '/ko-mu-ni-ka-sion/'
-    },
-    { 
-      word: 'MANIFESTATION', 
-      image: '📣', 
-      definition: 'Rassemblement public pour exprimer une opinion',
-      pronunciation: '/ma-ni-fès-ta-sion/'
-    },
-    { 
-      word: 'EXPÉRIMENTATION', 
-      image: '🔬', 
-      definition: 'Action de faire des expériences pour tester quelque chose',
-      pronunciation: '/èks-pé-ri-man-ta-sion/'
-    }
-  ]
-}
-
-function initExercise() {
-  // Si un thème est spécifié (CP et CE1), utiliser les mots par thème
-  if (props.theme && wordsByTheme[props.level] && wordsByTheme[props.level][props.theme]) {
-    words.value = [...wordsByTheme[props.level][props.theme]]
-  } else {
-    // Sinon utiliser la liste générale
-    words.value = [...wordDatabase[props.level] || wordDatabase.cp]
-  }
-  shuffleArray(words.value)
+async function initExercise() {
+  // Load words from JSON files
+  const loadedWords = await loadWordsData(props.level, props.theme)
   
-  // Mélanger aussi les options pour le choix multiple
-  if (isMultipleChoice.value) {
-    words.value.forEach(word => {
-      if (word.options) {
-        shuffleArray(word.options)
-      }
-    })
+  if (loadedWords.length > 0) {
+    words.value = [...loadedWords]
+    shuffleArray(words.value)
+    
+    // Shuffle options for multiple choice as well
+    if (isMultipleChoice.value) {
+      words.value.forEach(word => {
+        if (word.options) {
+          shuffleArray(word.options)
+        }
+      })
+    }
+  } else {
+    console.warn('Aucun mot chargé pour', props.level, props.theme)
   }
 }
 
@@ -627,6 +256,9 @@ function completeExercise() {
     correctAnswers.value,
     words.value.length
   )
+  
+  // Emit completion event
+  emit('exercise-complete')
 }
 
 function restart() {
@@ -639,6 +271,10 @@ function restart() {
   correctAnswers.value = 0
   isComplete.value = false
   initExercise()
+}
+
+function goToNext() {
+  emit('next-exercise')
 }
 
 function getOptionClass(option) {
@@ -672,32 +308,34 @@ watch(currentWordIndex, () => {
 <style scoped>
 .spelling-exercise {
   background: white;
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 12px;
+  padding: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
 }
 
 .exercise-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 2px solid #f0f0f0;
 }
 
 .exercise-header h3 {
   color: #667eea;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .score {
   font-weight: bold;
   color: #667eea;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .word-card {
@@ -706,75 +344,75 @@ watch(currentWordIndex, () => {
 
 .question-number {
   color: #999;
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
 }
 
 .word-image {
-  font-size: 6rem;
-  margin: 1.5rem 0;
+  font-size: 3.5rem;
+  margin: 0.5rem 0;
   animation: fadeIn 0.5s;
 }
 
 .word-definition {
   background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin: 1.5rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
   text-align: left;
 }
 
 .word-definition strong {
   color: #667eea;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .word-definition p {
-  margin: 0.5rem 0 0 0;
+  margin: 0.25rem 0 0 0;
   color: #333;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .word-pronunciation {
   color: #667eea;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Courier New', monospace;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-style: italic;
 }
 
 .instruction {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
   font-weight: 500;
 }
 
 .multiple-choice {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
 }
 
 .choice-buttons {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   max-width: 400px;
   margin: 0 auto;
 }
 
 .choice-btn {
-  padding: 1.25rem 2rem;
-  font-size: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  border: 3px solid #667eea;
+  border: 2px solid #667eea;
   background: white;
   color: #667eea;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s;
   font-family: 'Courier New', monospace;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 .choice-btn:hover:not(:disabled) {
@@ -803,19 +441,19 @@ watch(currentWordIndex, () => {
 }
 
 .free-input {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
 }
 
 .spelling-input {
   width: 100%;
   max-width: 400px;
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.3rem;
+  padding: 0.6rem;
   text-align: center;
-  border: 3px solid #667eea;
-  border-radius: 12px;
+  border: 2px solid #667eea;
+  border-radius: 8px;
   font-family: 'Courier New', monospace;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -831,11 +469,11 @@ watch(currentWordIndex, () => {
 }
 
 .feedback {
-  margin: 1.5rem 0;
-  padding: 1rem;
-  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .feedback.correct {
@@ -852,13 +490,13 @@ watch(currentWordIndex, () => {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s;
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .btn-primary:hover:not(:disabled) {
@@ -873,39 +511,74 @@ watch(currentWordIndex, () => {
 
 .exercise-complete {
   text-align: center;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .completion-icon {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .exercise-complete h2 {
   color: #667eea;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .final-score p {
-  font-size: 1.3rem;
-  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
   color: #333;
 }
 
 .percentage {
-  font-size: 3rem !important;
+  font-size: 2rem !important;
   font-weight: bold;
   color: #667eea;
 }
 
 .stars {
-  font-size: 3rem;
-  margin: 2rem 0;
+  font-size: 2rem;
+  margin: 0.5rem 0;
 }
 
 .star {
   margin: 0 0.25rem;
   animation: starPop 0.5s ease-out;
+}
+
+.completion-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: #667eea15;
+}
+
+.btn-next {
+  animation: pulseNext 2s ease-in-out infinite;
+  box-shadow: 0 4px 20px rgba(40, 167, 69, 0.4);
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.btn-next:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 24px rgba(40, 167, 69, 0.5);
 }
 
 @keyframes starPop {
@@ -917,6 +590,15 @@ watch(currentWordIndex, () => {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes pulseNext {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
   }
 }
 

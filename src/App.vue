@@ -25,14 +25,14 @@
 .header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -43,18 +43,20 @@
 
 .logo h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .main-content {
   flex: 1;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 
 .footer {
   background-color: #f5f5f5;
   text-align: center;
-  padding: 1.5rem;
+  padding: 0.75rem;
   margin-top: auto;
   border-top: 1px solid #e0e0e0;
 }

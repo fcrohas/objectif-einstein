@@ -1,0 +1,50 @@
+[
+  {
+    "word": "EXTRAORDINAIRE",
+    "image": "✨",
+    "definition": "Quelque chose d'exceptionnel, de remarquable, qui sort de l'ordinaire",
+    "pronunciation": "/èks-tra-or-di-nèr/"
+  },
+  {
+    "word": "ARCHITECTURE",
+    "image": "🏛️",
+    "definition": "Art de concevoir et de construire des bâtiments",
+    "pronunciation": "/ar-chi-tek-tur/"
+  },
+  {
+    "word": "MYSTÉRIEUX",
+    "image": "🔮",
+    "definition": "Qui est difficile à comprendre ou à expliquer",
+    "pronunciation": "/mis-té-ri-eu/"
+  },
+  {
+    "word": "ENCYCLOPÉDIE",
+    "image": "📖",
+    "definition": "Grand livre qui contient beaucoup de connaissances sur différents sujets",
+    "pronunciation": "/an-si-klo-pé-di/"
+  },
+  {
+    "word": "AGRICULTURE",
+    "image": "🚜",
+    "definition": "Culture de la terre pour produire des plantes et élever des animaux",
+    "pronunciation": "/a-gri-kul-tur/"
+  },
+  {
+    "word": "AQUARIUM",
+    "image": "🐠",
+    "definition": "Réservoir transparent rempli d'eau où vivent des poissons",
+    "pronunciation": "/a-kwa-ri-om/"
+  },
+  {
+    "word": "PHARMACIE",
+    "image": "💊",
+    "definition": "Magasin où on achète des médicaments",
+    "pronunciation": "/far-ma-si/"
+  },
+  {
+    "word": "ORCHESTRE",
+    "image": "🎻",
+    "definition": "Groupe de musiciens qui jouent ensemble",
+    "pronunciation": "/or-kès-tre/"
+  }
+]

@@ -1,0 +1,408 @@
+{
+  "on": [
+    {
+      "word": "PAPILLON",
+      "image": "🦋",
+      "definition": "Insecte avec de belles ailes colorées",
+      "pronunciation": "/pa-pi-yon/",
+      "options": ["PAPILLON", "PAPION", "PAPIYON"]
+    },
+    {
+      "word": "BALLON",
+      "image": "⚽",
+      "definition": "Objet rond pour jouer au football",
+      "pronunciation": "/ba-lon/",
+      "options": ["BALLON", "BALON", "BALONS"]
+    },
+    {
+      "word": "CITRON",
+      "image": "🍋",
+      "definition": "Fruit jaune et acide",
+      "pronunciation": "/si-tron/",
+      "options": ["CITRON", "SITRON", "CITRUN"]
+    },
+    {
+      "word": "STATION",
+      "image": "🚉",
+      "definition": "Endroit où s'arrêtent les trains",
+      "pronunciation": "/sta-sion/",
+      "options": ["STATION", "STASION", "STATIONS"]
+    },
+    {
+      "word": "CHAMPION",
+      "image": "🏆",
+      "definition": "Celui qui gagne une compétition",
+      "pronunciation": "/chan-pion/",
+      "options": ["CHAMPION", "CHAMPΙON", "CHAMPIONS"]
+    },
+    {
+      "word": "DRAGON",
+      "image": "🐉",
+      "definition": "Animal imaginaire qui crache du feu",
+      "pronunciation": "/dra-gon/",
+      "options": ["DRAGON", "DRAGONON", "DRAGUN"]
+    },
+    {
+      "word": "CRAYON",
+      "image": "✏️",
+      "definition": "Outil pour écrire et dessiner",
+      "pronunciation": "/krè-yon/",
+      "options": ["CRAYON", "CRAION", "CRAYONS"]
+    },
+    {
+      "word": "CARTON",
+      "image": "📦",
+      "definition": "Matière épaisse pour faire des boîtes",
+      "pronunciation": "/kar-ton/",
+      "options": ["CARTON", "CARTONS", "KARTUN"]
+    }
+  ],
+  "ou": [
+    {
+      "word": "HIBOU",
+      "image": "🦉",
+      "definition": "Oiseau de nuit avec de grands yeux",
+      "pronunciation": "/i-bou/",
+      "options": ["HIBOU", "HIBOUX", "IIBOU"]
+    },
+    {
+      "word": "KANGOUROU",
+      "image": "🦘",
+      "definition": "Animal d'Australie qui saute",
+      "pronunciation": "/kan-gou-rou/",
+      "options": ["KANGOUROU", "KANGOUROUS", "KANGOURU"]
+    },
+    {
+      "word": "COUCOU",
+      "image": "👋",
+      "definition": "Mot pour saluer quelqu'un",
+      "pronunciation": "/kou-kou/",
+      "options": ["COUCOU", "COUKOU", "KOUCOU"]
+    },
+    {
+      "word": "JOUJOU",
+      "image": "🧸",
+      "definition": "Autre nom pour un jouet",
+      "pronunciation": "/jou-jou/",
+      "options": ["JOUJOU", "JOUJOUX", "JOUJOUS"]
+    },
+    {
+      "word": "CAILLOU",
+      "image": "🪨",
+      "definition": "Petite pierre ronde",
+      "pronunciation": "/ka-you/",
+      "options": ["CAILLOU", "CAILLOUX", "KAILLOU"]
+    },
+    {
+      "word": "VOYOU",
+      "image": "😈",
+      "definition": "Personne qui n'obéit pas aux règles",
+      "pronunciation": "/vwa-you/",
+      "options": ["VOYOU", "VOILLOU", "VOIOU"]
+    },
+    {
+      "word": "GENOU",
+      "image": "🦵",
+      "definition": "Partie de la jambe qui plie",
+      "pronunciation": "/je-nou/",
+      "options": ["GENOU", "GENOUX", "JENOU"]
+    },
+    {
+      "word": "COUTEAU",
+      "image": "🔪",
+      "definition": "Ustensile pour couper",
+      "pronunciation": "/kou-tô/",
+      "options": ["COUTEAU", "COUTO", "COUTAU"]
+    }
+  ],
+  "an": [
+    {
+      "word": "ELEPHANT",
+      "image": "🐘",
+      "definition": "Très grand animal avec une trompe",
+      "pronunciation": "/é-lé-fan/",
+      "options": ["ELEPHANT", "ÉLÉPHANT", "ELEFAN"]
+    },
+    {
+      "word": "RESTAURANT",
+      "image": "🍽️",
+      "definition": "Endroit où on mange",
+      "pronunciation": "/rès-to-ran/",
+      "options": ["RESTAURANT", "RESTORANT", "RESTORAN"]
+    },
+    {
+      "word": "MOMENT",
+      "image": "⏰",
+      "definition": "Court instant dans le temps",
+      "pronunciation": "/mo-man/",
+      "options": ["MOMENT", "MOMAN", "MOMANS"]
+    },
+    {
+      "word": "VOLANT",
+      "image": "🎾",
+      "definition": "Objet pour conduire une voiture",
+      "pronunciation": "/vo-lan/",
+      "options": ["VOLANT", "VOLAN", "VOLANS"]
+    },
+    {
+      "word": "PARENT",
+      "image": "👨‍👩‍👦",
+      "definition": "Papa et maman ensemble",
+      "pronunciation": "/pa-ran/",
+      "options": ["PARENT", "PARAN", "PARENTS"]
+    },
+    {
+      "word": "DIAMANT",
+      "image": "💎",
+      "definition": "Pierre précieuse très brillante",
+      "pronunciation": "/dia-man/",
+      "options": ["DIAMANT", "DIAMAN", "DIAMANS"]
+    },
+    {
+      "word": "SERPENT",
+      "image": "🐍",
+      "definition": "Animal qui rampe et n'a pas de pattes",
+      "pronunciation": "/sèr-pan/",
+      "options": ["SERPENT", "SERPAN", "SERPENTS"]
+    },
+    {
+      "word": "VACANCES",
+      "image": "🏖️",
+      "definition": "Période sans école pour se reposer",
+      "pronunciation": "/va-kans/",
+      "options": ["VACANCES", "VAKANS", "VACANCE"]
+    }
+  ],
+  "in": [
+    {
+      "word": "MATIN",
+      "image": "🌅",
+      "definition": "Début de la journée",
+      "pronunciation": "/ma-tin/",
+      "options": ["MATIN", "MATEN", "MATAIN"]
+    },
+    {
+      "word": "CHEMIN",
+      "image": "🛤️",
+      "definition": "Petite route pour marcher",
+      "pronunciation": "/che-min/",
+      "options": ["CHEMIN", "SHEMIN", "CHEMAIN"]
+    },
+    {
+      "word": "SAPIN",
+      "image": "🎄",
+      "definition": "Arbre de Noël",
+      "pronunciation": "/sa-pin/",
+      "options": ["SAPIN", "SAPEN", "SAPAIN"]
+    },
+    {
+      "word": "MARIN",
+      "image": "⚓",
+      "definition": "Personne qui travaille sur un bateau",
+      "pronunciation": "/ma-rin/",
+      "options": ["MARIN", "MAREN", "MARAIN"]
+    },
+    {
+      "word": "MOULIN",
+      "image": "🏚️",
+      "definition": "Bâtiment pour faire de la farine",
+      "pronunciation": "/mou-lin/",
+      "options": ["MOULIN", "MOULEN", "MOULAIN"]
+    },
+    {
+      "word": "CHAGRIN",
+      "image": "😢",
+      "definition": "Grande tristesse",
+      "pronunciation": "/cha-grin/",
+      "options": ["CHAGRIN", "CHAGRAIN", "SHAGREN"]
+    },
+    {
+      "word": "COUSIN",
+      "image": "👦",
+      "definition": "Fils de la tante ou de l'oncle",
+      "pronunciation": "/kou-zin/",
+      "options": ["COUSIN", "COUZIN", "COUZAIN"]
+    },
+    {
+      "word": "REQUIN",
+      "image": "🦈",
+      "definition": "Grand poisson dangereux de la mer",
+      "pronunciation": "/re-kin/",
+      "options": ["REQUIN", "REKEN", "REQUAIN"]
+    }
+  ],
+  "oi": [
+    {
+      "word": "POISSON",
+      "image": "🐟",
+      "definition": "Animal qui vit dans l'eau",
+      "pronunciation": "/pwa-son/",
+      "options": ["POISSON", "POISON", "POISSONS"]
+    },
+    {
+      "word": "MIROIR",
+      "image": "🪞",
+      "definition": "Objet qui reflète notre image",
+      "pronunciation": "/mi-rwar/",
+      "options": ["MIROIR", "MIRWAR", "MIROUAR"]
+    },
+    {
+      "word": "HISTOIRE",
+      "image": "📖",
+      "definition": "Récit d'événements vrais ou imaginaires",
+      "pronunciation": "/is-twar/",
+      "options": ["HISTOIRE", "ISTOIRE", "HISTOAR"]
+    },
+    {
+      "word": "ARMOIRE",
+      "image": "🗄️",
+      "definition": "Meuble pour ranger les vêtements",
+      "pronunciation": "/ar-mwar/",
+      "options": ["ARMOIRE", "ARMWAR", "ARMOUAR"]
+    },
+    {
+      "word": "VICTOIRE",
+      "image": "🏆",
+      "definition": "Fait de gagner une compétition",
+      "pronunciation": "/vik-twar/",
+      "options": ["VICTOIRE", "VIKTOIRE", "VICTOAR"]
+    },
+    {
+      "word": "PATINOIRE",
+      "image": "⛸️",
+      "definition": "Endroit où on patine sur la glace",
+      "pronunciation": "/pa-ti-nwar/",
+      "options": ["PATINOIRE", "PATINWAR", "PATINOAR"]
+    },
+    {
+      "word": "BAIGNOIRE",
+      "image": "🛁",
+      "definition": "Grand récipient pour prendre un bain",
+      "pronunciation": "/bè-gnwar/",
+      "options": ["BAIGNOIRE", "BAGNOIRE", "BEIGNOIRE"]
+    },
+    {
+      "word": "MOUCHOIR",
+      "image": "🧻",
+      "definition": "Tissu pour se moucher",
+      "pronunciation": "/mou-shwar/",
+      "options": ["MOUCHOIR", "MOUCHWAR", "MUSHOAR"]
+    }
+  ],
+  "ch": [
+    {
+      "word": "CHOCOLAT",
+      "image": "🍫",
+      "definition": "Friandise sucrée faite avec du cacao",
+      "pronunciation": "/cho-ko-la/",
+      "options": ["CHOCOLAT", "CHOCLA", "SHOKOLAT"]
+    },
+    {
+      "word": "CHAMBRE",
+      "image": "🛏️",
+      "definition": "Pièce où on dort",
+      "pronunciation": "/chan-bre/",
+      "options": ["CHAMBRE", "SHAMBRE", "CHANBRE"]
+    },
+    {
+      "word": "CHAUSSURE",
+      "image": "👟",
+      "definition": "Ce qu'on met aux pieds",
+      "pronunciation": "/chô-sure/",
+      "options": ["CHAUSSURE", "CHOSURE", "SHAUSSURE"]
+    },
+    {
+      "word": "MARCHE",
+      "image": "🚶",
+      "definition": "Action d'avancer à pied",
+      "pronunciation": "/mar-she/",
+      "options": ["MARCHE", "MARSH", "MARSHE"]
+    },
+    {
+      "word": "CHEMISE",
+      "image": "👔",
+      "definition": "Vêtement avec des manches et des boutons",
+      "pronunciation": "/che-mize/",
+      "options": ["CHEMISE", "SHMISE", "SHEMIZE"]
+    },
+    {
+      "word": "CHANDELLE",
+      "image": "🕯️",
+      "definition": "Bougie pour s'éclairer",
+      "pronunciation": "/chan-dèl/",
+      "options": ["CHANDELLE", "SHANDEL", "CHANDEL"]
+    },
+    {
+      "word": "CHAPEAU",
+      "image": "🎩",
+      "definition": "Ce qu'on met sur la tête",
+      "pronunciation": "/cha-pô/",
+      "options": ["CHAPEAU", "SHAPO", "CHAPAU"]
+    },
+    {
+      "word": "MANCHETTE",
+      "image": "📰",
+      "definition": "Titre d'un journal",
+      "pronunciation": "/man-shèt/",
+      "options": ["MANCHETTE", "MANSHET", "MANCHET"]
+    }
+  ],
+  "tion": [
+    {
+      "word": "ATTENTION",
+      "image": "⚠️",
+      "definition": "Quand on se concentre bien",
+      "pronunciation": "/a-tan-sion/",
+      "options": ["ATTENTION", "ATANSION", "ATTENSION"]
+    },
+    {
+      "word": "STATION",
+      "image": "🚉",
+      "definition": "Lieu où s'arrêtent les trains",
+      "pronunciation": "/sta-sion/",
+      "options": ["STATION", "STASION", "STATIONS"]
+    },
+    {
+      "word": "QUESTION",
+      "image": "❓",
+      "definition": "Ce qu'on pose pour avoir une réponse",
+      "pronunciation": "/kès-tion/",
+      "options": ["QUESTION", "KESTION", "QESTION"]
+    },
+    {
+      "word": "ADDITION",
+      "image": "➕",
+      "definition": "Opération de calcul pour additionner",
+      "pronunciation": "/a-di-sion/",
+      "options": ["ADDITION", "ADISION", "ADDISION"]
+    },
+    {
+      "word": "SOLUTION",
+      "image": "💡",
+      "definition": "Réponse à un problème",
+      "pronunciation": "/so-lu-sion/",
+      "options": ["SOLUTION", "SOLUSIONE", "SOLUCION"]
+    },
+    {
+      "word": "ÉMOTION",
+      "image": "😊",
+      "definition": "Sentiment comme la joie ou la peur",
+      "pronunciation": "/é-mo-sion/",
+      "options": ["ÉMOTION", "EMOSION", "EMOTION"]
+    },
+    {
+      "word": "NATION",
+      "image": "🏳️",
+      "definition": "Pays, ensemble de personnes",
+      "pronunciation": "/na-sion/",
+      "options": ["NATION", "NASION", "NATIONS"]
+    },
+    {
+      "word": "POTION",
+      "image": "🧪",
+      "definition": "Boisson magique dans les histoires",
+      "pronunciation": "/po-sion/",
+      "options": ["POTION", "POSION", "POTIONS"]
+    }
+  ]
+}

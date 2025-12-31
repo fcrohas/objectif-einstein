@@ -264,32 +264,34 @@ watch(currentQuestion, () => {
 <style scoped>
 .math-exercise {
   background: white;
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 12px;
+  padding: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
 }
 
 .exercise-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 2px solid #f0f0f0;
 }
 
 .exercise-header h3 {
   color: #667eea;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .score {
   font-weight: bold;
   color: #667eea;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .question-card {
@@ -298,29 +300,29 @@ watch(currentQuestion, () => {
 
 .question-number {
   color: #999;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
 }
 
 .question {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #333;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-family: 'Courier New', monospace;
 }
 
 .answer-input {
-  margin: 2rem 0;
+  margin: 0.75rem 0;
 }
 
 .answer-input input {
-  width: 200px;
-  font-size: 2rem;
-  padding: 1rem;
+  width: 150px;
+  font-size: 1.3rem;
+  padding: 0.6rem;
   text-align: center;
-  border: 3px solid #667eea;
-  border-radius: 12px;
+  border: 2px solid #667eea;
+  border-radius: 8px;
   font-family: 'Courier New', monospace;
 }
 
@@ -335,11 +337,11 @@ watch(currentQuestion, () => {
 }
 
 .feedback {
-  margin: 1.5rem 0;
-  padding: 1rem;
-  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .feedback.correct {
@@ -356,13 +358,13 @@ watch(currentQuestion, () => {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s;
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .btn-primary:hover {
@@ -372,38 +374,39 @@ watch(currentQuestion, () => {
 
 .exercise-complete {
   text-align: center;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .completion-icon {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .exercise-complete h2 {
   color: #667eea;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .final-score {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
 }
 
 .final-score p {
-  font-size: 1.3rem;
-  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
   color: #333;
 }
 
 .percentage {
-  font-size: 3rem !important;
+  font-size: 2rem !important;
   font-weight: bold;
   color: #667eea;
 }
 
 .stars {
-  font-size: 3rem;
-  margin: 2rem 0;
+  font-size: 2rem;
+  margin: 0.5rem 0;
 }
 
 .star {

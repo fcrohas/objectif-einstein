@@ -1,0 +1,50 @@
+[
+  {
+    "word": "RESPONSABILITÉ",
+    "image": "🎯",
+    "definition": "Obligation morale de répondre de ses actes et de leurs conséquences",
+    "pronunciation": "/rès-pon-sa-bi-li-té/"
+  },
+  {
+    "word": "DÉMOCRATIQUE",
+    "image": "🗳️",
+    "definition": "Qui concerne un système où le peuple a le pouvoir",
+    "pronunciation": "/dé-mo-kra-tik/"
+  },
+  {
+    "word": "ENVIRONNEMENT",
+    "image": "🌍",
+    "definition": "Ensemble des éléments naturels et artificiels qui nous entourent",
+    "pronunciation": "/an-vi-ro-ne-man/"
+  },
+  {
+    "word": "RECONNAISSANCE",
+    "image": "🙏",
+    "definition": "Sentiment de gratitude envers quelqu'un",
+    "pronunciation": "/re-ko-nè-san-se/"
+  },
+  {
+    "word": "DÉVELOPPEMENT",
+    "image": "📈",
+    "definition": "Action de grandir, de progresser, d'évoluer",
+    "pronunciation": "/dé-ve-lo-pe-man/"
+  },
+  {
+    "word": "COMMUNICATION",
+    "image": "📡",
+    "definition": "Action de transmettre des informations à quelqu'un",
+    "pronunciation": "/ko-mu-ni-ka-sion/"
+  },
+  {
+    "word": "MANIFESTATION",
+    "image": "📣",
+    "definition": "Rassemblement public pour exprimer une opinion",
+    "pronunciation": "/ma-ni-fès-ta-sion/"
+  },
+  {
+    "word": "EXPÉRIMENTATION",
+    "image": "🔬",
+    "definition": "Action de faire des expériences pour tester quelque chose",
+    "pronunciation": "/èks-pé-ri-man-ta-sion/"
+  }
+]

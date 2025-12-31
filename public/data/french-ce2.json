@@ -1,0 +1,50 @@
+[
+  {
+    "word": "ÉLÉPHANT",
+    "image": "🐘",
+    "definition": "Très grand animal gris avec une longue trompe",
+    "pronunciation": "/é-lé-fan/"
+  },
+  {
+    "word": "ORDINATEUR",
+    "image": "💻",
+    "definition": "Machine électronique pour travailler, jouer et chercher des informations",
+    "pronunciation": "/or-di-na-teur/"
+  },
+  {
+    "word": "BIBLIOTHÈQUE",
+    "image": "📚",
+    "definition": "Lieu où on peut emprunter et lire des livres",
+    "pronunciation": "/bi-bli-o-tèk/"
+  },
+  {
+    "word": "DINOSAURE",
+    "image": "🦕",
+    "definition": "Animal préhistorique géant qui vivait il y a très longtemps",
+    "pronunciation": "/di-no-zor/"
+  },
+  {
+    "word": "TÉLÉPHONE",
+    "image": "📱",
+    "definition": "Appareil pour parler avec quelqu'un qui est loin",
+    "pronunciation": "/té-lé-fon/"
+  },
+  {
+    "word": "KANGOUROU",
+    "image": "🦘",
+    "definition": "Animal d'Australie qui saute et porte son bébé dans une poche",
+    "pronunciation": "/kan-gou-rou/"
+  },
+  {
+    "word": "CHAMPIGNON",
+    "image": "🍄",
+    "definition": "Plante avec un chapeau qu'on peut manger (si elle n'est pas toxique)",
+    "pronunciation": "/chan-pi-gnon/"
+  },
+  {
+    "word": "ACCIDENT",
+    "image": "⚠️",
+    "definition": "Événement malheureux qui arrive sans qu'on le veuille",
+    "pronunciation": "/ak-si-dan/"
+  }
+]
