@@ -50,6 +50,13 @@
           <div v-if="feedback" class="feedback" :class="feedbackClass">
             {{ feedback }}
           </div>
+          
+          <!-- Bouton pour continuer après une erreur -->
+          <div v-if="answered && feedbackClass === 'incorrect'" class="continue-section">
+            <button @click="nextQuestion" class="btn-continue">
+              Question suivante →
+            </button>
+          </div>
         </div>
       </div>
 
@@ -425,6 +432,28 @@ onMounted(() => {
 
 .btn-secondary:hover {
   background: #667eea15;
+}
+
+.continue-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.btn-continue {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-continue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 .error-message, .loading-message {
