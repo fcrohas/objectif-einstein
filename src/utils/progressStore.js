@@ -1,9 +1,15 @@
 // Système de gestion de la progression de l'élève
+import { profileStore } from './profileStore'
+
 export const progressStore = {
-  // Récupérer la progression complète
+  // Récupérer la progression complète du profil actif
   getProgress() {
-    const stored = localStorage.getItem('objectif-einstein-progress')
-    return stored ? JSON.parse(stored) : this.getDefaultProgress()
+    const activeProfile = profileStore.getActiveProfile()
+    if (!activeProfile) return this.getDefaultProgress()
+    
+    return activeProfile.progress && Object.keys(activeProfile.progress).length > 0
+      ? activeProfile.progress
+      : this.getDefaultProgress()
   },
 
   // Structure par défaut
@@ -22,9 +28,12 @@ export const progressStore = {
     }
   },
 
-  // Sauvegarder la progression
+  // Sauvegarder la progression du profil actif
   saveProgress(progress) {
-    localStorage.setItem('objectif-einstein-progress', JSON.stringify(progress))
+    const activeProfile = profileStore.getActiveProfile()
+    if (activeProfile) {
+      profileStore.updateProgress(activeProfile.id, progress)
+    }
   },
 
   // Enregistrer un exercice complété

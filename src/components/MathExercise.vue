@@ -41,7 +41,7 @@
         </button>
         
         <button 
-          v-else 
+          v-else-if="feedbackClass === 'incorrect'" 
           @click="nextQuestion"
           class="btn-primary"
         >
@@ -107,7 +107,7 @@ const stars = computed(() => {
 
 // Générer des questions selon le niveau et le type
 function generateQuestions() {
-  const count = 10
+  const count = 5
   const generated = []
   
   const config = getConfigForLevel(props.level, props.exerciseType)
@@ -198,6 +198,12 @@ function checkAnswer() {
   
   if (correct) {
     correctAnswers.value++
+    // Passage automatique après 1 seconde si bonne réponse
+    setTimeout(() => {
+      if (answered.value) {
+        nextQuestion()
+      }
+    }, 1000)
     feedback.value = '✓ Bravo ! C\'est correct ! 🎉'
     feedbackClass.value = 'correct'
   } else {

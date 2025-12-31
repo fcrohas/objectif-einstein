@@ -1,13 +1,26 @@
 <template>
   <div class="spelling-exercise">
-    <div class="exercise-header">
-      <h3>{{ title }}</h3>
-      <div class="score">
-        Score: {{ correctAnswers }}/{{ words.length }}
-      </div>
+    <div v-if="loadingError" class="error-message">
+      <div class="error-icon">⚠️</div>
+      <h3>Impossible de charger les exercices</h3>
+      <p>{{ loadingError }}</p>
+      <button @click="initExercise" class="btn-primary">🔄 Réessayer</button>
     </div>
 
-    <div v-if="!isComplete" class="exercise-content">
+    <div v-else-if="words.length === 0" class="loading-message">
+      <div class="loading-icon">⏳</div>
+      <p>Chargement des exercices...</p>
+    </div>
+
+    <template v-else>
+      <div class="exercise-header">
+        <h3>{{ title }}</h3>
+        <div class="score">
+          Score: {{ correctAnswers }}/{{ words.length }}
+        </div>
+      </div>
+
+      <div v-if="!isComplete" class="exercise-content">
       <div class="word-card">
         <div class="question-number">
           Mot {{ currentWordIndex + 1 }}/{{ words.length }}
@@ -74,7 +87,7 @@
         </button>
         
         <button 
-          v-if="answered" 
+          v-if="answered && feedbackClass === 'incorrect'" 
           @click="nextWord"
           class="btn-primary"
         >
@@ -105,6 +118,7 @@
         </button>
       </div>
     </div>
+    </template>
   </div>
 </template>
 
@@ -115,19 +129,32 @@ import { progressStore } from '../utils/progressStore'
 // Function to load words data from JSON files
 const loadWordsData = async (level, theme = null) => {
   try {
+    const baseUrl = import.meta.env.BASE_URL || '/objectif-einstein/'
+    const url = `${baseUrl}data/french-${level}.json`
+    console.log('Chargement du fichier:', url)
+    
     if (['cp', 'ce1'].includes(level) && theme) {
       // Load JSON file for CP or CE1 with theme
-      const response = await fetch(`/objectif-einstein/data/french-${level}.json`)
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
       const data = await response.json()
+      console.log('Données chargées pour', level, theme, ':', data[theme]?.length, 'mots')
       return data[theme] || []
     } else if (['ce2', 'cm1', 'cm2'].includes(level)) {
       // Load JSON file for CE2, CM1, CM2 (returns whole array)
-      const response = await fetch(`/objectif-einstein/data/french-${level}.json`)
-      return await response.json()
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      const result = await response.json()
+      console.log('Données chargées pour', level, ':', result?.length, 'mots')
+      return result
     }
     return []
   } catch (error) {
-    console.error('Erreur de chargement des données:', error)
+    console.error('Erreur de chargement des données:', error, 'pour', level, theme)
     return []
   }
 }
@@ -163,6 +190,7 @@ const feedbackClass = ref('')
 const correctAnswers = ref(0)
 const isComplete = ref(false)
 const answerInput = ref(null)
+const loadingError = ref(null)
 
 const currentWord = computed(() => words.value[currentWordIndex.value] || { word: '', definition: '', image: '📝' })
 const isMultipleChoice = computed(() => ['cp', 'ce1'].includes(props.level))
@@ -176,23 +204,31 @@ const stars = computed(() => {
 })
 
 async function initExercise() {
-  // Load words from JSON files
-  const loadedWords = await loadWordsData(props.level, props.theme)
-  
-  if (loadedWords.length > 0) {
-    words.value = [...loadedWords]
-    shuffleArray(words.value)
+  try {
+    loadingError.value = null
+    // Load words from JSON files
+    const loadedWords = await loadWordsData(props.level, props.theme)
     
-    // Shuffle options for multiple choice as well
-    if (isMultipleChoice.value) {
-      words.value.forEach(word => {
-        if (word.options) {
-          shuffleArray(word.options)
-        }
-      })
+    if (loadedWords.length > 0) {
+      words.value = [...loadedWords]
+      shuffleArray(words.value)
+      
+      // Shuffle options for multiple choice as well
+      if (isMultipleChoice.value) {
+        words.value.forEach(word => {
+          if (word.options) {
+            shuffleArray(word.options)
+          }
+        })
+      }
+      loadingError.value = null
+    } else {
+      loadingError.value = `Aucun mot trouvé pour ${props.level} ${props.theme || ''}`
+      console.warn('Aucun mot chargé pour', props.level, props.theme)
     }
-  } else {
-    console.warn('Aucun mot chargé pour', props.level, props.theme)
+  } catch (error) {
+    loadingError.value = `Erreur de chargement : ${error.message}`
+    console.error('Erreur initExercise:', error)
   }
 }
 
@@ -206,6 +242,12 @@ function selectOption(option) {
     correctAnswers.value++
     feedback.value = `✓ Bravo ! "${option}" est la bonne orthographe ! 🎉`
     feedbackClass.value = 'correct'
+    // Passage automatique après 1 seconde si bonne réponse
+    setTimeout(() => {
+      if (answered.value) {
+        nextWord()
+      }
+    }, 1000)
   } else {
     feedback.value = `✗ Pas tout à fait... La bonne orthographe est "${currentWord.value.word}".`
     feedbackClass.value = 'incorrect'
@@ -223,6 +265,12 @@ function checkAnswer() {
     correctAnswers.value++
     feedback.value = `✓ Excellent ! "${correctWord}" est parfaitement écrit ! 🎉`
     feedbackClass.value = 'correct'
+    // Passage automatique après 1 seconde si bonne réponse
+    setTimeout(() => {
+      if (answered.value) {
+        nextWord()
+      }
+    }, 1000)
   } else {
     feedback.value = `✗ Ce n'est pas tout à fait ça... Le mot s'écrit "${correctWord}".`
     feedbackClass.value = 'incorrect'
@@ -612,4 +660,30 @@ watch(currentWordIndex, () => {
     transform: scale(1);
   }
 }
+
+.error-message, .loading-message {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-icon, .loading-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-message h3 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.error-message p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.loading-message p {
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
 </style>

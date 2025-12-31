@@ -2,15 +2,22 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
 import App from './App.vue'
+import ProfileSelection from './views/ProfileSelection.vue'
 import Home from './views/Home.vue'
 import LevelView from './views/LevelView.vue'
 import SubjectSelection from './views/SubjectSelection.vue'
 import ExercisesView from './views/ExercisesView.vue'
 import ProgressDashboard from './components/ProgressDashboard.vue'
+import { profileStore } from './utils/profileStore'
 
 const router = createRouter({
   history: createWebHistory('/objectif-einstein/'),
   routes: [
+    {
+      path: '/profil',
+      name: 'ProfileSelection',
+      component: ProfileSelection
+    },
     {
       path: '/',
       name: 'Home',
@@ -40,6 +47,17 @@ const router = createRouter({
       component: ProgressDashboard
     }
   ]
+})
+
+// Guard de navigation pour vérifier qu'un profil est sélectionné
+router.beforeEach((to, from, next) => {
+  const activeProfile = profileStore.getActiveProfile()
+  
+  if (!activeProfile && to.name !== 'ProfileSelection') {
+    next({ name: 'ProfileSelection' })
+  } else {
+    next()
+  }
 })
 
 createApp(App).use(router).mount('#app')

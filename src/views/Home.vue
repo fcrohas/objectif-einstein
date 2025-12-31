@@ -1,14 +1,19 @@
 <template>
   <div class="home container">
     <div class="hero">
-      <h1>Bienvenue sur Objectif Einstein ! 🚀</h1>
-      <p class="subtitle">Un voyage d'apprentissage du CP au CM2</p>
+      <div class="profile-header">
+        <h1>Bonjour {{ profileName }} ! 🚀</h1>
+        <button @click="changeProfile" class="change-profile-btn">
+          Changer de profil
+        </button>
+      </div>
+      <p class="subtitle">Ton voyage d'apprentissage</p>
       <ProgressSummary />
     </div>
 
     <div class="levels-grid">
       <div 
-        v-for="level in levels" 
+        v-for="level in accessibleLevels" 
         :key="level.id"
         class="level-card"
         @click="goToLevel(level.id)"
@@ -27,10 +32,13 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import ProgressSummary from '../components/ProgressSummary.vue'
+import { profileStore } from '../utils/profileStore'
 
 const router = useRouter()
+const activeProfile = ref(null)
 
 const levels = [
   {
@@ -70,9 +78,28 @@ const levels = [
   }
 ]
 
+const profileName = computed(() => {
+  return activeProfile.value?.name || 'Élève'
+})
+
+const accessibleLevels = computed(() => {
+  if (!activeProfile.value) return levels
+  
+  const accessible = profileStore.getAccessibleLevels(activeProfile.value.currentLevel)
+  return levels.filter(level => accessible.includes(level.id))
+})
+
 const goToLevel = (levelId) => {
   router.push(`/niveau/${levelId}`)
 }
+
+const changeProfile = () => {
+  router.push('/profil')
+}
+
+onMounted(() => {
+  activeProfile.value = profileStore.getActiveProfile()
+})
 </script>
 
 <style scoped>
@@ -88,9 +115,35 @@ const goToLevel = (levelId) => {
   border-radius: 12px;
 }
 
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.change-profile-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.change-profile-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
 .hero h1 {
   color: #667eea;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .subtitle {
