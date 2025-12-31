@@ -1,0 +1,66 @@
+{
+  "title": "Le conditionnel et le subjonctif",
+  "level": "cm2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir deux modes verbaux importants : le conditionnel et le subjonctif. Ils expriment des actions possibles, souhaitées ou incertaines !"
+    },
+    {
+      "type": "text",
+      "title": "Le conditionnel présent 📝",
+      "content": "Le conditionnel exprime une condition, un souhait, une hypothèse. Exemple : Je voudrais un gâteau. Si j'avais de l'argent, j'achèterais ce jeu."
+    },
+    {
+      "type": "example",
+      "title": "Conjuguer au conditionnel",
+      "content": "Formation : infinitif + terminaisons de l'imparfait",
+      "steps": [
+        "CHANTER : je chanterais, tu chanterais, il chanterait",
+        "nous chanterions, vous chanteriez, ils chanteraient",
+        "FINIR : je finirais, tu finirais, il finirait",
+        "Terminaisons : -ais, -ais, -ait, -ions, -iez, -aient"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Le subjonctif présent",
+      "content": "Le subjonctif exprime le doute, le souhait, l'ordre :",
+      "steps": [
+        "Il faut que je parte (nécessité)",
+        "Je veux que tu viennes (souhait)",
+        "Je doute qu'il soit là (doute)",
+        "Formation difficile : souvent 'que' + verbe modifié",
+        "Exemple : que je sois, que tu aies, qu'il fasse"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Comment conjugue-t-on 'avoir' au conditionnel avec 'je' ?",
+      "options": ["j'ai", "j'avais", "j'aurais", "j'aurai"],
+      "answer": 2,
+      "explanation": "C'est 'j'aurais' ! Au conditionnel : infinitif (avoir → aur-) + terminaison (-ais). J'aurais = je pourrais avoir."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Après 'si', on n'utilise JAMAIS le conditionnel ! On dit : 'Si j'avais (imparfait)... je ferais (conditionnel)'."
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Quelle phrase utilise correctement le subjonctif ?",
+      "options": ["Il faut que je vais", "Il faut que j'aille", "Il faut que j'irai", "Il faut que j'irais"],
+      "answer": 1,
+      "explanation": "C'est 'Il faut que j'aille' ! Après 'il faut que', on utilise le subjonctif. Aller devient 'aille' au subjonctif."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu as découvert le conditionnel et le subjonctif ! Ces modes s'apprennent progressivement, continue à les pratiquer !"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Les mesures : longueurs et masses",
+  "level": "cm1",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à convertir les unités de mesure. C'est très utile dans la vie quotidienne !"
+    },
+    {
+      "type": "text",
+      "title": "Les unités de longueur 📏",
+      "content": "Le mètre (m) est l'unité de base. Plus petit : décimètre (dm), centimètre (cm), millimètre (mm). Plus grand : décamètre (dam), hectomètre (hm), kilomètre (km)."
+    },
+    {
+      "type": "example",
+      "title": "Convertir les longueurs",
+      "content": "Les conversions de longueurs :",
+      "steps": [
+        "1 m = 10 dm = 100 cm = 1000 mm",
+        "1 km = 1000 m (comme 1000 pas !)",
+        "Pour passer à l'unité plus petite : on multiplie par 10",
+        "Pour passer à l'unité plus grande : on divise par 10"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Les unités de masse ⚖️",
+      "content": "Le gramme (g) et le kilogramme (kg) :",
+      "steps": [
+        "1 kg = 1000 g",
+        "1 tonne (t) = 1000 kg",
+        "500 g = 0,5 kg (c'est la moitié d'un kilo)",
+        "2500 g = 2,5 kg = 2 kg et 500 g"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Combien de centimètres dans 2 mètres ?",
+      "options": ["20 cm", "200 cm", "2000 cm", "2 cm"],
+      "answer": 1,
+      "explanation": "1 m = 100 cm, donc 2 m = 2 × 100 = 200 cm. Tu multiplies par 100 !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour convertir, utilise un tableau de conversion ! Chaque colonne représente une unité, et tu décales la virgule."
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Combien de grammes dans 3,5 kg ?",
+      "options": ["35 g", "350 g", "3500 g", "35000 g"],
+      "answer": 2,
+      "explanation": "1 kg = 1000 g, donc 3,5 kg = 3,5 × 1000 = 3500 g. Tu déplaces la virgule de 3 rangs !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant convertir les unités de mesure ! C'est pratique pour cuisiner, bricoler, voyager..."
+    }
+  ]
+}

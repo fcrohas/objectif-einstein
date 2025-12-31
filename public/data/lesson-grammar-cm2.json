@@ -1,0 +1,65 @@
+{
+  "title": "Les compléments circonstanciels",
+  "level": "cm2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à reconnaître les compléments circonstanciels. Ils apportent des informations sur les circonstances de l'action !"
+    },
+    {
+      "type": "text",
+      "title": "Les compléments circonstanciels 📝",
+      "content": "Un complément circonstanciel (CC) indique les circonstances : le temps, le lieu, la manière, la cause... On peut souvent le déplacer ou le supprimer."
+    },
+    {
+      "type": "example",
+      "title": "Les principaux CC",
+      "content": "Découvrons les différents types :",
+      "steps": [
+        "CC de temps (CCT) : Hier, je suis allé au parc → quand ?",
+        "CC de lieu (CCL) : Je vais à Paris → où ?",
+        "CC de manière (CCM) : Il marche lentement → comment ?",
+        "CC de cause (CCC) : Il pleure de joie → pourquoi ?"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Reconnaître un CC",
+      "content": "Comment l'identifier ?",
+      "steps": [
+        "1. Pose une question : où ? quand ? comment ? pourquoi ?",
+        "2. Essaie de le déplacer dans la phrase",
+        "3. Essaie de le supprimer : la phrase reste correcte",
+        "Exemple : Demain, Paul ira au cinéma avec ses amis"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Dans 'Marie joue dans le jardin', quelle est la fonction de 'dans le jardin' ?",
+      "options": ["CCT", "CCL", "CCM", "COD"],
+      "answer": 1,
+      "explanation": "C'est un CC de lieu (CCL) ! Il répond à la question 'où ?' : Marie joue où ? Dans le jardin."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Contrairement au COD et COI, tu peux déplacer ou supprimer le CC sans rendre la phrase incorrecte !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Dans 'Il travaille sérieusement', quelle est la nature de 'sérieusement' ?",
+      "options": ["CCT", "CCL", "CCM", "CCC"],
+      "answer": 2,
+      "explanation": "C'est un CC de manière (CCM) ! Il répond à 'comment ?' : Il travaille comment ? Sérieusement."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant reconnaître et analyser les compléments circonstanciels ! Continue à analyser des phrases !"
+    }
+  ]
+}

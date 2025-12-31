@@ -1,0 +1,67 @@
+{
+  "title": "Les préfixes et suffixes",
+  "level": "ce2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir les préfixes et les suffixes. Ce sont des petites parties qu'on ajoute aux mots pour en créer de nouveaux !"
+    },
+    {
+      "type": "text",
+      "title": "Les préfixes 📝",
+      "content": "Un préfixe se place AVANT le mot. Il change son sens. Exemples : dé-, re-, in-, pré-, mal-."
+    },
+    {
+      "type": "example",
+      "title": "Exemples de préfixes",
+      "content": "Transformons des mots avec des préfixes :",
+      "steps": [
+        "faire → dé + faire = défaire (contraire)",
+        "venir → re + venir = revenir (encore une fois)",
+        "capable → in + capable = incapable (contraire)",
+        "chauffer → pré + chauffer = préchauffer (avant)",
+        "heureux → mal + heureux = malheureux (contraire)"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Les suffixes",
+      "content": "Un suffixe se place APRÈS le mot :",
+      "steps": [
+        "jardin + -ier = jardinier (métier)",
+        "propre + -té = propreté (qualité)",
+        "lent + -ement = lentement (manière)",
+        "chaud + -eur = chaleur (qualité)",
+        "possible + -ité = possibilité (nom)"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Quel est le préfixe dans le mot 'refaire' ?",
+      "options": ["re-", "faire", "-re", "-faire"],
+      "answer": 0,
+      "explanation": "Le préfixe est 're-'. Il se place avant 'faire' et signifie 'faire à nouveau'."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Les préfixes in-, im-, il-, ir- signifient tous 'pas' ou 'contraire' : invisible, impossible, illisible, irréel !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Que signifie le mot 'malhonnête' ?",
+      "options": ["Très honnête", "Pas honnête", "Presque honnête", "Toujours honnête"],
+      "answer": 1,
+      "explanation": "Mal- est un préfixe qui indique le contraire. Malhonnête = pas honnête, contraire d'honnête."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant utiliser les préfixes et les suffixes pour créer de nouveaux mots ! C'est magique !"
+    }
+  ]
+}

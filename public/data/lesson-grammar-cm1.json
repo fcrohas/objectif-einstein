@@ -1,0 +1,65 @@
+{
+  "title": "Les propositions : principales et subordonnées",
+  "level": "cm1",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre ce qu'est une proposition. Une phrase peut avoir plusieurs propositions, comme un train avec plusieurs wagons !"
+    },
+    {
+      "type": "text",
+      "title": "Qu'est-ce qu'une proposition ? 📝",
+      "content": "Une proposition, c'est un groupe de mots organisé autour d'un verbe conjugué. Une phrase simple a une proposition, une phrase complexe en a plusieurs."
+    },
+    {
+      "type": "example",
+      "title": "Les phrases simples et complexes",
+      "content": "Observons la différence :",
+      "steps": [
+        "Phrase simple : Le chat dort. (1 verbe = 1 proposition)",
+        "Phrase complexe : Le chat dort et le chien joue. (2 verbes = 2 propositions)",
+        "Phrase complexe : Je pense que tu as raison. (2 verbes = 2 propositions)",
+        "Compte les verbes conjugués pour trouver le nombre de propositions !"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Proposition principale et subordonnée",
+      "content": "Dans une phrase complexe :",
+      "steps": [
+        "La proposition principale peut exister seule",
+        "La proposition subordonnée dépend de la principale",
+        "Exemple : Je sais [principale] que tu viendras [subordonnée]",
+        "La subordonnée commence souvent par : que, quand, si, parce que..."
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Combien de propositions dans 'Marie lit et Tom dessine' ?",
+      "options": ["1", "2", "3", "0"],
+      "answer": 1,
+      "explanation": "Il y a 2 propositions car il y a 2 verbes conjugués : 'lit' et 'dessine'. Chaque verbe forme une proposition."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour trouver le nombre de propositions, compte simplement les verbes conjugués dans la phrase !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Dans 'Je pense que c'est difficile', quelle est la proposition principale ?",
+      "options": ["Je pense", "que c'est difficile", "c'est difficile", "Je pense que"],
+      "answer": 0,
+      "explanation": "'Je pense' est la proposition principale. Elle peut exister seule. 'Que c'est difficile' est la subordonnée."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant reconnaître les propositions ! Continue à analyser des phrases pour progresser !"
+    }
+  ]
+}

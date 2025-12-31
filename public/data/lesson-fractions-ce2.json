@@ -1,0 +1,65 @@
+{
+  "title": "Les fractions simples",
+  "level": "ce2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir les fractions ! Une fraction, c'est une partie d'un tout. Par exemple, une demi-pomme, un quart de pizza..."
+    },
+    {
+      "type": "text",
+      "title": "Qu'est-ce qu'une fraction ? 🍕",
+      "content": "Une fraction s'écrit avec deux nombres : le numérateur (en haut) et le dénominateur (en bas). Exemple : 1/2 veut dire 1 part sur 2 parts égales."
+    },
+    {
+      "type": "example",
+      "title": "Les fractions courantes",
+      "content": "Découvrons les fractions les plus utilisées :",
+      "steps": [
+        "1/2 = une moitié (tu partages en 2 parts égales)",
+        "1/3 = un tiers (tu partages en 3 parts égales)",
+        "1/4 = un quart (tu partages en 4 parts égales)",
+        "3/4 = trois quarts (tu prends 3 parts sur 4)"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Exemple : La pizza 🍕",
+      "content": "Une pizza coupée en 8 parts :",
+      "steps": [
+        "Si tu manges 1 part : tu as mangé 1/8 de la pizza",
+        "Si tu manges 4 parts : tu as mangé 4/8 de la pizza",
+        "4/8 = 1/2 (c'est la même chose !)",
+        "Si tu manges toute la pizza : 8/8 = 1 pizza entière"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Tu as une tablette de chocolat de 12 carrés. Tu en manges 3. Quelle fraction as-tu mangée ?",
+      "options": ["1/3", "3/12", "1/4", "3/4"],
+      "answer": 1,
+      "explanation": "Tu as mangé 3 carrés sur 12, donc 3/12. On peut aussi simplifier : 3/12 = 1/4 !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Le dénominateur (en bas) te dit en combien de parts tu as partagé. Le numérateur (en haut) te dit combien de parts tu as prises !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Quelle fraction représente la moitié ?",
+      "options": ["1/3", "2/4", "1/4", "3/4"],
+      "answer": 1,
+      "explanation": "2/4 = 1/2 ! En effet, 2 parts sur 4, c'est la même chose que 1 part sur 2. C'est la moitié !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu connais maintenant les fractions simples ! Tu verras qu'elles sont très utiles dans la vie quotidienne !"
+    }
+  ]
+}

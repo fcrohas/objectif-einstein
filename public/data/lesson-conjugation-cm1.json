@@ -1,0 +1,66 @@
+{
+  "title": "L'imparfait et le passé simple",
+  "level": "cm1",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre deux temps du passé : l'imparfait et le passé simple. Ils servent à raconter des histoires !"
+    },
+    {
+      "type": "text",
+      "title": "L'imparfait 📝",
+      "content": "L'imparfait décrit une action passée qui dure, une habitude, ou un décor. Exemple : Il faisait beau, je jouais dans le jardin."
+    },
+    {
+      "type": "example",
+      "title": "Conjuguer à l'imparfait",
+      "content": "Terminaisons : -ais, -ais, -ait, -ions, -iez, -aient",
+      "steps": [
+        "CHANTER : je chantais, tu chantais, il chantait",
+        "nous chantions, vous chantiez, ils chantaient",
+        "FINIR : je finissais, tu finissais, il finissait",
+        "Pour tous les verbes, les terminaisons sont les mêmes !"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Le passé simple",
+      "content": "Le passé simple décrit une action brève, terminée :",
+      "steps": [
+        "CHANTER : je chantai, tu chantas, il chanta",
+        "nous chantâmes, vous chantâtes, ils chantèrent",
+        "FINIR : je finis, tu finis, il finit",
+        "nous finîmes, vous finîtes, ils finirent",
+        "On l'utilise surtout à l'écrit, dans les histoires"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Comment conjugue-t-on 'jouer' à l'imparfait avec 'je' ?",
+      "options": ["je joue", "je jouais", "je jouai", "je jouerai"],
+      "answer": 1,
+      "explanation": "C'est 'je jouais' ! À l'imparfait, on prend le radical (jou-) et on ajoute -ais."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Dans un récit, l'imparfait décrit le décor (Il pleuvait...) et le passé simple raconte l'action (Soudain, il tomba) !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Il était une fois un prince qui ... dans un château. Quel temps utiliser ?",
+      "options": ["vivait (imparfait)", "vécut (passé simple)", "vit (présent)", "a vécu (passé composé)"],
+      "answer": 0,
+      "explanation": "On utilise l'imparfait 'vivait' car c'est une situation qui dure, un décor. Le passé simple serait pour une action ponctuelle."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant utiliser l'imparfait et le passé simple ! Lis des histoires pour t'entraîner à les reconnaître !"
+    }
+  ]
+}

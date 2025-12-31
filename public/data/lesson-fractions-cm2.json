@@ -1,0 +1,65 @@
+{
+  "title": "Les fractions : opérations",
+  "level": "cm2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à additionner et soustraire des fractions. C'est comme assembler des pièces de puzzle !"
+    },
+    {
+      "type": "text",
+      "title": "Les fractions de même dénominateur 📊",
+      "content": "Quand deux fractions ont le même dénominateur, c'est facile ! On additionne ou soustrait les numérateurs, et on garde le dénominateur."
+    },
+    {
+      "type": "example",
+      "title": "Additionner des fractions",
+      "content": "Exemples d'additions :",
+      "steps": [
+        "2/5 + 1/5 = (2+1)/5 = 3/5",
+        "3/8 + 4/8 = (3+4)/8 = 7/8",
+        "5/10 + 2/10 = (5+2)/10 = 7/10",
+        "Important : on ne touche jamais au dénominateur !"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Soustraire des fractions",
+      "content": "Exemples de soustractions :",
+      "steps": [
+        "4/7 - 1/7 = (4-1)/7 = 3/7",
+        "9/10 - 3/10 = (9-3)/10 = 6/10 = 3/5",
+        "7/8 - 5/8 = (7-5)/8 = 2/8 = 1/4",
+        "On peut simplifier le résultat !"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Calcule : 3/6 + 2/6 = ?",
+      "options": ["5/12", "5/6", "1/6", "6/6"],
+      "answer": 1,
+      "explanation": "3/6 + 2/6 = (3+2)/6 = 5/6. On additionne les numérateurs et on garde le dénominateur !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pense à simplifier ton résultat ! Par exemple, 4/8 = 1/2, c'est plus simple et c'est la même chose !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Calcule : 7/9 - 2/9 = ?",
+      "options": ["5/18", "9/9", "5/9", "5/0"],
+      "answer": 2,
+      "explanation": "7/9 - 2/9 = (7-2)/9 = 5/9. On soustrait les numérateurs et on garde le dénominateur !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant calculer avec des fractions ! Continue à t'entraîner pour devenir un expert !"
+    }
+  ]
+}

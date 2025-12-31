@@ -1,0 +1,68 @@
+{
+  "title": "Les nombres décimaux : opérations",
+  "level": "cm2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à additionner, soustraire et multiplier des nombres décimaux. C'est comme avec les entiers, mais avec une virgule !"
+    },
+    {
+      "type": "text",
+      "title": "Additionner des décimaux ➕",
+      "content": "Pour additionner, on aligne les virgules les unes sous les autres. Ensuite, on additionne normalement !"
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 12,5 + 3,47",
+      "content": "Addition avec virgules :",
+      "steps": [
+        "  12,50",
+        "+  3,47",
+        "-------",
+        "  15,97",
+        "On additionne colonne par colonne, comme d'habitude !"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Multiplier par 10, 100, 1000",
+      "content": "Règle magique :",
+      "steps": [
+        "× 10 : la virgule se déplace d'1 rang vers la droite",
+        "3,5 × 10 = 35",
+        "× 100 : la virgule se déplace de 2 rangs",
+        "2,34 × 100 = 234",
+        "× 1000 : la virgule se déplace de 3 rangs",
+        "1,2 × 1000 = 1200"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Calcule : 7,8 + 2,3 = ?",
+      "options": ["9,1", "10,1", "9,11", "10"],
+      "answer": 1,
+      "explanation": "7,8 + 2,3 = 10,1. On additionne 7 + 2 = 9, puis 8 + 3 = 11 dixièmes = 1,1. Total : 9 + 1,1 = 10,1"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour diviser par 10, 100 ou 1000, c'est l'inverse ! La virgule se déplace vers la gauche !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Calcule : 4,5 × 10 = ?",
+      "options": ["0,45", "45", "450", "4,50"],
+      "answer": 1,
+      "explanation": "4,5 × 10 = 45. La virgule se déplace d'un rang vers la droite. 4,5 devient 45,0 donc 45 !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu maîtrises les opérations avec les nombres décimaux ! Tu peux maintenant calculer des prix, des distances..."
+    }
+  ]
+}

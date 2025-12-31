@@ -1,0 +1,65 @@
+{
+  "title": "Les tables de multiplication",
+  "level": "ce2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas réviser et approfondir tes tables de multiplication jusqu'à 10. Les tables, c'est comme des recettes magiques pour calculer vite !"
+    },
+    {
+      "type": "text",
+      "title": "Les tables de 2 à 5 📊",
+      "content": "Tu connais déjà ces tables ! La table de 2, c'est compter de 2 en 2. La table de 5, ça finit toujours par 0 ou 5. La table de 3, on additionne 3 à chaque fois !"
+    },
+    {
+      "type": "example",
+      "title": "Les tables de 6 et 7 ⭐",
+      "content": "Découvrons les tables de 6 et 7 :",
+      "steps": [
+        "6 × 1 = 6, 6 × 2 = 12, 6 × 3 = 18, 6 × 4 = 24",
+        "6 × 5 = 30, 6 × 6 = 36, 6 × 7 = 42, 6 × 8 = 48",
+        "7 × 1 = 7, 7 × 2 = 14, 7 × 3 = 21, 7 × 4 = 28",
+        "7 × 5 = 35, 7 × 6 = 42, 7 × 7 = 49, 7 × 8 = 56"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Les tables de 8 et 9 🌟",
+      "content": "Les plus difficiles !",
+      "steps": [
+        "8 × 1 = 8, 8 × 2 = 16, 8 × 3 = 24, 8 × 4 = 32",
+        "8 × 5 = 40, 8 × 6 = 48, 8 × 7 = 56, 8 × 8 = 64",
+        "9 × 1 = 9, 9 × 2 = 18, 9 × 3 = 27, 9 × 4 = 36",
+        "9 × 5 = 45, 9 × 6 = 54, 9 × 7 = 63, 9 × 8 = 72"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Calcule : 7 × 8 = ?",
+      "options": ["54", "56", "48", "64"],
+      "answer": 1,
+      "explanation": "7 × 8 = 56. Tu peux aussi calculer 7 × 7 = 49, puis ajouter 7 pour trouver 56 !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour la table de 9, additionne les deux chiffres du résultat : tu obtiens toujours 9 ! Exemple : 9 × 4 = 36, et 3 + 6 = 9 !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Calcule : 8 × 9 = ?",
+      "options": ["63", "72", "64", "81"],
+      "answer": 1,
+      "explanation": "8 × 9 = 72. C'est le produit le plus élevé avant 9 × 9 = 81 !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu connais maintenant toutes les tables jusqu'à 10 ! Continue à les réviser régulièrement pour ne jamais les oublier !"
+    }
+  ]
+}

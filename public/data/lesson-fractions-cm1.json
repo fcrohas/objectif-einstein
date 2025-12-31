@@ -1,0 +1,65 @@
+{
+  "title": "Les fractions et décimaux",
+  "level": "cm1",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à transformer des fractions en nombres décimaux. C'est comme traduire d'une langue à une autre !"
+    },
+    {
+      "type": "text",
+      "title": "Les fractions décimales 📊",
+      "content": "Une fraction décimale a pour dénominateur 10, 100 ou 1000. Par exemple : 3/10, 25/100, 125/1000. Elles sont faciles à transformer en décimaux !"
+    },
+    {
+      "type": "example",
+      "title": "Transformer les dixièmes",
+      "content": "Les fractions sur 10 deviennent des décimaux :",
+      "steps": [
+        "1/10 = 0,1 (un dixième)",
+        "3/10 = 0,3 (trois dixièmes)",
+        "7/10 = 0,7 (sept dixièmes)",
+        "12/10 = 1,2 (douze dixièmes = 1 unité et 2 dixièmes)"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Transformer les centièmes",
+      "content": "Les fractions sur 100 :",
+      "steps": [
+        "1/100 = 0,01 (un centième)",
+        "25/100 = 0,25 (vingt-cinq centièmes)",
+        "50/100 = 0,50 = 0,5 (cinquante centièmes = cinq dixièmes)",
+        "125/100 = 1,25 (un unité et vingt-cinq centièmes)"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Transforme en nombre décimal : 4/10 = ?",
+      "options": ["0,4", "0,04", "4,0", "0,40"],
+      "answer": 0,
+      "explanation": "4/10 = 0,4. Le 4 est dans la colonne des dixièmes. 0,4 et 0,40 sont équivalents mais on écrit 0,4 !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour les dixièmes, il y a 1 chiffre après la virgule. Pour les centièmes, il y en a 2. Pour les millièmes, il y en a 3 !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Transforme en nombre décimal : 75/100 = ?",
+      "options": ["7,5", "0,75", "75,0", "0,075"],
+      "answer": 1,
+      "explanation": "75/100 = 0,75. Il y a 7 dans les dixièmes et 5 dans les centièmes !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant passer des fractions aux décimaux ! Tu verras que c'est très utile dans la vie quotidienne !"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Le sens propre et le sens figuré",
+  "level": "cm2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir que les mots peuvent avoir plusieurs sens : le sens propre et le sens figuré. C'est fascinant !"
+    },
+    {
+      "type": "text",
+      "title": "Le sens propre 📝",
+      "content": "Le sens propre est le sens premier, concret, littéral du mot. C'est sa définition de base dans le dictionnaire."
+    },
+    {
+      "type": "example",
+      "title": "Exemples de sens propre",
+      "content": "Le sens concret des mots :",
+      "steps": [
+        "Dévorer : manger avec avidité (un lion dévore sa proie)",
+        "Tomber : chuter, perdre l'équilibre (je suis tombé dans l'escalier)",
+        "Glacé : très froid (l'eau est glacée)",
+        "Sombre : sans lumière (une pièce sombre)"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Le sens figuré",
+      "content": "Le sens figuré est imagé, symbolique :",
+      "steps": [
+        "Dévorer : lire rapidement (dévorer un livre)",
+        "Tomber : arriver par hasard (tomber sur un ami)",
+        "Glacé : terrifié (un regard glacé)",
+        "Sombre : triste (un avenir sombre)",
+        "On utilise le mot dans un sens imagé, poétique"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Dans 'Paul a le cœur brisé', quel sens a 'brisé' ?",
+      "options": ["Sens propre", "Sens figuré", "Les deux", "Aucun"],
+      "answer": 1,
+      "explanation": "C'est le sens figuré ! Le cœur de Paul n'est pas vraiment cassé, il est très triste. On utilise une image."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Les expressions comme 'avoir la tête dans les nuages', 'prendre ses jambes à son cou' utilisent le sens figuré !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Dans 'Ce prof est une lumière', quel est le sens de 'lumière' ?",
+      "options": ["Sens propre (éclairage)", "Sens figuré (intelligent)", "Les deux", "Aucun"],
+      "answer": 1,
+      "explanation": "C'est le sens figuré ! 'Lumière' signifie ici 'personne très intelligente'. C'est une métaphore."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant faire la différence entre sens propre et sens figuré ! Cela enrichit ton langage et ta compréhension !"
+    }
+  ]
+}

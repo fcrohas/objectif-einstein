@@ -98,9 +98,150 @@ const lessonsByLevel = {
       description: 'Comprends la structure de la phrase'
     }
   ],
-  ce2: [],
-  cm1: [],
-  cm2: []
+  ce2: [
+    {
+      id: 'addition',
+      name: 'Les additions avec retenue',
+      icon: '➕',
+      description: 'Maîtrise les additions complexes'
+    },
+    {
+      id: 'soustraction',
+      name: 'Les soustractions avec retenue',
+      icon: '➖',
+      description: 'Apprends à soustraire avec retenue'
+    },
+    {
+      id: 'multiplication',
+      name: 'Les tables de multiplication',
+      icon: '✖️',
+      description: 'Révise toutes les tables jusqu\'à 10'
+    },
+    {
+      id: 'division',
+      name: 'La division',
+      icon: '➗',
+      description: 'Découvre comment diviser'
+    },
+    {
+      id: 'fractions',
+      name: 'Les fractions simples',
+      icon: '🍕',
+      description: 'Comprends les fractions'
+    },
+    {
+      id: 'grammar',
+      name: 'Les compléments COD et COI',
+      icon: '📝',
+      description: 'Apprends les compléments d\'objet'
+    },
+    {
+      id: 'conjugation',
+      name: 'Le passé composé',
+      icon: '🔤',
+      description: 'Raconte ce qui s\'est passé'
+    },
+    {
+      id: 'orthographe',
+      name: 'Les homophones',
+      icon: '✍️',
+      description: 'Ne confonds plus a/à, et/est, son/sont'
+    },
+    {
+      id: 'vocabulary',
+      name: 'Les préfixes et suffixes',
+      icon: '📚',
+      description: 'Crée de nouveaux mots'
+    }
+  ],
+  cm1: [
+    {
+      id: 'division',
+      name: 'La division à deux chiffres',
+      icon: '➗',
+      description: 'Divise par des nombres plus grands'
+    },
+    {
+      id: 'fractions',
+      name: 'Les fractions et décimaux',
+      icon: '🔢',
+      description: 'Transforme les fractions en décimaux'
+    },
+    {
+      id: 'decimaux',
+      name: 'Les nombres décimaux',
+      icon: '📊',
+      description: 'Maîtrise les nombres à virgule'
+    },
+    {
+      id: 'mesures',
+      name: 'Les mesures',
+      icon: '📏',
+      description: 'Convertis longueurs et masses'
+    },
+    {
+      id: 'grammar',
+      name: 'Les propositions',
+      icon: '📝',
+      description: 'Principales et subordonnées'
+    },
+    {
+      id: 'conjugation',
+      name: 'L\'imparfait et le passé simple',
+      icon: '🔤',
+      description: 'Raconte des histoires au passé'
+    },
+    {
+      id: 'orthographe',
+      name: 'Les accords du participe passé',
+      icon: '✍️',
+      description: 'Accorde correctement les participes'
+    }
+  ],
+  cm2: [
+    {
+      id: 'fractions',
+      name: 'Les fractions : opérations',
+      icon: '🔢',
+      description: 'Additionne et soustrais des fractions'
+    },
+    {
+      id: 'decimaux',
+      name: 'Les nombres décimaux : opérations',
+      icon: '📊',
+      description: 'Calcule avec les décimaux'
+    },
+    {
+      id: 'proportionnalite',
+      name: 'La proportionnalité',
+      icon: '⚖️',
+      description: 'Résous des problèmes de proportionnalité'
+    },
+    {
+      id: 'geometrie',
+      name: 'Périmètres et aires',
+      icon: '📐',
+      description: 'Calcule périmètres et surfaces'
+    },
+    {
+      id: 'grammar',
+      name: 'Les compléments circonstanciels',
+      icon: '📝',
+      description: 'Analyse les circonstances'
+    },
+    {
+      id: 'conjugation',
+      name: 'Le conditionnel et le subjonctif',
+      icon: '🔤',
+      description: 'Découvre de nouveaux modes'
+    },
+    {
+      id: 'vocabulaire',
+      name: 'Le sens propre et figuré',
+      icon: '📚',
+      description: 'Comprends les images du langage'
+    }
+  ]
 }
 
 const availableLessons = computed(() => {

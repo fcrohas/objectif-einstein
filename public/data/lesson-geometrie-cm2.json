@@ -1,0 +1,65 @@
+{
+  "title": "La géométrie : périmètres et aires",
+  "level": "cm2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à calculer les périmètres et les aires des figures géométriques. C'est comme mesurer le tour et la surface d'un objet !"
+    },
+    {
+      "type": "text",
+      "title": "Le périmètre 📏",
+      "content": "Le périmètre, c'est le tour d'une figure. Pour le calculer, on additionne tous les côtés. C'est comme mesurer une clôture autour d'un jardin !"
+    },
+    {
+      "type": "example",
+      "title": "Périmètres des figures",
+      "content": "Les formules à connaître :",
+      "steps": [
+        "Carré : P = 4 × côté",
+        "Rectangle : P = 2 × (longueur + largeur)",
+        "Triangle : P = côté1 + côté2 + côté3",
+        "Cercle : P = 2 × π × rayon (environ 6,28 × rayon)"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Les aires 📐",
+      "content": "L'aire, c'est la surface. Les formules :",
+      "steps": [
+        "Carré : A = côté × côté",
+        "Rectangle : A = longueur × largeur",
+        "Triangle : A = (base × hauteur) ÷ 2",
+        "L'unité est le m², cm², km²..."
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Quel est le périmètre d'un carré de 5 cm de côté ?",
+      "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+      "answer": 2,
+      "explanation": "Périmètre = 4 × côté = 4 × 5 = 20 cm. On additionne les 4 côtés : 5 + 5 + 5 + 5 = 20 cm !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour l'aire du rectangle, pense à un champ : longueur × largeur te donne le nombre de m² ! Pour le triangle, c'est la moitié d'un rectangle !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Quelle est l'aire d'un rectangle de 6 cm sur 4 cm ?",
+      "options": ["10 cm²", "20 cm²", "24 cm²", "12 cm²"],
+      "answer": 2,
+      "explanation": "Aire = longueur × largeur = 6 × 4 = 24 cm². C'est comme un rectangle fait de 24 petits carrés de 1 cm² !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant calculer des périmètres et des aires ! C'est utile pour mesurer des terrains, des pièces, des jardins..."
+    }
+  ]
+}

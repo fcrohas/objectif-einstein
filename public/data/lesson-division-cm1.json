@@ -1,0 +1,66 @@
+{
+  "title": "La division à deux chiffres",
+  "level": "cm1",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à diviser par des nombres à deux chiffres. C'est plus difficile mais tu vas voir, c'est possible !"
+    },
+    {
+      "type": "text",
+      "title": "La méthode 📊",
+      "content": "Pour diviser par un nombre à deux chiffres, on cherche combien de fois il entre dans le dividende. On utilise les tables et on estime !"
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 156 ÷ 12",
+      "content": "Divisons 156 par 12 :",
+      "steps": [
+        "12 × 10 = 120 (c'est trop proche)",
+        "12 × 13 = 156 (parfait !)",
+        "Donc 156 ÷ 12 = 13",
+        "Vérification : 12 × 13 = 156 ✓"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 247 ÷ 13",
+      "content": "Un exemple avec reste :",
+      "steps": [
+        "13 × 10 = 130",
+        "13 × 15 = 195",
+        "13 × 19 = 247 (parfait !)",
+        "Donc 247 ÷ 13 = 19",
+        "Vérification : 13 × 19 = 247 ✓"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Calcule : 144 ÷ 12 = ?",
+      "options": ["11", "12", "13", "14"],
+      "answer": 1,
+      "explanation": "12 × 12 = 144, donc 144 ÷ 12 = 12. Tu peux utiliser la table de 12 !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour estimer le résultat, arrondis le diviseur à la dizaine la plus proche et fais une division simple !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Calcule : 195 ÷ 15 = ?",
+      "options": ["11", "12", "13", "14"],
+      "answer": 2,
+      "explanation": "15 × 13 = 195, donc 195 ÷ 15 = 13. Tu peux calculer 15 × 10 = 150, puis ajouter 3 fois 15 !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant diviser par des nombres à deux chiffres ! Continue à t'entraîner pour devenir encore plus rapide !"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "La division",
+  "level": "ce2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir la division ! C'est l'opération qui permet de partager équitablement ou de grouper des objets."
+    },
+    {
+      "type": "text",
+      "title": "Qu'est-ce que diviser ? 🍰",
+      "content": "Diviser, c'est partager en parts égales. Par exemple : si tu as 12 bonbons et que tu veux les partager avec 3 amis, combien chacun en aura-t-il ? 12 ÷ 3 = 4 bonbons chacun !"
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 20 ÷ 4",
+      "content": "On cherche combien de fois 4 est dans 20 :",
+      "steps": [
+        "4 × 1 = 4 (il reste 16)",
+        "4 × 2 = 8 (il reste 12)",
+        "4 × 3 = 12 (il reste 8)",
+        "4 × 4 = 16 (il reste 4)",
+        "4 × 5 = 20 (il reste 0) → 20 ÷ 4 = 5"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 35 ÷ 7",
+      "content": "Utilisons la table de 7 :",
+      "steps": [
+        "7 × 1 = 7",
+        "7 × 2 = 14",
+        "7 × 3 = 21",
+        "7 × 4 = 28",
+        "7 × 5 = 35 ✓",
+        "Donc 35 ÷ 7 = 5"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Calcule : 24 ÷ 6 = ?",
+      "options": ["3", "4", "5", "6"],
+      "answer": 1,
+      "explanation": "6 × 4 = 24, donc 24 ÷ 6 = 4. Tu peux imaginer 24 bonbons partagés en 6 parts égales !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "La division est l'inverse de la multiplication ! Si tu sais que 7 × 8 = 56, alors tu sais aussi que 56 ÷ 7 = 8 et 56 ÷ 8 = 7 !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Calcule : 48 ÷ 8 = ?",
+      "options": ["5", "6", "7", "8"],
+      "answer": 1,
+      "explanation": "8 × 6 = 48, donc 48 ÷ 8 = 6. C'est comme partager 48 cartes entre 8 joueurs !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu as découvert la division ! Continue à t'entraîner en utilisant tes tables de multiplication !"
+    }
+  ]
+}

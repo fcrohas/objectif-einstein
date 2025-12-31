@@ -1,0 +1,65 @@
+{
+  "title": "Les homophones : a/à, et/est, son/sont",
+  "level": "ce2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à ne plus confondre les homophones. Ce sont des mots qui se prononcent pareil mais s'écrivent différemment !"
+    },
+    {
+      "type": "text",
+      "title": "a / à 📝",
+      "content": "'a' est le verbe avoir (il a). 'à' est une préposition (aller à l'école). Astuce : remplace par 'avait'. Si ça marche, c'est 'a' !"
+    },
+    {
+      "type": "example",
+      "title": "Exemples avec a / à",
+      "content": "Choisissons la bonne orthographe :",
+      "steps": [
+        "Il ... un chat → Il avait un chat ✓ → Il a un chat",
+        "Je vais ... Paris → Je vais avait Paris ✗ → Je vais à Paris",
+        "Elle ... peur → Elle avait peur ✓ → Elle a peur",
+        "Pense ... moi → Pense avait moi ✗ → Pense à moi"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "et / est",
+      "content": "Différencions 'et' et 'est' :",
+      "steps": [
+        "'et' = mot de liaison (et alors ?)",
+        "'est' = verbe être (il est)",
+        "Astuce : remplace par 'était'. Si ça marche, c'est 'est' !",
+        "Le chat ... le chien → Le chat était le chien ✗ → Le chat et le chien"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Papa ... maman vont au cinéma. Quelle orthographe ?",
+      "options": ["a", "à", "et", "est"],
+      "answer": 2,
+      "explanation": "C'est 'et' car c'est un mot de liaison qui unit papa et maman. On ne peut pas dire 'Papa était maman'."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "son / sont : 'son' est un déterminant (son chat). 'sont' est le verbe être (ils sont). Remplace par 'étaient' : si ça marche, c'est 'sont' !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Il ... aller ... l'école. Complète avec les bons mots.",
+      "options": ["a / a", "a / à", "à / a", "à / à"],
+      "answer": 1,
+      "explanation": "Il a aller à l'école. 'a' = verbe avoir (il avait aller). 'à' = préposition de lieu (aller à)."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu ne confondras plus ces homophones ! Pense toujours aux astuces de remplacement !"
+    }
+  ]
+}

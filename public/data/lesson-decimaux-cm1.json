@@ -1,0 +1,66 @@
+{
+  "title": "Les nombres décimaux",
+  "level": "cm1",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir les nombres décimaux en détail. Ce sont des nombres avec une virgule, comme les prix dans les magasins !"
+    },
+    {
+      "type": "text",
+      "title": "La virgule 📊",
+      "content": "La virgule sépare la partie entière de la partie décimale. À gauche : unités, dizaines, centaines. À droite : dixièmes, centièmes, millièmes."
+    },
+    {
+      "type": "example",
+      "title": "Décomposer un nombre décimal",
+      "content": "Prenons 12,45 :",
+      "steps": [
+        "1 dizaine (10)",
+        "2 unités (2)",
+        "4 dixièmes (0,4)",
+        "5 centièmes (0,05)",
+        "Total : 10 + 2 + 0,4 + 0,05 = 12,45"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Comparer des décimaux",
+      "content": "Comment comparer 3,8 et 3,75 ?",
+      "steps": [
+        "On regarde d'abord les unités : 3 = 3",
+        "Ensuite les dixièmes : 8 > 7",
+        "Donc 3,8 > 3,75",
+        "Attention : 3,8 = 3,80, donc 80 centièmes > 75 centièmes !"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Quel est le nombre le plus grand ?",
+      "options": ["5,3", "5,29", "5,31", "5,299"],
+      "answer": 2,
+      "explanation": "5,31 est le plus grand ! On compare : 5 = 5 = 5 = 5, puis 3 > 2 et 2, et enfin 1 > 0 > 9."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour comparer deux nombres décimaux, ajoute des zéros à droite pour avoir le même nombre de chiffres après la virgule !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Dans 24,67, quelle est la valeur du chiffre 6 ?",
+      "options": ["6 unités", "6 dixièmes", "6 centièmes", "60 centièmes"],
+      "answer": 1,
+      "explanation": "Le 6 est juste après la virgule, c'est donc 6 dixièmes (ou 0,6 ou 60 centièmes) !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu maîtrises maintenant les nombres décimaux ! Tu peux compter des euros, mesurer des distances..."
+    }
+  ]
+}

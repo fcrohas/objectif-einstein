@@ -1,0 +1,66 @@
+{
+  "title": "Les accords du participe passé",
+  "level": "cm1",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre les règles d'accord du participe passé. C'est une règle importante de l'orthographe française !"
+    },
+    {
+      "type": "text",
+      "title": "Avec l'auxiliaire ÊTRE 📝",
+      "content": "Quand on utilise ÊTRE, le participe passé s'accorde toujours avec le sujet. Comme un adjectif !"
+    },
+    {
+      "type": "example",
+      "title": "Accords avec ÊTRE",
+      "content": "Le participe s'accorde en genre et en nombre :",
+      "steps": [
+        "Pierre est allé (masculin singulier)",
+        "Marie est allée (féminin singulier → +e)",
+        "Les garçons sont allés (masculin pluriel → +s)",
+        "Les filles sont allées (féminin pluriel → +es)",
+        "Pense au sujet pour savoir comment accorder !"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Avec l'auxiliaire AVOIR",
+      "content": "Avec AVOIR, c'est plus complexe :",
+      "steps": [
+        "En général, PAS d'accord : J'ai mangé une pomme",
+        "SAUF si le COD est placé AVANT le verbe",
+        "Cette pomme, je l'ai mangée (l' = la pomme, avant le verbe → accord)",
+        "Les fleurs que j'ai cueillies (que = les fleurs, avant → accord)"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Sophie et Julie sont ... au cinéma. Complète.",
+      "options": ["allé", "allés", "allée", "allées"],
+      "answer": 3,
+      "explanation": "C'est 'allées' ! Avec ÊTRE, on accorde avec le sujet. Sophie et Julie sont féminins et pluriels → +ées."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Avec ÊTRE, accorde toujours ! Avec AVOIR, cherche le COD : s'il est AVANT, accorde ; s'il est APRÈS, n'accorde pas !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Les histoires que j'ai ... Complète.",
+      "options": ["lu", "lus", "lue", "lues"],
+      "answer": 3,
+      "explanation": "C'est 'lues' ! Le COD 'que' (= les histoires) est avant le verbe. Les histoires est féminin pluriel → lues."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu connais maintenant les règles d'accord du participe passé ! Avec de la pratique, ça deviendra automatique !"
+    }
+  ]
+}

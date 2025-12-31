@@ -1,0 +1,65 @@
+{
+  "title": "Les compléments : COD et COI",
+  "level": "ce2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à reconnaître les compléments d'objet. Ce sont des mots qui complètent le verbe dans la phrase !"
+    },
+    {
+      "type": "text",
+      "title": "Le Complément d'Objet Direct (COD) 📝",
+      "content": "Le COD répond à la question 'quoi ?' ou 'qui ?' après le verbe. Exemple : Je mange une pomme. Je mange quoi ? Une pomme (COD)."
+    },
+    {
+      "type": "example",
+      "title": "Trouver le COD",
+      "content": "Cherchons le COD dans ces phrases :",
+      "steps": [
+        "Le chat attrape la souris → attrape quoi ? la souris (COD)",
+        "Marie lit un livre → lit quoi ? un livre (COD)",
+        "Paul voit son ami → voit qui ? son ami (COD)",
+        "Le COD se place juste après le verbe"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Le Complément d'Objet Indirect (COI)",
+      "content": "Le COI est introduit par 'à' ou 'de' :",
+      "steps": [
+        "Je parle à mon frère → parle à qui ? à mon frère (COI)",
+        "Elle pense à ses vacances → pense à quoi ? à ses vacances (COI)",
+        "Il se souvient de cette histoire → se souvient de quoi ? de cette histoire (COI)",
+        "Le COI a toujours une préposition (à, de)"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Dans 'Tom mange des bonbons', quel est le COD ?",
+      "options": ["Tom", "mange", "des bonbons", "Il n'y a pas de COD"],
+      "answer": 2,
+      "explanation": "Le COD est 'des bonbons'. Tom mange quoi ? Des bonbons. Le COD complète directement le verbe 'mange'."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour trouver le COD, pose la question 'quoi ?' ou 'qui ?' après le verbe. Pour le COI, cherche 'à qui/quoi ?' ou 'de qui/quoi ?'."
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Dans 'Sophie téléphone à sa grand-mère', quelle est la fonction de 'à sa grand-mère' ?",
+      "options": ["COD", "COI", "Sujet", "Verbe"],
+      "answer": 1,
+      "explanation": "'À sa grand-mère' est un COI car il y a la préposition 'à'. Sophie téléphone à qui ? À sa grand-mère."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant reconnaître les COD et les COI ! Continue à t'entraîner dans les exercices !"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "La proportionnalité",
+  "level": "cm2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas découvrir la proportionnalité. C'est quand deux quantités varient ensemble de la même manière !"
+    },
+    {
+      "type": "text",
+      "title": "Qu'est-ce que la proportionnalité ? 📊",
+      "content": "Deux grandeurs sont proportionnelles quand on peut passer de l'une à l'autre en multipliant toujours par le même nombre. Ce nombre s'appelle le coefficient de proportionnalité."
+    },
+    {
+      "type": "example",
+      "title": "Exemple : Les pommes 🍎",
+      "content": "Dans un magasin, les pommes coûtent 2€ le kg :",
+      "steps": [
+        "1 kg → 2€ (× 2)",
+        "2 kg → 4€ (× 2)",
+        "3 kg → 6€ (× 2)",
+        "5 kg → 10€ (× 2)",
+        "Le coefficient de proportionnalité est 2"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Le tableau de proportionnalité",
+      "content": "On peut utiliser un tableau :",
+      "steps": [
+        "Nombre de cahiers : 2 | 5 | 10",
+        "Prix en € : 6 | 15 | 30",
+        "Pour passer de la 1ère ligne à la 2ème : × 3",
+        "Donc le prix d'un cahier est 3€",
+        "On peut trouver n'importe quelle valeur !"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Si 3 stylos coûtent 6€, combien coûtent 5 stylos ?",
+      "options": ["8€", "10€", "12€", "15€"],
+      "answer": 1,
+      "explanation": "Un stylo coûte 6 ÷ 3 = 2€. Donc 5 stylos coûtent 5 × 2 = 10€. On peut aussi faire (5 × 6) ÷ 3 = 10€ !"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour résoudre un problème de proportionnalité, trouve d'abord le prix ou la quantité pour 1. Ensuite, multiplie !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Une voiture parcourt 80 km en 1 heure. Combien de km en 3 heures ?",
+      "options": ["160 km", "200 km", "240 km", "280 km"],
+      "answer": 2,
+      "explanation": "C'est proportionnel ! 80 km × 3 = 240 km. La distance parcourue est proportionnelle au temps !"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu comprends maintenant la proportionnalité ! C'est très utile pour les achats, les recettes de cuisine, les vitesses..."
+    }
+  ]
+}

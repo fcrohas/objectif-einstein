@@ -1,0 +1,65 @@
+{
+  "title": "Les additions avec retenue",
+  "level": "ce2",
+  "subject": "Mathématiques",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre à faire des additions avec plusieurs retenues. C'est comme monter des escaliers : quand tu arrives à 10, tu passes au niveau suivant !"
+    },
+    {
+      "type": "text",
+      "title": "Rappel : La retenue 📊",
+      "content": "Quand tu additionnes deux chiffres et que le résultat fait 10 ou plus, tu gardes les unités et tu passes les dizaines au rang suivant. C'est la retenue !"
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 147 + 286",
+      "content": "Commençons par les unités :",
+      "steps": [
+        "7 + 6 = 13 → J'écris 3 et je retiens 1",
+        "4 + 8 = 12, + 1 de retenue = 13 → J'écris 3 et je retiens 1",
+        "1 + 2 = 3, + 1 de retenue = 4",
+        "Résultat : 147 + 286 = 433"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Exemple : 358 + 476",
+      "content": "Faisons une autre addition ensemble :",
+      "steps": [
+        "8 + 6 = 14 → J'écris 4 et je retiens 1",
+        "5 + 7 = 12, + 1 de retenue = 13 → J'écris 3 et je retiens 1",
+        "3 + 4 = 7, + 1 de retenue = 8",
+        "Résultat : 358 + 476 = 834"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Calcule : 245 + 378 = ?",
+      "options": ["613", "623", "523", "723"],
+      "answer": 1,
+      "explanation": "5 + 8 = 13 (j'écris 3, retenue 1), 4 + 7 + 1 = 12 (j'écris 2, retenue 1), 2 + 3 + 1 = 6. Résultat : 623"
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour vérifier ton addition, tu peux soustraire un des nombres au résultat. Tu dois retrouver l'autre nombre !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Calcule : 567 + 488 = ?",
+      "options": ["1045", "1055", "955", "1155"],
+      "answer": 1,
+      "explanation": "7 + 8 = 15 (j'écris 5, retenue 1), 6 + 8 + 1 = 15 (j'écris 5, retenue 1), 5 + 4 + 1 = 10 (j'écris 0, retenue 1), puis 1. Résultat : 1055"
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu maîtrises maintenant les additions avec retenue ! Continue à t'entraîner avec les exercices pour devenir un champion !"
+    }
+  ]
+}

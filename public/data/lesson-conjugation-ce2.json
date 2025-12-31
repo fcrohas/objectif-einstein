@@ -1,0 +1,65 @@
+{
+  "title": "Le passé composé",
+  "level": "ce2",
+  "subject": "Français",
+  "slides": [
+    {
+      "type": "text",
+      "title": "Bienvenue ! 🎉",
+      "content": "Aujourd'hui, tu vas apprendre le passé composé. C'est un temps du passé qui permet de raconter ce qui s'est passé !"
+    },
+    {
+      "type": "text",
+      "title": "Comment former le passé composé ? 📝",
+      "content": "Le passé composé = auxiliaire (avoir ou être) au présent + participe passé du verbe. Exemple : J'ai mangé, Je suis allé."
+    },
+    {
+      "type": "example",
+      "title": "Avec l'auxiliaire AVOIR",
+      "content": "La plupart des verbes utilisent 'avoir' :",
+      "steps": [
+        "Manger : J'ai mangé, tu as mangé, il a mangé",
+        "Finir : J'ai fini, tu as fini, elle a fini",
+        "Voir : J'ai vu, tu as vu, on a vu",
+        "Le participe passé ne change pas avec 'avoir'"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Avec l'auxiliaire ÊTRE",
+      "content": "Les verbes de déplacement utilisent 'être' :",
+      "steps": [
+        "Aller : Je suis allé(e), tu es allé(e), il est allé",
+        "Venir : Je suis venu(e), tu es venu(e), elle est venue",
+        "Partir : Je suis parti(e), nous sommes parti(e)s",
+        "Attention : le participe s'accorde avec le sujet !"
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "À toi de jouer ! 🎯",
+      "question": "Comment conjugue-t-on 'manger' au passé composé avec 'je' ?",
+      "options": ["Je mange", "J'ai mangé", "Je mangeais", "J'ai manger"],
+      "answer": 1,
+      "explanation": "C'est 'J'ai mangé' ! On utilise l'auxiliaire avoir au présent (ai) + le participe passé (mangé)."
+    },
+    {
+      "type": "tip",
+      "title": "Astuce du champion ! 💡",
+      "content": "Pour les verbes avec ÊTRE, retiens cette phrase : 'Mrs Vandertramp' (Monter, Rester, Sortir, Venir, Aller, Naître, Descendre, Entrer, Retourner, Tomber, Rentrer, Arriver, Mourir, Partir) !"
+    },
+    {
+      "type": "quiz",
+      "title": "Dernier défi ! 🏆",
+      "question": "Sophie et Marie (aller) au parc. Quelle est la bonne forme ?",
+      "options": ["sont allé", "sont allés", "sont allées", "ont allées"],
+      "answer": 2,
+      "explanation": "C'est 'sont allées' ! Avec ÊTRE, on accorde. Sophie et Marie sont féminins et pluriels, donc -ées."
+    },
+    {
+      "type": "text",
+      "title": "Bravo ! 🌟",
+      "content": "Tu sais maintenant utiliser le passé composé ! Continue à t'entraîner pour bien mémoriser les auxiliaires !"
+    }
+  ]
+}
