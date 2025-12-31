@@ -134,8 +134,7 @@ export const progressStore = {
     const activeProfile = profileStore.getActiveProfile()
     if (activeProfile) {
       // Réinitialiser la progression du profil actif
-      activeProfile.progress = this.getDefaultProgress()
-      profileStore.saveProfiles()
+      profileStore.updateProgress(activeProfile.id, this.getDefaultProgress())
     }
     // Aussi supprimer l'ancien format si présent
     localStorage.removeItem('objectif-einstein-progress')
