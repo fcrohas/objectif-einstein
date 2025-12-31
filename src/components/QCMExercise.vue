@@ -137,7 +137,14 @@ async function initExercise() {
     
     if (loadedQuestions.length > 0) {
       questions.value = [...loadedQuestions]
+      // Mélanger l'ordre des questions
       shuffleArray(questions.value)
+      // Mélanger les options de chaque question
+      questions.value.forEach(question => {
+        if (question.options && Array.isArray(question.options)) {
+          shuffleArray(question.options)
+        }
+      })
       loadingError.value = null
     } else {
       loadingError.value = `Aucune question trouvée pour ${props.level} ${props.subject}`
