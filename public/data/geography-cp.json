@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Quelle est la couleur du ciel ?",
+    "options": ["Bleu", "Rouge", "Vert", "Jaune"],
+    "answer": "Bleu",
+    "image": "☁️"
+  },
+  {
+    "question": "Où vit le poisson ?",
+    "options": ["Dans l'eau", "Dans les arbres", "Dans le ciel", "Sous terre"],
+    "answer": "Dans l'eau",
+    "image": "🐟"
+  },
+  {
+    "question": "Quel est le plus grand : la mer ou une rivière ?",
+    "options": ["La mer", "Une rivière", "C'est pareil", "Aucun des deux"],
+    "answer": "La mer",
+    "image": "🌊"
+  },
+  {
+    "question": "De quelle couleur est l'herbe ?",
+    "options": ["Verte", "Bleue", "Rouge", "Noire"],
+    "answer": "Verte",
+    "image": "🌱"
+  },
+  {
+    "question": "Que trouve-t-on à la montagne en hiver ?",
+    "options": ["De la neige", "Du sable", "Des palmiers", "Des poissons"],
+    "answer": "De la neige",
+    "image": "⛰️"
+  }
+]

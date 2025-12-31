@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Qui était Vercingétorix ?",
+    "options": ["Un chef gaulois", "Un empereur romain", "Un roi de France", "Un pharaon égyptien"],
+    "answer": "Un chef gaulois",
+    "image": "⚔️"
+  },
+  {
+    "question": "Quel événement marque le début du Moyen Âge ?",
+    "options": ["La chute de l'Empire romain", "La découverte de l'Amérique", "La Révolution française", "La Première Guerre mondiale"],
+    "answer": "La chute de l'Empire romain",
+    "image": "🏰"
+  },
+  {
+    "question": "Qui a sacré Napoléon empereur ?",
+    "options": ["Lui-même", "Le pape", "Louis XVI", "Le peuple"],
+    "answer": "Lui-même",
+    "image": "👑"
+  },
+  {
+    "question": "En quelle année a débuté la Première Guerre mondiale ?",
+    "options": ["1914", "1789", "1939", "1492"],
+    "answer": "1914",
+    "image": "🎖️"
+  },
+  {
+    "question": "Quel roi a fait construire le château de Versailles ?",
+    "options": ["Louis XIV", "François 1er", "Henri IV", "Charles V"],
+    "answer": "Louis XIV",
+    "image": "🏰"
+  }
+]

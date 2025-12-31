@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Combien y a-t-il de mois dans une année ?",
+    "options": ["12", "10", "7", "14"],
+    "answer": "12",
+    "image": "📅"
+  },
+  {
+    "question": "En quelle saison les arbres perdent-ils leurs feuilles ?",
+    "options": ["En automne", "En été", "Au printemps", "En hiver"],
+    "answer": "En automne",
+    "image": "🍁"
+  },
+  {
+    "question": "Qui était le premier roi de France ?",
+    "options": ["Clovis", "Napoléon", "Louis XIV", "Charlemagne"],
+    "answer": "Clovis",
+    "image": "👑"
+  },
+  {
+    "question": "Que fabriquaient les hommes préhistoriques ?",
+    "options": ["Des outils en pierre", "Des ordinateurs", "Des voitures", "Des téléphones"],
+    "answer": "Des outils en pierre",
+    "image": "🪨"
+  },
+  {
+    "question": "Dans quel type d'habitation vivaient les hommes préhistoriques ?",
+    "options": ["Dans des grottes", "Dans des châteaux", "Dans des immeubles", "Dans des cabanes en bois"],
+    "answer": "Dans des grottes",
+    "image": "🏔️"
+  }
+]

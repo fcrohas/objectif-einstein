@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Quel événement a mis fin à la Seconde Guerre mondiale en Europe ?",
+    "options": ["La capitulation de l'Allemagne en 1945", "La prise de la Bastille", "Le traité de Versailles", "La bataille de Waterloo"],
+    "answer": "La capitulation de l'Allemagne en 1945",
+    "image": "🕊️"
+  },
+  {
+    "question": "Qui a appelé à la résistance depuis Londres le 18 juin 1940 ?",
+    "options": ["Charles de Gaulle", "Napoléon", "Louis XIV", "Victor Hugo"],
+    "answer": "Charles de Gaulle",
+    "image": "🇫🇷"
+  },
+  {
+    "question": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois ?",
+    "options": ["1969", "1945", "1789", "2000"],
+    "answer": "1969",
+    "image": "🚀"
+  },
+  {
+    "question": "Quelle période historique se situe entre le Moyen Âge et les Temps modernes ?",
+    "options": ["La Renaissance", "L'Antiquité", "L'époque contemporaine", "La Préhistoire"],
+    "answer": "La Renaissance",
+    "image": "🎨"
+  },
+  {
+    "question": "Quel traité a créé l'Union européenne ?",
+    "options": ["Le traité de Maastricht", "Le traité de Versailles", "La Déclaration des droits de l'homme", "Le code civil"],
+    "answer": "Le traité de Maastricht",
+    "image": "🇪🇺"
+  }
+]

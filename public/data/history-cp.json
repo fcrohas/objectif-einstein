@@ -1,0 +1,32 @@
+[
+  {
+    "question": "À quelle saison tombe la neige ?",
+    "options": ["L'hiver", "L'été", "Le printemps", "L'automne"],
+    "answer": "L'hiver",
+    "image": "❄️"
+  },
+  {
+    "question": "Quel jour vient après lundi ?",
+    "options": ["Mardi", "Dimanche", "Vendredi", "Samedi"],
+    "answer": "Mardi",
+    "image": "📅"
+  },
+  {
+    "question": "Combien y a-t-il de saisons dans l'année ?",
+    "options": ["4", "2", "3", "5"],
+    "answer": "4",
+    "image": "🍂"
+  },
+  {
+    "question": "À quel moment de la journée se lève le soleil ?",
+    "options": ["Le matin", "Le soir", "La nuit", "L'après-midi"],
+    "answer": "Le matin",
+    "image": "🌅"
+  },
+  {
+    "question": "Quel jour vient avant dimanche ?",
+    "options": ["Samedi", "Lundi", "Vendredi", "Jeudi"],
+    "answer": "Samedi",
+    "image": "📆"
+  }
+]

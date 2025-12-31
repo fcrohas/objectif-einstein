@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Combien y a-t-il de continents sur Terre ?",
+    "options": ["7", "5", "4", "10"],
+    "answer": "7",
+    "image": "🌍"
+  },
+  {
+    "question": "Quel océan borde la côte ouest de la France ?",
+    "options": ["L'océan Atlantique", "L'océan Pacifique", "L'océan Indien", "L'océan Arctique"],
+    "answer": "L'océan Atlantique",
+    "image": "🌊"
+  },
+  {
+    "question": "Comment s'appelle la mer qui borde le sud de la France ?",
+    "options": ["La mer Méditerranée", "La mer du Nord", "La Manche", "La mer Rouge"],
+    "answer": "La mer Méditerranée",
+    "image": "🏖️"
+  },
+  {
+    "question": "Quelle est la plus grande ville de France ?",
+    "options": ["Paris", "Lyon", "Marseille", "Toulouse"],
+    "answer": "Paris",
+    "image": "🗼"
+  },
+  {
+    "question": "Quel est le plus long fleuve de France ?",
+    "options": ["La Loire", "La Seine", "Le Rhône", "La Garonne"],
+    "answer": "La Loire",
+    "image": "🏞️"
+  }
+]

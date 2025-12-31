@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Quelle est la capitale de l'Allemagne ?",
+    "options": ["Berlin", "Munich", "Hambourg", "Francfort"],
+    "answer": "Berlin",
+    "image": "🇩🇪"
+  },
+  {
+    "question": "Quel est le plus grand désert chaud du monde ?",
+    "options": ["Le Sahara", "Le Gobi", "Le Kalahari", "Le désert d'Arabie"],
+    "answer": "Le Sahara",
+    "image": "🏜️"
+  },
+  {
+    "question": "Combien y a-t-il de pays dans l'Union européenne ?",
+    "options": ["27", "15", "50", "10"],
+    "answer": "27",
+    "image": "🇪🇺"
+  },
+  {
+    "question": "Sur quel continent se trouve le Brésil ?",
+    "options": ["L'Amérique du Sud", "L'Afrique", "L'Asie", "L'Europe"],
+    "answer": "L'Amérique du Sud",
+    "image": "🌎"
+  },
+  {
+    "question": "Quel océan se trouve entre l'Amérique et l'Europe ?",
+    "options": ["L'océan Atlantique", "L'océan Pacifique", "L'océan Indien", "L'océan Arctique"],
+    "answer": "L'océan Atlantique",
+    "image": "🌊"
+  }
+]

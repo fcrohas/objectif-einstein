@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+    "options": ["Les Pyrénées", "Les Alpes", "Le Jura", "Les Vosges"],
+    "answer": "Les Pyrénées",
+    "image": "⛰️"
+  },
+  {
+    "question": "Quel est le pays le plus peuplé du monde ?",
+    "options": ["La Chine", "L'Inde", "Les États-Unis", "La France"],
+    "answer": "La Chine",
+    "image": "🌏"
+  },
+  {
+    "question": "Comment s'appelle la ligne imaginaire qui fait le tour de la Terre à égale distance des pôles ?",
+    "options": ["L'équateur", "Le méridien", "Le tropique", "L'horizon"],
+    "answer": "L'équateur",
+    "image": "🌐"
+  },
+  {
+    "question": "Quelle est la capitale de l'Italie ?",
+    "options": ["Rome", "Milan", "Venise", "Florence"],
+    "answer": "Rome",
+    "image": "🏛️"
+  },
+  {
+    "question": "Quel fleuve traverse l'Égypte ?",
+    "options": ["Le Nil", "L'Amazone", "Le Danube", "Le Gange"],
+    "answer": "Le Nil",
+    "image": "🐪"
+  }
+]

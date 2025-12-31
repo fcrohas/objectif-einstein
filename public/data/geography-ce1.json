@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Quelle est la capitale de la France ?",
+    "options": ["Paris", "Lyon", "Marseille", "Bordeaux"],
+    "answer": "Paris",
+    "image": "🗼"
+  },
+  {
+    "question": "Comment s'appelle une grande étendue d'eau salée ?",
+    "options": ["Une mer", "Une rivière", "Un lac", "Un ruisseau"],
+    "answer": "Une mer",
+    "image": "🌊"
+  },
+  {
+    "question": "Quel est le plus haut sommet d'Europe ?",
+    "options": ["Le Mont Blanc", "La Tour Eiffel", "L'Everest", "Le Kilimandjaro"],
+    "answer": "Le Mont Blanc",
+    "image": "🏔️"
+  },
+  {
+    "question": "Sur quel continent se trouve la France ?",
+    "options": ["L'Europe", "L'Afrique", "L'Asie", "L'Amérique"],
+    "answer": "L'Europe",
+    "image": "🗺️"
+  },
+  {
+    "question": "Comment s'appelle le fleuve qui traverse Paris ?",
+    "options": ["La Seine", "La Loire", "Le Rhône", "La Garonne"],
+    "answer": "La Seine",
+    "image": "🌉"
+  }
+]

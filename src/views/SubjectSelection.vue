@@ -58,6 +58,20 @@ const subjectsByLevel = {
       icon: '✏️',
       description: 'Orthographe par thèmes',
       exerciseCount: 6
+    },
+    {
+      id: 'history',
+      name: 'Histoire',
+      icon: '📜',
+      description: 'Se repérer dans le temps',
+      exerciseCount: 1
+    },
+    {
+      id: 'geography',
+      name: 'Géographie',
+      icon: '🗺️',
+      description: 'Découvrir le monde',
+      exerciseCount: 1
     }
   ],
   ce1: [
@@ -74,6 +88,20 @@ const subjectsByLevel = {
       icon: '✏️',
       description: 'Orthographe par thèmes',
       exerciseCount: 6
+    },
+    {
+      id: 'history',
+      name: 'Histoire',
+      icon: '📜',
+      description: 'La Préhistoire',
+      exerciseCount: 1
+    },
+    {
+      id: 'geography',
+      name: 'Géographie',
+      icon: '🗺️',
+      description: 'La France et ses régions',
+      exerciseCount: 1
     }
   ],
   ce2: [
@@ -89,6 +117,20 @@ const subjectsByLevel = {
       name: 'Français',
       icon: '✏️',
       description: 'Orthographe et vocabulaire',
+      exerciseCount: 1
+    },
+    {
+      id: 'history',
+      name: 'Histoire',
+      icon: '📜',
+      description: 'L\'Antiquité et les Gaulois',
+      exerciseCount: 1
+    },
+    {
+      id: 'geography',
+      name: 'Géographie',
+      icon: '🗺️',
+      description: 'Les continents et océans',
       exerciseCount: 1
     }
   ],
@@ -106,6 +148,20 @@ const subjectsByLevel = {
       icon: '✏️',
       description: 'Orthographe avancée',
       exerciseCount: 1
+    },
+    {
+      id: 'history',
+      name: 'Histoire',
+      icon: '📜',
+      description: 'Le Moyen Âge et les Temps modernes',
+      exerciseCount: 1
+    },
+    {
+      id: 'geography',
+      name: 'Géographie',
+      icon: '🗺️',
+      description: 'Le monde et ses pays',
+      exerciseCount: 1
     }
   ],
   cm2: [
@@ -121,8 +177,20 @@ const subjectsByLevel = {
       name: 'Français',
       icon: '✏️',
       description: 'Orthographe complexe',
+      exerciseCount: 1    },
+    {
+      id: 'history',
+      name: 'Histoire',
+      icon: '📜',
+      description: 'Du XXe siècle à nos jours',
       exerciseCount: 1
-    }
+    },
+    {
+      id: 'geography',
+      name: 'Géographie',
+      icon: '🗺️',
+      description: 'L\'Europe et l\'Union européenne',
+      exerciseCount: 1    }
   ]
 }
 

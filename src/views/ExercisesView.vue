@@ -142,6 +142,26 @@
       </div>
     </div>
 
+    <div v-else-if="subject === 'history'" class="exercises-section">
+      <div class="exercise-container">
+        <QCMExercise 
+          :level="level"
+          subject="history"
+          :title="`Quiz d'histoire - ${levelName}`"
+        />
+      </div>
+    </div>
+
+    <div v-else-if="subject === 'geography'" class="exercises-section">
+      <div class="exercise-container">
+        <QCMExercise 
+          :level="level"
+          subject="geography"
+          :title="`Quiz de géographie - ${levelName}`"
+        />
+      </div>
+    </div>
+
     <div class="progress-link">
       <router-link to="/progression" class="btn-progress">
         📊 Voir ma progression
@@ -155,6 +175,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MathExercise from '../components/MathExercise.vue'
 import SpellingExercise from '../components/SpellingExercise.vue'
+import QCMExercise from '../components/QCMExercise.vue'
 import { progressStore } from '../utils/progressStore'
 
 const route = useRoute()
@@ -173,7 +194,9 @@ const levelName = computed(() => {
 const subjectData = computed(() => {
   const subjects = {
     math: { name: 'Mathématiques', icon: '🔢' },
-    french: { name: 'Français', icon: '✏️' }
+    french: { name: 'Français', icon: '✏️' },
+    history: { name: 'Histoire', icon: '📜' },
+    geography: { name: 'Géographie', icon: '🗺️' }
   }
   return subjects[subject.value] || subjects.math
 })

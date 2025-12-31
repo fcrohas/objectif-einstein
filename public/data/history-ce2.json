@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Qui a découvert l'Amérique en 1492 ?",
+    "options": ["Christophe Colomb", "Napoléon", "Jules César", "Louis XIV"],
+    "answer": "Christophe Colomb",
+    "image": "🌎"
+  },
+  {
+    "question": "Quel monument célèbre a été construit par les Romains en Gaule ?",
+    "options": ["Le Pont du Gard", "La Tour Eiffel", "Le Château de Versailles", "Notre-Dame"],
+    "answer": "Le Pont du Gard",
+    "image": "🏛️"
+  },
+  {
+    "question": "Comment s'appelaient les habitants de la Gaule ?",
+    "options": ["Les Gaulois", "Les Romains", "Les Vikings", "Les Grecs"],
+    "answer": "Les Gaulois",
+    "image": "⚔️"
+  },
+  {
+    "question": "Quel roi français est surnommé le Roi-Soleil ?",
+    "options": ["Louis XIV", "Napoléon", "François 1er", "Henri IV"],
+    "answer": "Louis XIV",
+    "image": "☀️"
+  },
+  {
+    "question": "En quelle année a eu lieu la Révolution française ?",
+    "options": ["1789", "1492", "1914", "2000"],
+    "answer": "1789",
+    "image": "🗽"
+  }
+]
