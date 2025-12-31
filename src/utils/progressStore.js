@@ -131,6 +131,13 @@ export const progressStore = {
 
   // Réinitialiser la progression
   reset() {
+    const activeProfile = profileStore.getActiveProfile()
+    if (activeProfile) {
+      // Réinitialiser la progression du profil actif
+      activeProfile.progress = this.getDefaultProgress()
+      profileStore.saveProfiles()
+    }
+    // Aussi supprimer l'ancien format si présent
     localStorage.removeItem('objectif-einstein-progress')
   }
 }
