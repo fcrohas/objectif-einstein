@@ -8,8 +8,14 @@
       </div>
     </div>
 
+    <div class="cta-section">
+      <button @click="goToSubjects" class="btn-start">
+        🎓 Commencer les exercices
+      </button>
+    </div>
+
     <div class="activities-section">
-      <h2>Matières et activités</h2>
+      <h2>Programme du {{ levelData.name }}</h2>
       <div class="subjects-grid">
         <div 
           v-for="subject in levelData.activities" 
@@ -28,81 +34,15 @@
         </div>
       </div>
     </div>
-
-    <div class="exercises-section">
-      <h2>🎮 Exercices interactifs</h2>
-      
-      <div class="exercise-tabs">
-        <button 
-          v-for="tab in exerciseTabs" 
-          :key="tab.id"
-          @click="activeTab = tab.id"
-          class="tab-btn"
-          :class="{ active: activeTab === tab.id }"
-        >
-          {{ tab.icon }} {{ tab.label }}
-        </button>
-      </div>
-
-      <div class="exercise-container">
-        <MathExercise 
-          v-if="activeTab === 'math-addition'"
-          :level="route.params.level"
-          exercise-type="addition"
-          title="Additions"
-        />
-        
-        <MathExercise 
-          v-if="activeTab === 'math-soustraction'"
-          :level="route.params.level"
-          exercise-type="soustraction"
-          title="Soustractions"
-        />
-
-        <MathExercise 
-          v-if="activeTab === 'math-multiplication' && ['ce1', 'ce2', 'cm1', 'cm2'].includes(route.params.level)"
-          :level="route.params.level"
-          exercise-type="multiplication"
-          title="Multiplications"
-        />
-
-        <MathExercise 
-          v-if="activeTab === 'math-division' && ['cm1', 'cm2'].includes(route.params.level)"
-          :level="route.params.level"
-          exercise-type="division"
-          title="Divisions"
-        />
-
-        <WordGame 
-          v-if="activeTab === 'french-words'"
-          :level="route.params.level"
-          title="Jeu des mots mélangés"
-        />
-
-        <SpellingExercise 
-          v-if="activeTab === 'french-spelling'"
-          :level="route.params.level"
-          title="Exercice d'orthographe"
-        />
-
-        <ProgressDashboard 
-          v-if="activeTab === 'progress'"
-        />
-      </div>
-    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { useRoute } from 'vue-router'
-import MathExercise from '../components/MathExercise.vue'
-import WordGame from '../components/WordGame.vue'
-import SpellingExercise from '../components/SpellingExercise.vue'
-import ProgressDashboard from '../components/ProgressDashboard.vue'
+import { computed } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
-const activeTab = ref('math-addition')
+const router = useRouter()
 
 const levelsData = {
   cp: {
@@ -316,30 +256,9 @@ const levelData = computed(() => {
   return levelsData[route.params.level] || levelsData.cp
 })
 
-const exerciseTabs = computed(() => {
-  const tabs = [
-    { id: 'math-addition', label: 'Additions', icon: '➕' },
-    { id: 'math-soustraction', label: 'Soustractions', icon: '➖' }
-  ]
-  
-  // Ajouter multiplications pour CE1+
-  if (['ce1', 'ce2', 'cm1', 'cm2'].includes(route.params.level)) {
-    tabs.push({ id: 'math-multiplication', label: 'Multiplications', icon: '✖️' })
-  }
-  
-  // Ajouter divisions pour CM1+
-  if (['cm1', 'cm2'].includes(route.params.level)) {
-    tabs.push({ id: 'math-division', label: 'Divisions', icon: '➗' })
-  }
-  
-  tabs.push(
-    { id: 'french-spelling', label: 'Orthographe', icon: '✏️' },
-    { id: 'french-words', label: 'Mots mélangés', icon: '🔤' },
-    { id: 'progress', label: 'Ma progression', icon: '📊' }
-  )
-  
-  return tabs
-})
+function goToSubjects() {
+  router.push(`/niveau/${route.params.level}/matières`)
+}
 </script>
 
 <style scoped>
@@ -380,6 +299,29 @@ const exerciseTabs = computed(() => {
 .level-title h1 {
   color: #667eea;
   margin: 0;
+}
+
+.cta-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn-start {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-start:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
 }
 
 .activities-section {
@@ -447,49 +389,5 @@ const exerciseTabs = computed(() => {
   left: 0;
   color: #667eea;
   font-weight: bold;
-}
-
-.exercises-section {
-  margin: 3rem 0;
-}
-
-.exercises-section h2 {
-  color: #667eea;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.exercise-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.tab-btn {
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #667eea;
-  background: white;
-  color: #667eea;
-  border-radius: 12px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.2s;
-  font-size: 1rem;
-}
-
-.tab-btn:hover {
-  background: #667eea15;
-}
-
-.tab-btn.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-color: transparent;
-}
-
-.exercise-container {
-  min-height: 400px;
 }
 </style>
