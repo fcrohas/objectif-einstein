@@ -74,9 +74,15 @@
         />
 
         <WordGame 
-          v-if="activeTab === 'french'"
+          v-if="activeTab === 'french-words'"
           :level="route.params.level"
           title="Jeu des mots mélangés"
+        />
+
+        <SpellingExercise 
+          v-if="activeTab === 'french-spelling'"
+          :level="route.params.level"
+          title="Exercice d'orthographe"
         />
 
         <ProgressDashboard 
@@ -92,6 +98,7 @@ import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import MathExercise from '../components/MathExercise.vue'
 import WordGame from '../components/WordGame.vue'
+import SpellingExercise from '../components/SpellingExercise.vue'
 import ProgressDashboard from '../components/ProgressDashboard.vue'
 
 const route = useRoute()
@@ -326,7 +333,8 @@ const exerciseTabs = computed(() => {
   }
   
   tabs.push(
-    { id: 'french', label: 'Français', icon: '📝' },
+    { id: 'french-spelling', label: 'Orthographe', icon: '✏️' },
+    { id: 'french-words', label: 'Mots mélangés', icon: '🔤' },
     { id: 'progress', label: 'Ma progression', icon: '📊' }
   )
   
