@@ -1,0 +1,101 @@
+{
+  "icon": "📝",
+  "title": "La grammaire : Le sujet et le verbe",
+  "subtitle": "Comprends la structure de la phrase !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "🎯",
+      "title": "La phrase simple",
+      "content": [
+        "Une phrase raconte quelque chose.",
+        "Elle est composée d'au moins <strong>deux éléments importants</strong> :",
+        "Le <strong>sujet</strong> (qui fait l'action) et le <strong>verbe</strong> (l'action)."
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "👤",
+      "title": "Le sujet : Qui fait l'action ?",
+      "content": [
+        "Le <strong>sujet</strong> indique <strong>qui</strong> ou <strong>quoi</strong> fait l'action.",
+        "Exemple : <strong>Le chat</strong> mange.",
+        "Pour trouver le sujet, on demande : <em>Qui est-ce qui mange ?</em>",
+        "Réponse : <strong>Le chat</strong> ! C'est le sujet."
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🏃",
+      "title": "Le verbe : Quelle action ?",
+      "content": [
+        "Le <strong>verbe</strong> indique <strong>l'action</strong> ou <strong>l'état</strong>.",
+        "Exemple : Le chat <strong>mange</strong>.",
+        "Le verbe change selon qui fait l'action et le moment.",
+        "Je mange, tu manges, il mange..."
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🔍",
+      "title": "Trouve le sujet et le verbe",
+      "examples": [
+        {
+          "question": "Dans 'Marie joue dans le jardin', quel est le sujet ?",
+          "answer": "Marie",
+          "explanation": "Qui joue ? Marie ! C'est le sujet"
+        },
+        {
+          "question": "Dans 'Le chien court vite', quel est le verbe ?",
+          "answer": "court",
+          "explanation": "Quelle est l'action ? Court ! C'est le verbe"
+        },
+        {
+          "question": "Dans 'Les oiseaux chantent', quel est le sujet ?",
+          "answer": "Les oiseaux",
+          "explanation": "Qui chante ? Les oiseaux ! C'est le sujet"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "À toi de trouver le sujet",
+      "instruction": "Quel est le sujet de cette phrase ?",
+      "question": "Paul et Sophie jouent ensemble.",
+      "options": ["jouent", "Paul et Sophie", "ensemble", "jouent ensemble"],
+      "answer": "Paul et Sophie",
+      "correctFeedback": "Bravo ! Paul et Sophie font l'action, c'est le sujet",
+      "incorrectFeedback": "Qui joue ? Paul et Sophie ! C'est le sujet"
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "À toi de trouver le verbe",
+      "instruction": "Quel est le verbe de cette phrase ?",
+      "question": "Mon frère mange une pomme.",
+      "options": ["frère", "mange", "pomme", "mon"],
+      "answer": "mange",
+      "correctFeedback": "Parfait ! Mange est l'action, c'est le verbe",
+      "incorrectFeedback": "Quelle est l'action ? Mange ! C'est le verbe"
+    },
+    {
+      "type": "tip",
+      "title": "Astuces pour identifier",
+      "tips": [
+        {
+          "label": "👤 Pour le sujet :",
+          "text": "Demande 'Qui est-ce qui...' ou 'Qu'est-ce qui...' avant le verbe"
+        },
+        {
+          "label": "🏃 Pour le verbe :",
+          "text": "C'est le mot qui change quand on change de temps (hier, aujourd'hui, demain)"
+        },
+        {
+          "label": "🤝 Ils s'accordent :",
+          "text": "Le verbe change selon le sujet : je mange, nous mangeons"
+        }
+      ]
+    }
+  ]
+}

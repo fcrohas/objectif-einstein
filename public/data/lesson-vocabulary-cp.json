@@ -1,0 +1,111 @@
+{
+  "icon": "📚",
+  "title": "Le vocabulaire : Synonymes et Antonymes",
+  "subtitle": "Enrichis ton vocabulaire !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "📖",
+      "title": "Les synonymes",
+      "content": [
+        "Un <strong>synonyme</strong> est un mot qui a <strong>presque le même sens</strong> qu'un autre mot.",
+        "Exemple : <em>content</em> et <em>joyeux</em> sont des synonymes.",
+        "On utilise des synonymes pour ne pas répéter toujours le même mot ! ✨"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "😊",
+      "title": "Exemples de synonymes",
+      "examples": [
+        {
+          "question": "Un synonyme de 'grand' ?",
+          "answer": "immense",
+          "explanation": "Grand et immense veulent dire la même chose"
+        },
+        {
+          "question": "Un synonyme de 'beau' ?",
+          "answer": "joli",
+          "explanation": "Beau et joli ont le même sens"
+        },
+        {
+          "question": "Un synonyme de 'maison' ?",
+          "answer": "habitation",
+          "explanation": "Une maison est une habitation"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🔄",
+      "title": "Les antonymes",
+      "content": [
+        "Un <strong>antonyme</strong> est un mot qui a le <strong>sens contraire</strong> d'un autre mot.",
+        "Exemple : <em>chaud</em> et <em>froid</em> sont des antonymes.",
+        "Ce sont des mots opposés ! ⚡"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🌓",
+      "title": "Exemples d'antonymes",
+      "examples": [
+        {
+          "question": "Le contraire de 'grand' ?",
+          "answer": "petit",
+          "explanation": "Grand et petit sont des contraires"
+        },
+        {
+          "question": "Le contraire de 'jour' ?",
+          "answer": "nuit",
+          "explanation": "Le jour est le contraire de la nuit"
+        },
+        {
+          "question": "Le contraire de 'monter' ?",
+          "answer": "descendre",
+          "explanation": "Monter et descendre sont opposés"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "Quiz sur les synonymes",
+      "instruction": "Trouve le synonyme",
+      "question": "Quel mot est un synonyme de 'rapide' ?",
+      "options": ["lent", "vite", "long", "court"],
+      "answer": "vite",
+      "correctFeedback": "Bravo ! Rapide et vite ont le même sens",
+      "incorrectFeedback": "Rapide = vite, ils veulent dire la même chose"
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "Quiz sur les antonymes",
+      "instruction": "Trouve l'antonyme",
+      "question": "Quel est le contraire de 'heureux' ?",
+      "options": ["content", "joyeux", "triste", "gai"],
+      "answer": "triste",
+      "correctFeedback": "Excellent ! Heureux et triste sont des contraires",
+      "incorrectFeedback": "Le contraire d'heureux, c'est triste"
+    },
+    {
+      "type": "tip",
+      "title": "Astuces pour retenir",
+      "tips": [
+        {
+          "label": "📝 Synonymes :",
+          "text": "Cherche des mots qui peuvent se remplacer dans une phrase"
+        },
+        {
+          "label": "🔄 Antonymes :",
+          "text": "Pense à des mots opposés comme chaud/froid, haut/bas"
+        },
+        {
+          "label": "📚 Lis beaucoup :",
+          "text": "Plus tu lis, plus tu découvres de nouveaux mots !"
+        }
+      ]
+    }
+  ]
+}

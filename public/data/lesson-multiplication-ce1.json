@@ -1,0 +1,101 @@
+{
+  "icon": "✖️",
+  "title": "Les multiplications",
+  "subtitle": "Découvre la multiplication !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "🎯",
+      "title": "La multiplication, c'est quoi ?",
+      "content": [
+        "La <strong>multiplication</strong>, c'est une <strong>addition répétée</strong> !",
+        "Au lieu d'ajouter plusieurs fois le même nombre, on multiplie ! ✨",
+        "C'est beaucoup plus rapide !"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🍫",
+      "title": "Exemple avec des chocolats",
+      "content": [
+        "Tu as <strong>3 boîtes</strong> de chocolats 📦📦📦",
+        "Chaque boîte contient <strong>4 chocolats</strong> 🍫🍫🍫🍫",
+        "Au lieu de faire 4 + 4 + 4, tu peux faire : <strong>3 × 4 = 12</strong>",
+        "Tu as 12 chocolats en tout ! 🍫"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "📊",
+      "title": "Les tables de multiplication",
+      "content": [
+        "Pour aller vite, on apprend les <strong>tables de multiplication</strong> !",
+        "La table de 2 : 2, 4, 6, 8, 10...",
+        "La table de 5 : 5, 10, 15, 20, 25...",
+        "Plus tu les connais, plus c'est facile ! 🚀"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🔢",
+      "title": "Exemples de multiplications",
+      "examples": [
+        {
+          "question": "2 × 3 = ?",
+          "answer": "6",
+          "explanation": "2 + 2 + 2 = 6, donc 2 × 3 = 6"
+        },
+        {
+          "question": "5 × 2 = ?",
+          "answer": "10",
+          "explanation": "5 + 5 = 10, donc 5 × 2 = 10"
+        },
+        {
+          "question": "3 × 4 = ?",
+          "answer": "12",
+          "explanation": "3 + 3 + 3 + 3 = 12, donc 3 × 4 = 12"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "Test ton calcul",
+      "instruction": "Trouve le résultat",
+      "question": "2 × 5 = ?",
+      "options": ["8", "10", "12", "15"],
+      "answer": "10",
+      "correctFeedback": "Bravo ! 2 × 5 = 10",
+      "incorrectFeedback": "2 + 2 + 2 + 2 + 2 = 10, donc 2 × 5 = 10"
+    },
+    {
+      "type": "tip",
+      "title": "Astuces pour les tables",
+      "tips": [
+        {
+          "label": "🖐️ La table de 5 :",
+          "text": "Compte de 5 en 5 sur tes doigts : 5, 10, 15, 20..."
+        },
+        {
+          "label": "👯 La table de 2 :",
+          "text": "Ce sont les doubles ! 2×3 c'est le double de 3"
+        },
+        {
+          "label": "🔄 C'est pareil dans les deux sens :",
+          "text": "3 × 4 = 4 × 3 = 12"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🌟",
+      "title": "Défi final",
+      "instruction": "Dernière multiplication !",
+      "question": "3 × 3 = ?",
+      "options": ["6", "9", "12", "15"],
+      "answer": "9",
+      "correctFeedback": "Excellent ! Tu maîtrises les multiplications !",
+      "incorrectFeedback": "3 + 3 + 3 = 9, donc 3 × 3 = 9"
+    }
+  ]
+}

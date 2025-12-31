@@ -11,7 +11,23 @@
       <h2>{{ subjectData.name }} - {{ levelName }}</h2>
     </div>
 
-    <div v-if="subject === 'math'" class="exercises-section">
+    <!-- Bouton pour accéder aux leçons -->
+    <div v-if="showLessonButton" class="lesson-access">
+      <button @click="showLesson = !showLesson" class="lesson-toggle-btn">
+        <span v-if="!showLesson">📖 Voir la leçon</span>
+        <span v-else>✏️ Faire les exercices</span>
+      </button>
+    </div>
+
+    <!-- Affichage de la leçon ou des exercices -->
+    <div v-if="showLesson && showLessonButton" class="lesson-section">
+      <LessonViewer 
+        :level="level"
+        :subject="getLessonSubject()"
+      />
+    </div>
+
+    <div v-else-if="subject === 'math'" class="exercises-section">
       <div class="exercise-tabs">
         <button 
           v-for="tab in mathTabs" 
@@ -234,6 +250,7 @@ import QCMExercise from '../components/QCMExercise.vue'
 import ReadingExercise from '../components/ReadingExercise.vue'
 import GrammarExercise from '../components/GrammarExercise.vue'
 import MathProblemExercise from '../components/MathProblemExercise.vue'
+import LessonViewer from '../components/LessonViewer.vue'
 import { progressStore } from '../utils/progressStore'
 
 const route = useRoute()
@@ -243,6 +260,28 @@ const subject = computed(() => route.params.subject)
 const activeTab = ref('addition')
 const currentTheme = ref(null)
 const completedThemes = ref([])
+const showLesson = ref(false)
+
+// Subjects qui ont des leçons disponibles
+const subjectsWithLessons = ['addition', 'soustraction', 'multiplication', 'division', 'grammar', 'conjugation', 'vocabulary']
+
+const showLessonButton = computed(() => {
+  // Pour les maths, on check l'onglet actif
+  if (subject.value === 'math') {
+    return subjectsWithLessons.includes(activeTab.value)
+  }
+  // Pour les autres matières, on check le subject directement
+  return subjectsWithLessons.includes(subject.value)
+})
+
+function getLessonSubject() {
+  // Pour les maths, retourne l'onglet actif (addition, soustraction, etc.)
+  if (subject.value === 'math') {
+    return activeTab.value
+  }
+  // Pour les autres, retourne le subject
+  return subject.value
+}
 
 const levelName = computed(() => {
   const names = { cp: 'CP', ce1: 'CE1', ce2: 'CE2', cm1: 'CM1', cm2: 'CM2' }
@@ -713,6 +752,33 @@ onMounted(() => {
   color: #667eea;
   margin: 0;
   font-size: 1.3rem;
+}
+
+.lesson-access {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.lesson-toggle-btn {
+  padding: 1rem 2rem;
+  border: none;
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  color: white;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-toggle-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lesson-section {
+  margin-bottom: 2rem;
 }
 
 .exercises-section h3 {

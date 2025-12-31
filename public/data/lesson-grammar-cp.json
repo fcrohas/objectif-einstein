@@ -1,0 +1,108 @@
+{
+  "icon": "📝",
+  "title": "La grammaire : Les classes de mots",
+  "subtitle": "Découvre les noms, verbes et adjectifs !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "📚",
+      "title": "Les classes de mots",
+      "content": [
+        "Les mots ont différents <strong>rôles</strong> dans les phrases !",
+        "Aujourd'hui, nous allons découvrir trois classes importantes : les <strong>noms</strong>, les <strong>verbes</strong> et les <strong>adjectifs</strong>. 🎯"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🏷️",
+      "title": "Les noms",
+      "content": [
+        "Un <strong>nom</strong> désigne une <strong>personne</strong>, un <strong>animal</strong>, une <strong>chose</strong> ou un <strong>lieu</strong>.",
+        "Exemples : <em>chat, maison, Marie, école</em>",
+        "On peut mettre <strong>un</strong> ou <strong>le</strong> devant un nom."
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🏃",
+      "title": "Les verbes",
+      "content": [
+        "Un <strong>verbe</strong> indique une <strong>action</strong> ou un <strong>état</strong>.",
+        "Exemples : <em>manger, courir, être, avoir</em>",
+        "Le verbe change selon le temps et la personne."
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🎨",
+      "title": "Les adjectifs",
+      "content": [
+        "Un <strong>adjectif</strong> décrit ou donne des précisions sur un nom.",
+        "Exemples : <em>grand, rouge, joli, méchant</em>",
+        "Dans \"un <strong>petit</strong> chat\", <em>petit</em> est un adjectif qui décrit le chat."
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🔍",
+      "title": "Trouve la classe des mots",
+      "examples": [
+        {
+          "question": "Dans 'Le chien mange', quel est le nom ?",
+          "answer": "chien",
+          "explanation": "Le chien est l'animal dont on parle"
+        },
+        {
+          "question": "Dans 'Le chat est noir', quel est l'adjectif ?",
+          "answer": "noir",
+          "explanation": "Noir décrit la couleur du chat"
+        },
+        {
+          "question": "Dans 'Marie joue', quel est le verbe ?",
+          "answer": "joue",
+          "explanation": "Joue indique l'action que fait Marie"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "Test tes connaissances",
+      "instruction": "Quelle est la classe du mot souligné ?",
+      "question": "Le <u>lapin</u> court vite.",
+      "options": ["nom", "verbe", "adjectif"],
+      "answer": "nom",
+      "correctFeedback": "Bravo ! Lapin est bien un nom (un animal)",
+      "incorrectFeedback": "Lapin désigne un animal, c'est donc un nom"
+    },
+    {
+      "type": "tip",
+      "title": "Comment les reconnaître ?",
+      "tips": [
+        {
+          "label": "🏷️ Pour le nom :",
+          "text": "Peux-tu mettre 'un', 'le', 'la' devant ? C'est un nom !"
+        },
+        {
+          "label": "🏃 Pour le verbe :",
+          "text": "Peux-tu dire 'je suis en train de...' ? C'est un verbe !"
+        },
+        {
+          "label": "🎨 Pour l'adjectif :",
+          "text": "Est-ce que ça décrit comment est quelque chose ? C'est un adjectif !"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🏆",
+      "title": "Quiz final",
+      "instruction": "Dernière question !",
+      "question": "Dans 'Un gros éléphant', quel mot est un adjectif ?",
+      "options": ["un", "gros", "éléphant"],
+      "answer": "gros",
+      "correctFeedback": "Excellent ! Gros décrit l'éléphant, c'est un adjectif !",
+      "incorrectFeedback": "Gros décrit comment est l'éléphant, c'est un adjectif"
+    }
+  ]
+}

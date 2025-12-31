@@ -1,0 +1,90 @@
+{
+  "icon": "➖",
+  "title": "Les soustractions",
+  "subtitle": "Apprends à enlever avec facilité !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "👋",
+      "title": "Découvre la soustraction",
+      "content": [
+        "Aujourd'hui, nous apprenons à <strong>soustraire</strong> !",
+        "Soustraire, c'est <strong>enlever</strong> une quantité. 🎯",
+        "C'est le contraire de l'addition !"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🍪",
+      "title": "Qu'est-ce qu'une soustraction ?",
+      "content": [
+        "Tu as <strong>5 biscuits</strong> 🍪🍪🍪🍪🍪",
+        "Tu en manges <strong>2</strong> 😋",
+        "Combien t'en reste-t-il ?",
+        "5 - 2 = 3 biscuits ! 🍪🍪🍪"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🧮",
+      "title": "Exemples de soustractions",
+      "examples": [
+        {
+          "question": "5 - 2 = ?",
+          "answer": "3",
+          "explanation": "Si on enlève 2 à 5, il reste 3"
+        },
+        {
+          "question": "4 - 1 = ?",
+          "answer": "3",
+          "explanation": "On retire 1 à 4, il reste 3"
+        },
+        {
+          "question": "3 - 3 = ?",
+          "answer": "0",
+          "explanation": "Si on enlève tout, il ne reste rien !"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "Teste-toi !",
+      "instruction": "Trouve le bon résultat",
+      "question": "5 - 1 = ?",
+      "options": ["3", "4", "5", "6"],
+      "answer": "4",
+      "correctFeedback": "Bravo ! 5 - 1 = 4",
+      "incorrectFeedback": "Si tu as 5 objets et que tu en enlèves 1, il en reste 4"
+    },
+    {
+      "type": "tip",
+      "title": "Astuces pour soustraire",
+      "tips": [
+        {
+          "label": "🖐️ Compte à rebours :",
+          "text": "Pars du plus grand nombre et compte à l'envers sur tes doigts"
+        },
+        {
+          "label": "➕ Pense à l'addition :",
+          "text": "Pour 5-2, demande-toi : 2 + ? = 5. La réponse est 3 !"
+        },
+        {
+          "label": "✏️ Dessine :",
+          "text": "Dessine des objets et barre ceux que tu enlèves"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🌟",
+      "title": "Dernière question",
+      "instruction": "Tu peux le faire !",
+      "question": "4 - 2 = ?",
+      "options": ["1", "2", "3", "4"],
+      "answer": "2",
+      "correctFeedback": "Parfait ! Tu maîtrises les soustractions !",
+      "incorrectFeedback": "4 - 2 = 2. Continue de pratiquer !"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "icon": "➕",
+  "title": "Les additions",
+  "subtitle": "Apprends à additionner avec plaisir !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "👋",
+      "title": "Bienvenue !",
+      "content": [
+        "Aujourd'hui, nous allons apprendre à <strong>additionner</strong>.",
+        "Additionner, c'est <strong>rassembler</strong> des quantités pour en avoir plus ! 🎉"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🍎",
+      "title": "Qu'est-ce qu'une addition ?",
+      "content": [
+        "Imagine que tu as <strong>2 pommes</strong> 🍎🍎",
+        "Ton ami te donne <strong>3 pommes</strong> de plus 🍎🍎🍎",
+        "Maintenant, combien de pommes as-tu ? Tu les comptes toutes ensemble !",
+        "2 + 3 = 5 pommes ! 🍎🍎🍎🍎🍎"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🧮",
+      "title": "Exemples pratiques",
+      "examples": [
+        {
+          "question": "3 + 2 = ?",
+          "answer": "5",
+          "explanation": "3 objets + 2 objets = 5 objets en tout"
+        },
+        {
+          "question": "4 + 1 = ?",
+          "answer": "5",
+          "explanation": "On ajoute 1 à 4, on obtient 5"
+        },
+        {
+          "question": "2 + 2 = ?",
+          "answer": "4",
+          "explanation": "Le double de 2, c'est 4 !"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "À toi de jouer !",
+      "instruction": "Choisis la bonne réponse",
+      "question": "1 + 4 = ?",
+      "options": ["3", "4", "5", "6"],
+      "answer": "5",
+      "correctFeedback": "C'est exact ! 1 + 4 = 5",
+      "incorrectFeedback": "Compte bien : 1 objet + 4 objets = 5 objets"
+    },
+    {
+      "type": "tip",
+      "title": "Astuces pour bien additionner",
+      "tips": [
+        {
+          "label": "🖐️ Utilise tes doigts :",
+          "text": "Tu peux compter sur tes doigts pour t'aider !"
+        },
+        {
+          "label": "📊 Commence par le plus grand :",
+          "text": "C'est plus facile de compter en partant du nombre le plus grand."
+        },
+        {
+          "label": "🎨 Dessine :",
+          "text": "Tu peux dessiner des points ou des objets pour visualiser."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🌟",
+      "title": "Quiz final",
+      "instruction": "Dernière question !",
+      "question": "3 + 3 = ?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "6",
+      "correctFeedback": "Bravo ! Tu as bien compris les additions !",
+      "incorrectFeedback": "3 + 3 = 6. Continue de t'entraîner !"
+    }
+  ]
+}

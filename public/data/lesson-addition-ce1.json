@@ -1,0 +1,90 @@
+{
+  "icon": "➕",
+  "title": "Les additions",
+  "subtitle": "Maîtrise les additions jusqu'à 20 !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "🎓",
+      "title": "Les additions en CE1",
+      "content": [
+        "Tu connais déjà les petites additions !",
+        "Maintenant, nous allons apprendre à additionner des nombres <strong>jusqu'à 20</strong> et même plus grand !",
+        "Prêt ? C'est parti ! 🚀"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "🔢",
+      "title": "Addition avec retenue",
+      "content": [
+        "Parfois, quand on additionne les unités, on dépasse 10.",
+        "Par exemple : <strong>7 + 5</strong>",
+        "On peut décomposer : 7 + 3 = 10, puis 10 + 2 = 12",
+        "On dit qu'il y a une <strong>retenue</strong> !"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "📝",
+      "title": "Exemples avec retenue",
+      "examples": [
+        {
+          "question": "8 + 6 = ?",
+          "answer": "14",
+          "explanation": "8 + 2 = 10, puis 10 + 4 = 14"
+        },
+        {
+          "question": "9 + 7 = ?",
+          "answer": "16",
+          "explanation": "9 + 1 = 10, puis 10 + 6 = 16"
+        },
+        {
+          "question": "15 + 8 = ?",
+          "answer": "23",
+          "explanation": "15 + 5 = 20, puis 20 + 3 = 23"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "Test ta compréhension",
+      "instruction": "Trouve le résultat",
+      "question": "12 + 9 = ?",
+      "options": ["19", "20", "21", "22"],
+      "answer": "21",
+      "correctFeedback": "Parfait ! 12 + 9 = 21",
+      "incorrectFeedback": "12 + 8 = 20, donc 12 + 9 = 21"
+    },
+    {
+      "type": "tip",
+      "title": "Stratégies pour calculer vite",
+      "tips": [
+        {
+          "label": "🎯 Passe par 10 :",
+          "text": "Décompose pour arriver à 10, c'est plus facile (7+5 = 7+3+2 = 10+2)"
+        },
+        {
+          "label": "🔄 Change l'ordre :",
+          "text": "3 + 17 est plus difficile que 17 + 3, change l'ordre !"
+        },
+        {
+          "label": "✌️ Les doubles :",
+          "text": "Apprends les doubles par cœur : 7+7=14, 8+8=16, 9+9=18"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🏆",
+      "title": "Défi final",
+      "instruction": "Dernier calcul !",
+      "question": "18 + 15 = ?",
+      "options": ["31", "32", "33", "34"],
+      "answer": "33",
+      "correctFeedback": "Excellent ! Tu es un champion des additions !",
+      "incorrectFeedback": "18 + 10 = 28, puis 28 + 5 = 33"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "icon": "🔤",
+  "title": "La conjugaison : Le présent",
+  "subtitle": "Conjugue les verbes au présent !",
+  "slides": [
+    {
+      "type": "text",
+      "illustration": "⏰",
+      "title": "Le présent de l'indicatif",
+      "content": [
+        "Le <strong>présent</strong> indique ce qui se passe <strong>maintenant</strong>, en ce moment !",
+        "Exemple : <em>Je mange</em>, <em>tu joues</em>, <em>il court</em>",
+        "Le verbe change selon la personne qui fait l'action. 🎯"
+      ]
+    },
+    {
+      "type": "text",
+      "illustration": "👤",
+      "title": "Les pronoms personnels",
+      "content": [
+        "Il y a 6 personnes pour conjuguer :",
+        "<strong>je</strong> - <strong>tu</strong> - <strong>il/elle</strong>",
+        "<strong>nous</strong> - <strong>vous</strong> - <strong>ils/elles</strong>",
+        "Chaque personne a sa propre terminaison !"
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🎭",
+      "title": "Le verbe ÊTRE au présent",
+      "examples": [
+        {
+          "question": "Je ... à l'école",
+          "answer": "Je suis",
+          "explanation": "Avec JE, on dit : je suis"
+        },
+        {
+          "question": "Tu ... content",
+          "answer": "Tu es",
+          "explanation": "Avec TU, on dit : tu es"
+        },
+        {
+          "question": "Il ... gentil",
+          "answer": "Il est",
+          "explanation": "Avec IL/ELLE, on dit : il/elle est"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "illustration": "🎭",
+      "title": "Le verbe AVOIR au présent",
+      "examples": [
+        {
+          "question": "J'... un vélo",
+          "answer": "J'ai",
+          "explanation": "Avec JE, on dit : j'ai"
+        },
+        {
+          "question": "Tu ... une gomme",
+          "answer": "Tu as",
+          "explanation": "Avec TU, on dit : tu as"
+        },
+        {
+          "question": "Elle ... un chat",
+          "answer": "Elle a",
+          "explanation": "Avec IL/ELLE, on dit : il/elle a"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🎯",
+      "title": "À toi de conjuguer !",
+      "instruction": "Complète avec le verbe être",
+      "question": "Tu ... à la maison.",
+      "options": ["es", "est", "suis", "sont"],
+      "answer": "es",
+      "correctFeedback": "Parfait ! Tu es",
+      "incorrectFeedback": "Avec TU, on dit : tu es"
+    },
+    {
+      "type": "tip",
+      "title": "Astuces pour conjuguer",
+      "tips": [
+        {
+          "label": "📖 Apprends par cœur :",
+          "text": "Les verbes être et avoir sont très importants, apprends-les bien !"
+        },
+        {
+          "label": "🎵 Chante-les :",
+          "text": "Tu peux les apprendre en chanson, c'est plus facile !"
+        },
+        {
+          "label": "✏️ Écris-les :",
+          "text": "Écris plusieurs fois les conjugaisons pour les mémoriser"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "illustration": "🌟",
+      "title": "Quiz final",
+      "instruction": "Dernière question !",
+      "question": "J'... un livre.",
+      "options": ["ai", "as", "a", "ont"],
+      "answer": "ai",
+      "correctFeedback": "Bravo ! Tu sais conjuguer !",
+      "incorrectFeedback": "Avec JE, on dit : j'ai"
+    }
+  ]
+}
