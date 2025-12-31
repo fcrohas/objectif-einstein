@@ -35,7 +35,7 @@
       <h3>Progression par niveau</h3>
       <div class="level-bars">
         <div 
-          v-for="(level, key) in progress.levels" 
+          v-for="(level, key) in filteredLevels" 
           :key="key"
           class="level-bar-container"
         >
@@ -79,12 +79,35 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { progressStore } from '../utils/progressStore'
+import { profileStore } from '../utils/profileStore'
 
 const progress = ref(progressStore.getProgress())
 const stats = ref(progressStore.getStats())
+const activeProfile = ref(null)
 
 const currentLevelName = computed(() => {
+  if (activeProfile.value) {
+    return getLevelName(activeProfile.value.currentLevel)
+  }
   return getLevelName(progress.value.currentLevel)
+})
+
+const accessibleLevels = computed(() => {
+  if (!activeProfile.value) {
+    return Object.keys(progress.value.levels)
+  }
+  
+  return profileStore.getAccessibleLevels(activeProfile.value.currentLevel)
+})
+
+const filteredLevels = computed(() => {
+  const filtered = {}
+  accessibleLevels.value.forEach(levelKey => {
+    if (progress.value.levels[levelKey]) {
+      filtered[levelKey] = progress.value.levels[levelKey]
+    }
+  })
+  return filtered
 })
 
 function getLevelName(key) {
@@ -116,6 +139,7 @@ function formatDate(dateString) {
 function refreshProgress() {
   progress.value = progressStore.getProgress()
   stats.value = progressStore.getStats()
+  activeProfile.value = profileStore.getActiveProfile()
 }
 
 function resetProgress() {
@@ -126,6 +150,7 @@ function resetProgress() {
 }
 
 onMounted(() => {
+  activeProfile.value = profileStore.getActiveProfile()
   refreshProgress()
 })
 </script>

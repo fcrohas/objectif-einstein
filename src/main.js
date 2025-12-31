@@ -52,9 +52,16 @@ const router = createRouter({
 // Guard de navigation pour vérifier qu'un profil est sélectionné
 router.beforeEach((to, from, next) => {
   const activeProfile = profileStore.getActiveProfile()
+  const allProfiles = profileStore.getProfiles()
   
-  if (!activeProfile && to.name !== 'ProfileSelection') {
-    next({ name: 'ProfileSelection' })
+  // Si on n'est pas sur la page de sélection de profil
+  if (to.name !== 'ProfileSelection') {
+    // Si aucun profil actif ou s'il y a plusieurs profils et qu'on vient de démarrer
+    if (!activeProfile || (allProfiles.length > 1 && !from.name)) {
+      next({ name: 'ProfileSelection' })
+    } else {
+      next()
+    }
   } else {
     next()
   }

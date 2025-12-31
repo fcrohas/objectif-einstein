@@ -1,6 +1,6 @@
 <template>
   <div class="progress-summary">
-    <div class="summary-card">
+    <div class="summary-card" @click="goToProgress">
       <div class="summary-icon">📚</div>
       <div class="summary-content">
         <div class="summary-stat">{{ stats.totalExercises }} exercices faits</div>
@@ -8,7 +8,7 @@
       </div>
     </div>
     
-    <div v-if="stats.achievements > 0" class="summary-card">
+    <div v-if="stats.achievements > 0" class="summary-card" @click="goToProgress">
       <div class="summary-icon">🏆</div>
       <div class="summary-content">
         <div class="summary-stat">{{ stats.achievements }} succès</div>
@@ -20,9 +20,15 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { progressStore } from '../utils/progressStore'
 
+const router = useRouter()
 const stats = ref(progressStore.getStats())
+
+function goToProgress() {
+  router.push('/progression')
+}
 
 onMounted(() => {
   stats.value = progressStore.getStats()
@@ -47,6 +53,13 @@ onMounted(() => {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   min-width: 200px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .summary-icon {
