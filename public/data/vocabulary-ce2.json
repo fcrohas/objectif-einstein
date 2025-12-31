@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Quel est le synonyme de 'furieux' ?",
+    "options": ["en colère", "content", "triste", "fatigué"],
+    "answer": "en colère",
+    "image": "😠",
+    "explanation": "'Furieux' et 'en colère' sont des synonymes."
+  },
+  {
+    "question": "L'antonyme de 'courage' est :",
+    "options": ["lâcheté", "bravoure", "force", "audace"],
+    "answer": "lâcheté",
+    "image": "💪",
+    "explanation": "'Courage' et 'lâcheté' sont des contraires."
+  },
+  {
+    "question": "De la famille de 'terre', on trouve :",
+    "options": ["terrestre", "sol", "planète", "monde"],
+    "answer": "terrestre",
+    "image": "🌍",
+    "explanation": "'Terre' et 'terrestre' sont de la même famille."
+  },
+  {
+    "question": "Un synonyme d' 'énorme' est :",
+    "options": ["gigantesque", "petit", "minuscule", "moyen"],
+    "answer": "gigantesque",
+    "image": "🦕",
+    "explanation": "'Énorme' et 'gigantesque' signifient très grand."
+  },
+  {
+    "question": "Quel mot est un homonyme de 'ver' ?",
+    "options": ["verre", "terre", "faire", "mère"],
+    "answer": "verre",
+    "image": "🥛",
+    "explanation": "'Ver' et 'verre' se prononcent pareil mais s'écrivent différemment."
+  },
+  {
+    "question": "Champ lexical de la peur :",
+    "options": ["effroi", "joie", "amour", "faim"],
+    "answer": "effroi",
+    "image": "😱",
+    "explanation": "L'effroi est une grande peur."
+  },
+  {
+    "question": "Préfixe 'in-' dans 'invisible' signifie :",
+    "options": ["ne pas", "très", "avant", "après"],
+    "answer": "ne pas",
+    "image": "👻",
+    "explanation": "'In-' est un préfixe de négation : invisible = qu'on ne peut pas voir."
+  },
+  {
+    "question": "Le suffixe '-eur' dans 'joueur' indique :",
+    "options": ["celui qui fait l'action", "l'action", "le lieu", "le temps"],
+    "answer": "celui qui fait l'action",
+    "image": "⚽",
+    "explanation": "Un joueur est celui qui joue."
+  },
+  {
+    "question": "Un synonyme de 'habitation' est :",
+    "options": ["demeure", "jardin", "rue", "ville"],
+    "answer": "demeure",
+    "image": "🏠",
+    "explanation": "'Habitation' et 'demeure' désignent un lieu où on habite."
+  },
+  {
+    "question": "L'antonyme de 'générosité' est :",
+    "options": ["avarice", "gentillesse", "bonté", "charité"],
+    "answer": "avarice",
+    "image": "💰",
+    "explanation": "'Générosité' et 'avarice' sont des contraires."
+  }
+]

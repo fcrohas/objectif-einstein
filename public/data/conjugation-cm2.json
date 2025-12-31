@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Subjonctif imparfait de 'être' :",
+    "example": "Bien qu'il ..., nous sortîmes.",
+    "options": ["fût", "soit", "était", "sera"],
+    "answer": "fût",
+    "image": "⏰",
+    "explanation": "Subjonctif imparfait (littéraire) : qu'il fût."
+  },
+  {
+    "question": "Conditionnel passé 2e forme :",
+    "example": "J'... ... venir si j'avais pu.",
+    "options": ["eusse pu", "aurais pu", "pouvais", "ai pu"],
+    "answer": "eusse pu",
+    "image": "💭",
+    "explanation": "Le conditionnel passé 2e forme : j'eusse pu (forme littéraire)."
+  },
+  {
+    "question": "Passé antérieur :",
+    "example": "Quand il ... ..., il partit.",
+    "options": ["eut fini", "avait fini", "a fini", "aura fini"],
+    "answer": "eut fini",
+    "image": "✅",
+    "explanation": "Passé antérieur = passé simple de l'auxiliaire + participe passé."
+  },
+  {
+    "question": "Voix passive au présent :",
+    "example": "La lettre ... par Marie.",
+    "options": ["est écrite", "écrit", "a écrit", "écrivait"],
+    "answer": "est écrite",
+    "image": "✉️",
+    "explanation": "Voix passive = être + participe passé accordé."
+  },
+  {
+    "question": "Participe présent :",
+    "example": "En ... son devoir, il apprend.",
+    "options": ["faisant", "fait", "faire", "faisait"],
+    "answer": "faisant",
+    "image": "📝",
+    "explanation": "Le participe présent de faire est 'faisant'."
+  },
+  {
+    "question": "Gérondif :",
+    "example": "Il chante ... marchant.",
+    "options": ["en", "tout", "avec", "sans"],
+    "answer": "en",
+    "image": "🎵",
+    "explanation": "Le gérondif se forme avec 'en' + participe présent."
+  },
+  {
+    "question": "Subjonctif passé :",
+    "example": "Je doute qu'il ... ... à temps.",
+    "options": ["soit arrivé", "est arrivé", "arrivait", "arrivera"],
+    "answer": "soit arrivé",
+    "image": "⏰",
+    "explanation": "Subjonctif passé = subjonctif de l'auxiliaire + participe passé."
+  },
+  {
+    "question": "Concordance des temps :",
+    "example": "Il dit qu'il ... demain.",
+    "options": ["viendra", "vient", "venait", "vienne"],
+    "answer": "viendra",
+    "image": "📅",
+    "explanation": "Après 'il dit que' au présent, on utilise le futur."
+  },
+  {
+    "question": "Participe passé des verbes pronominaux :",
+    "example": "Elles se sont ... des histoires.",
+    "options": ["raconté", "racontées", "racontés", "racontée"],
+    "answer": "raconté",
+    "image": "💬",
+    "explanation": "COD après le verbe : pas d'accord (des histoires = COD)."
+  },
+  {
+    "question": "Impératif passé :",
+    "example": "... ... ton travail avant de sortir !",
+    "options": ["Aie fini", "Finis", "Finir", "Avoir fini"],
+    "answer": "Aie fini",
+    "image": "✅",
+    "explanation": "Impératif passé = impératif de l'auxiliaire + participe passé."
+  }
+]

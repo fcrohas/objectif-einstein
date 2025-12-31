@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Conjugue 'être' à l'imparfait :",
+    "example": "J'... content hier.",
+    "options": ["étais", "été", "suis", "serai"],
+    "answer": "étais",
+    "image": "😊",
+    "explanation": "À l'imparfait, 'je' + être = j'étais."
+  },
+  {
+    "question": "Conjugue 'avoir' au présent :",
+    "example": "Nous ... un jardin.",
+    "options": ["avons", "avez", "ont", "a"],
+    "answer": "avons",
+    "image": "🏡",
+    "explanation": "Avec 'nous', avoir devient 'avons'."
+  },
+  {
+    "question": "Quel temps pour cette phrase ?",
+    "example": "Il jouait dans le parc.",
+    "options": ["imparfait", "présent", "futur", "passé composé"],
+    "answer": "imparfait",
+    "image": "⏰",
+    "explanation": "'Jouait' est à l'imparfait (action passée qui durait)."
+  },
+  {
+    "question": "Conjugue 'aller' au futur :",
+    "example": "Tu ... à l'école demain.",
+    "options": ["iras", "vas", "allais", "es allé"],
+    "answer": "iras",
+    "image": "🏫",
+    "explanation": "Au futur, 'tu' + aller = tu iras."
+  },
+  {
+    "question": "Passé composé de 'manger' :",
+    "example": "J'... une pomme.",
+    "options": ["ai mangé", "mange", "mangeais", "mangerai"],
+    "answer": "ai mangé",
+    "image": "🍎",
+    "explanation": "Passé composé = auxiliaire avoir + participe passé 'mangé'."
+  },
+  {
+    "question": "Conjugue au présent :",
+    "example": "Vous ... vos amis.",
+    "options": ["voyez", "vois", "voient", "voit"],
+    "answer": "voyez",
+    "image": "👀",
+    "explanation": "Avec 'vous', voir devient 'voyez'."
+  },
+  {
+    "question": "Infinitif du verbe :",
+    "example": "Ils chantent → ...",
+    "options": ["chanter", "chante", "chantons", "chanté"],
+    "answer": "chanter",
+    "image": "🎵",
+    "explanation": "L'infinitif est la forme non conjuguée : chanter."
+  },
+  {
+    "question": "Conjugue 'finir' au présent :",
+    "example": "Nous ... nos devoirs.",
+    "options": ["finissons", "finissez", "finit", "finis"],
+    "answer": "finissons",
+    "image": "✅",
+    "explanation": "Verbe du 2e groupe : nous finissons."
+  },
+  {
+    "question": "L'impératif de 'venir' :",
+    "example": "... ici ! (tu)",
+    "options": ["Viens", "Venez", "Venir", "Vient"],
+    "answer": "Viens",
+    "image": "👋",
+    "explanation": "À l'impératif avec 'tu' : Viens (sans le 's' final)."
+  },
+  {
+    "question": "Participe passé de 'prendre' :",
+    "example": "J'ai ... le bus.",
+    "options": ["pris", "prend", "prendu", "prendre"],
+    "answer": "pris",
+    "image": "🚌",
+    "explanation": "Le participe passé de prendre est 'pris'."
+  }
+]

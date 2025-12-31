@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Quel est le synonyme d' 'éphémère' ?",
+    "options": ["passager", "éternel", "permanent", "durable"],
+    "answer": "passager",
+    "image": "🦋",
+    "explanation": "'Éphémère' et 'passager' signifient qui dure peu de temps."
+  },
+  {
+    "question": "L'antonyme de 'prolixe' est :",
+    "options": ["concis", "bavard", "verbeux", "long"],
+    "answer": "concis",
+    "image": "💬",
+    "explanation": "'Prolixe' (qui parle beaucoup) est l'opposé de 'concis' (bref)."
+  },
+  {
+    "question": "Étymologie : 'bibliothèque' vient du grec :",
+    "options": ["biblio (livre) + thêkê (armoire)", "biblio (papier) + theos (dieu)", "bio (vie) + thèque (lieu)", "bibere (boire) + thêkê (lieu)"],
+    "answer": "biblio (livre) + thêkê (armoire)",
+    "image": "📚",
+    "explanation": "'Bibliothèque' vient du grec 'biblion' (livre) et 'thêkê' (armoire)."
+  },
+  {
+    "question": "Une métaphore de 'être très en colère' :",
+    "options": ["être fou de rage", "être un peu fâché", "être content", "être calme"],
+    "answer": "être fou de rage",
+    "image": "😡",
+    "explanation": "Une métaphore compare sans outil de comparaison : 'fou de rage'."
+  },
+  {
+    "question": "Le néologisme 'courriel' remplace :",
+    "options": ["e-mail", "lettre", "téléphone", "journal"],
+    "answer": "e-mail",
+    "image": "📧",
+    "explanation": "'Courriel' est un néologisme français pour 'e-mail'."
+  },
+  {
+    "question": "Un oxymore est illustré par :",
+    "options": ["un silence assourdissant", "un grand géant", "un petit nain", "un beau soleil"],
+    "answer": "un silence assourdissant",
+    "image": "🤫",
+    "explanation": "Un oxymore associe deux termes contradictoires : silence ≠ assourdissant."
+  },
+  {
+    "question": "Le registre de langue soutenu de 'voiture' est :",
+    "options": ["automobile", "bagnole", "caisse", "tacot"],
+    "answer": "automobile",
+    "image": "🚗",
+    "explanation": "'Automobile' est le terme soutenu pour 'voiture'."
+  },
+  {
+    "question": "Une périphrase pour 'le roi des animaux' :",
+    "options": ["le lion", "le tigre", "l'éléphant", "le cheval"],
+    "answer": "le lion",
+    "image": "🦁",
+    "explanation": "Une périphrase remplace un mot par une expression : le lion = roi des animaux."
+  },
+  {
+    "question": "Le sens propre de 'prendre la mouche' :",
+    "options": ["attraper un insecte", "se vexer", "s'envoler", "être rapide"],
+    "answer": "attraper un insecte",
+    "image": "🪰",
+    "explanation": "Le sens propre est littéral : attraper une mouche. Le sens figuré = se vexer."
+  },
+  {
+    "question": "Un synonyme de 'diligence' (rapidité) :",
+    "options": ["célérité", "lenteur", "paresse", "fatigue"],
+    "answer": "célérité",
+    "image": "⚡",
+    "explanation": "'Diligence' et 'célérité' signifient rapidité, promptitude."
+  }
+]

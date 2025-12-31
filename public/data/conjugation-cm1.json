@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Conjugue au passé simple :",
+    "example": "Il ... (aller) au marché.",
+    "options": ["alla", "allait", "est allé", "ira"],
+    "answer": "alla",
+    "image": "🏪",
+    "explanation": "Au passé simple : il alla."
+  },
+  {
+    "question": "Plus-que-parfait de 'finir' :",
+    "example": "J'... déjà ... mon travail.",
+    "options": ["avais fini", "ai fini", "aurai fini", "aurais fini"],
+    "answer": "avais fini",
+    "image": "✅",
+    "explanation": "Plus-que-parfait = imparfait de l'auxiliaire + participe passé."
+  },
+  {
+    "question": "Subjonctif présent :",
+    "example": "Il faut que tu ...",
+    "options": ["viennes", "viens", "venais", "viendras"],
+    "answer": "viennes",
+    "image": "🚶",
+    "explanation": "Après 'il faut que', on utilise le subjonctif : que tu viennes."
+  },
+  {
+    "question": "Impératif pluriel :",
+    "example": "... (finir) vos devoirs !",
+    "options": ["Finissez", "Finir", "Finissons", "Finis"],
+    "answer": "Finissez",
+    "image": "📚",
+    "explanation": "Impératif avec 'vous' : Finissez."
+  },
+  {
+    "question": "Passé simple de 'être' :",
+    "example": "Nous ... surpris.",
+    "options": ["fûmes", "étions", "sommes", "avons été"],
+    "answer": "fûmes",
+    "image": "😮",
+    "explanation": "Au passé simple avec 'nous' : nous fûmes."
+  },
+  {
+    "question": "Futur antérieur de 'partir' :",
+    "example": "Quand j'... ..., tu pourras venir.",
+    "options": ["serai parti", "suis parti", "partais", "partirai"],
+    "answer": "serai parti",
+    "image": "🚶",
+    "explanation": "Futur antérieur = futur de l'auxiliaire + participe passé."
+  },
+  {
+    "question": "Conditionnel passé :",
+    "example": "J'... ... si j'avais su.",
+    "options": ["aurais voulu", "ai voulu", "voulais", "voudrais"],
+    "answer": "aurais voulu",
+    "image": "💭",
+    "explanation": "Conditionnel passé = conditionnel de l'auxiliaire + participe passé."
+  },
+  {
+    "question": "Accord du participe avec 'être' :",
+    "example": "Les élèves sont ... en classe.",
+    "options": ["restés", "resté", "restées", "rester"],
+    "answer": "restés",
+    "image": "🏫",
+    "explanation": "Avec 'être', accord avec le sujet (masculin pluriel)."
+  },
+  {
+    "question": "Subjonctif de 'avoir' :",
+    "example": "Il faut que nous ... du courage.",
+    "options": ["ayons", "avons", "avions", "aurons"],
+    "answer": "ayons",
+    "image": "💪",
+    "explanation": "Subjonctif présent : que nous ayons."
+  },
+  {
+    "question": "Passé simple de 'venir' :",
+    "example": "Ils ... nous voir.",
+    "options": ["vinrent", "venaient", "sont venus", "viendront"],
+    "answer": "vinrent",
+    "image": "👥",
+    "explanation": "Au passé simple : ils vinrent."
+  }
+]

@@ -197,6 +197,26 @@
       </div>
     </div>
 
+    <div v-else-if="subject === 'conjugation'" class="exercises-section">
+      <div class="exercise-container">
+        <QCMExercise 
+          :level="level"
+          subject="conjugation"
+          title="Conjugaison"
+        />
+      </div>
+    </div>
+
+    <div v-else-if="subject === 'vocabulary'" class="exercises-section">
+      <div class="exercise-container">
+        <QCMExercise 
+          :level="level"
+          subject="vocabulary"
+          title="Vocabulaire"
+        />
+      </div>
+    </div>
+
     <div class="progress-link">
       <router-link to="/progression" class="btn-progress">
         📊 Voir ma progression
@@ -235,6 +255,8 @@ const subjectData = computed(() => {
     french: { name: 'Français', icon: '✏️' },
     reading: { name: 'Lecture Fluide', icon: '📖' },
     grammar: { name: 'Grammaire', icon: '📝' },
+    conjugation: { name: 'Conjugaison', icon: '🔤' },
+    vocabulary: { name: 'Vocabulaire', icon: '📚' },
     history: { name: 'Histoire', icon: '📜' },
     geography: { name: 'Géographie', icon: '🗺️' }
   }

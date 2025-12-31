@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Quelle est la bonne conjugaison ?",
+    "example": "Je ... à l'école.",
+    "options": ["vais", "va", "allez", "allons"],
+    "answer": "vais",
+    "image": "🚶",
+    "explanation": "Avec 'je', le verbe aller devient 'vais'."
+  },
+  {
+    "question": "Complète avec le bon verbe :",
+    "example": "Tu ... un livre.",
+    "options": ["lis", "lit", "lisons", "lisent"],
+    "answer": "lis",
+    "image": "📖",
+    "explanation": "Avec 'tu', on écrit 'lis'."
+  },
+  {
+    "question": "Quel verbe est au présent ?",
+    "example": "Il ...",
+    "options": ["mange", "mangera", "mangeait", "a mangé"],
+    "answer": "mange",
+    "image": "🍽️",
+    "explanation": "'Mange' est au présent. Les autres sont au futur, imparfait ou passé composé."
+  },
+  {
+    "question": "Conjugue le verbe être :",
+    "example": "Nous ... contents.",
+    "options": ["sommes", "êtes", "sont", "est"],
+    "answer": "sommes",
+    "image": "😊",
+    "explanation": "Avec 'nous', le verbe être devient 'sommes'."
+  },
+  {
+    "question": "Conjugue le verbe avoir :",
+    "example": "J'... un chien.",
+    "options": ["ai", "as", "a", "ont"],
+    "answer": "ai",
+    "image": "🐕",
+    "explanation": "Avec 'j'', le verbe avoir devient 'ai'."
+  },
+  {
+    "question": "Quelle est la bonne forme ?",
+    "example": "Ils ... dans le jardin.",
+    "options": ["jouent", "joue", "joues", "jouons"],
+    "answer": "jouent",
+    "image": "⚽",
+    "explanation": "Avec 'ils', on ajoute '-ent' : jouent."
+  },
+  {
+    "question": "Conjugue 'faire' au présent :",
+    "example": "Tu ... tes devoirs.",
+    "options": ["fais", "fait", "faisons", "font"],
+    "answer": "fais",
+    "image": "✏️",
+    "explanation": "Avec 'tu', le verbe faire devient 'fais'."
+  },
+  {
+    "question": "Quelle est la forme correcte ?",
+    "example": "Elle ... une chanson.",
+    "options": ["chante", "chantes", "chantent", "chantons"],
+    "answer": "chante",
+    "image": "🎵",
+    "explanation": "Avec 'elle', on écrit 'chante' (pas de 's')."
+  },
+  {
+    "question": "Conjugue 'venir' :",
+    "example": "Je ... à la maison.",
+    "options": ["viens", "vient", "venons", "viennent"],
+    "answer": "viens",
+    "image": "🏠",
+    "explanation": "Avec 'je', le verbe venir devient 'viens'."
+  },
+  {
+    "question": "Le verbe 'être' au présent avec 'vous' :",
+    "example": "Vous ... gentils.",
+    "options": ["êtes", "sommes", "sont", "est"],
+    "answer": "êtes",
+    "image": "😊",
+    "explanation": "Avec 'vous', le verbe être devient 'êtes'."
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "question": "Conjugue 'faire' à l'imparfait :",
+    "example": "Nous ... nos devoirs.",
+    "options": ["faisions", "faisons", "ferons", "avons fait"],
+    "answer": "faisions",
+    "image": "📝",
+    "explanation": "À l'imparfait : nous faisions."
+  },
+  {
+    "question": "Passé composé avec 'être' :",
+    "example": "Elle ... partie tôt.",
+    "options": ["est", "a", "était", "sera"],
+    "answer": "est",
+    "image": "🚪",
+    "explanation": "Avec le verbe partir, on utilise l'auxiliaire être : elle est partie."
+  },
+  {
+    "question": "Futur simple de 'venir' :",
+    "example": "Ils ... demain.",
+    "options": ["viendront", "viennent", "venaient", "sont venus"],
+    "answer": "viendront",
+    "image": "📅",
+    "explanation": "Au futur simple : ils viendront."
+  },
+  {
+    "question": "Quel est le groupe du verbe 'finir' ?",
+    "options": ["2e groupe", "1er groupe", "3e groupe", "4e groupe"],
+    "answer": "2e groupe",
+    "image": "🔢",
+    "explanation": "Les verbes en -ir qui font -issons au présent sont du 2e groupe."
+  },
+  {
+    "question": "Conjugue 'prendre' au présent :",
+    "example": "Tu ... ton cartable.",
+    "options": ["prends", "prend", "prenons", "prennent"],
+    "answer": "prends",
+    "image": "🎒",
+    "explanation": "Au présent avec 'tu' : tu prends."
+  },
+  {
+    "question": "Imparfait de 'avoir' :",
+    "example": "J'... peur du noir.",
+    "options": ["avais", "ai", "aurai", "ai eu"],
+    "answer": "avais",
+    "image": "😰",
+    "explanation": "À l'imparfait : j'avais."
+  },
+  {
+    "question": "Accord du participe passé :",
+    "example": "Les fleurs que j'ai ...",
+    "options": ["cueillies", "cueilli", "cueille", "cueillie"],
+    "answer": "cueillies",
+    "image": "🌸",
+    "explanation": "COD placé avant : accord avec 'les fleurs' (féminin pluriel)."
+  },
+  {
+    "question": "Conditionnel présent de 'aimer' :",
+    "example": "Je ... partir en vacances.",
+    "options": ["aimerais", "aime", "aimais", "aimerai"],
+    "answer": "aimerais",
+    "image": "🏖️",
+    "explanation": "Au conditionnel présent : j'aimerais."
+  },
+  {
+    "question": "Présent de l'indicatif :",
+    "example": "Vous ... (dire) la vérité.",
+    "options": ["dites", "dise", "disez", "dit"],
+    "answer": "dites",
+    "image": "💬",
+    "explanation": "Avec 'vous', dire devient 'dites' (irrégulier)."
+  },
+  {
+    "question": "Verbe pronominal au passé composé :",
+    "example": "Elles se sont ...",
+    "options": ["levées", "levé", "levés", "lever"],
+    "answer": "levées",
+    "image": "🛏️",
+    "explanation": "Accord avec le sujet 'elles' (féminin pluriel)."
+  }
+]

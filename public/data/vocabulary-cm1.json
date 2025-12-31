@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Quel est le synonyme de 'perspicace' ?",
+    "options": ["clairvoyant", "aveugle", "stupide", "lent"],
+    "answer": "clairvoyant",
+    "image": "🔍",
+    "explanation": "'Perspicace' et 'clairvoyant' signifient avoir une bonne compréhension."
+  },
+  {
+    "question": "L'antonyme de 'bienveillance' est :",
+    "options": ["malveillance", "gentillesse", "bonté", "sympathie"],
+    "answer": "malveillance",
+    "image": "😈",
+    "explanation": "'Bienveillance' et 'malveillance' sont des contraires parfaits."
+  },
+  {
+    "question": "Le préfixe 'télé-' signifie :",
+    "options": ["à distance", "près", "dedans", "dehors"],
+    "answer": "à distance",
+    "image": "📺",
+    "explanation": "'Télé-' vient du grec et signifie 'au loin' (télévision, téléphone)."
+  },
+  {
+    "question": "Le suffixe '-able' dans 'mangeable' indique :",
+    "options": ["qui peut être", "qui ne peut pas être", "action de", "lieu de"],
+    "answer": "qui peut être",
+    "image": "🍽️",
+    "explanation": "'-able' signifie 'qui peut être' : mangeable = qu'on peut manger."
+  },
+  {
+    "question": "Champ lexical de la justice :",
+    "options": ["tribunal", "hôpital", "école", "marché"],
+    "answer": "tribunal",
+    "image": "⚖️",
+    "explanation": "Le tribunal fait partie du domaine de la justice."
+  },
+  {
+    "question": "Un paronyme de 'éminent' est :",
+    "options": ["imminent", "évident", "patient", "content"],
+    "answer": "imminent",
+    "image": "⏰",
+    "explanation": "Des paronymes se ressemblent : éminent (remarquable) ≠ imminent (proche)."
+  },
+  {
+    "question": "Sens figuré de 'dévorer un livre' :",
+    "options": ["lire avec passion", "manger le livre", "détruire le livre", "acheter le livre"],
+    "answer": "lire avec passion",
+    "image": "📖",
+    "explanation": "Au sens figuré, 'dévorer' signifie lire avec avidité."
+  },
+  {
+    "question": "De la famille de 'politique', on a :",
+    "options": ["politicien", "police", "poli", "politique"],
+    "answer": "politicien",
+    "image": "🗳️",
+    "explanation": "'Politique' et 'politicien' sont de la même famille."
+  },
+  {
+    "question": "Un euphémisme pour 'mourir' est :",
+    "options": ["s'éteindre", "tomber", "dormir", "partir"],
+    "answer": "s'éteindre",
+    "image": "🕯️",
+    "explanation": "Un euphémisme adoucit une réalité dure : 's'éteindre' pour 'mourir'."
+  },
+  {
+    "question": "Le radical dans 'reconstruction' est :",
+    "options": ["construct", "re", "ion", "tion"],
+    "answer": "construct",
+    "image": "🏗️",
+    "explanation": "Le radical porte le sens principal : 'construct' = construire."
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Quel est le synonyme de 'joli' ?",
+    "options": ["beau", "laid", "grand", "petit"],
+    "answer": "beau",
+    "image": "🌺",
+    "explanation": "'Joli' et 'beau' ont le même sens."
+  },
+  {
+    "question": "Quel est l'antonyme de 'rapide' ?",
+    "options": ["lent", "vite", "fort", "grand"],
+    "answer": "lent",
+    "image": "🐢",
+    "explanation": "'Rapide' et 'lent' sont des contraires."
+  },
+  {
+    "question": "De la famille de 'dent', on a :",
+    "options": ["dentiste", "bouche", "mâcher", "blanc"],
+    "answer": "dentiste",
+    "image": "🦷",
+    "explanation": "'Dent' et 'dentiste' sont de la même famille."
+  },
+  {
+    "question": "Un synonyme de 'commencer' est :",
+    "options": ["débuter", "finir", "continuer", "arrêter"],
+    "answer": "débuter",
+    "image": "🚀",
+    "explanation": "'Commencer' et 'débuter' veulent dire la même chose."
+  },
+  {
+    "question": "Le contraire de 'monter' est :",
+    "options": ["descendre", "grimper", "sauter", "courir"],
+    "answer": "descendre",
+    "image": "⬇️",
+    "explanation": "'Monter' et 'descendre' sont des antonymes."
+  },
+  {
+    "question": "Quel mot appartient au champ lexical de l'école ?",
+    "options": ["cahier", "assiette", "lit", "voiture"],
+    "answer": "cahier",
+    "image": "📓",
+    "explanation": "Un cahier est utilisé à l'école."
+  },
+  {
+    "question": "De la famille de 'chaussure', on a :",
+    "options": ["chausser", "pied", "marcher", "semelle"],
+    "answer": "chausser",
+    "image": "👟",
+    "explanation": "'Chaussure' et 'chausser' sont de la même famille."
+  },
+  {
+    "question": "Un synonyme de 'crier' est :",
+    "options": ["hurler", "chuchoter", "parler", "rire"],
+    "answer": "hurler",
+    "image": "📢",
+    "explanation": "'Crier' et 'hurler' ont un sens proche."
+  },
+  {
+    "question": "Le contraire de 'plein' est :",
+    "options": ["vide", "rempli", "lourd", "grand"],
+    "answer": "vide",
+    "image": "🥤",
+    "explanation": "'Plein' et 'vide' sont des antonymes."
+  },
+  {
+    "question": "Quel mot appartient au champ lexical de la mer ?",
+    "options": ["vague", "montagne", "forêt", "désert"],
+    "answer": "vague",
+    "image": "🌊",
+    "explanation": "Les vagues sont à la mer."
+  }
+]

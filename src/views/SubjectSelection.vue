@@ -67,6 +67,27 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'grammar',
+      name: 'Grammaire',
+      icon: '📝',
+      description: 'Classes de mots',
+      exerciseCount: 1
+    },
+    {
+      id: 'conjugation',
+      name: 'Conjugaison',
+      icon: '🔤',
+      description: 'Verbes au présent',
+      exerciseCount: 1
+    },
+    {
+      id: 'vocabulary',
+      name: 'Vocabulaire',
+      icon: '📚',
+      description: 'Synonymes et antonymes',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -108,6 +129,20 @@ const subjectsByLevel = {
       name: 'Grammaire',
       icon: '📝',
       description: 'Noms, verbes et adjectifs',
+      exerciseCount: 1
+    },
+    {
+      id: 'conjugation',
+      name: 'Conjugaison',
+      icon: '🔤',
+      description: 'Temps simples et composés',
+      exerciseCount: 1
+    },
+    {
+      id: 'vocabulary',
+      name: 'Vocabulaire',
+      icon: '📚',
+      description: 'Familles de mots et champs lexicaux',
       exerciseCount: 1
     },
     {
@@ -155,6 +190,20 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'conjugation',
+      name: 'Conjugaison',
+      icon: '🔤',
+      description: 'Temps complexes et accords',
+      exerciseCount: 1
+    },
+    {
+      id: 'vocabulary',
+      name: 'Vocabulaire',
+      icon: '📚',
+      description: 'Préfixes, suffixes et sens figuré',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -175,7 +224,7 @@ const subjectsByLevel = {
       name: 'Mathématiques',
       icon: '🔢',
       description: 'Toutes les opérations',
-      exerciseCount: 4
+      exerciseCount: 7
     },
     {
       id: 'french',
@@ -199,6 +248,20 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'conjugation',
+      name: 'Conjugaison',
+      icon: '🔤',
+      description: 'Temps littéraires et subjonctif',
+      exerciseCount: 1
+    },
+    {
+      id: 'vocabulary',
+      name: 'Vocabulaire',
+      icon: '📚',
+      description: 'Étymologie et figures de style',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -219,7 +282,7 @@ const subjectsByLevel = {
       name: 'Mathématiques',
       icon: '🔢',
       description: 'Toutes les opérations',
-      exerciseCount: 4
+      exerciseCount: 7
     },
     {
       id: 'french',
@@ -236,6 +299,27 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'grammar',
+      name: 'Grammaire',
+      icon: '📝',
+      description: 'Analyse grammaticale complète',
+      exerciseCount: 1
+    },
+    {
+      id: 'conjugation',
+      name: 'Conjugaison',
+      icon: '🔤',
+      description: 'Formes complexes et voix passive',
+      exerciseCount: 1
+    },
+    {
+      id: 'vocabulary',
+      name: 'Vocabulaire',
+      icon: '📚',
+      description: 'Registres de langue et rhétorique',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -247,7 +331,8 @@ const subjectsByLevel = {
       name: 'Géographie',
       icon: '🗺️',
       description: 'L\'Europe et l\'Union européenne',
-      exerciseCount: 1    }
+      exerciseCount: 1
+    }
   ]
 }
 

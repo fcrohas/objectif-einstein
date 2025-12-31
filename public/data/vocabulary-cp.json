@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Quel mot veut dire la même chose que 'content' ?",
+    "options": ["heureux", "triste", "fatigué", "en colère"],
+    "answer": "heureux",
+    "image": "😊",
+    "explanation": "'Content' et 'heureux' sont des synonymes."
+  },
+  {
+    "question": "Quel est le contraire de 'grand' ?",
+    "options": ["petit", "gros", "long", "large"],
+    "answer": "petit",
+    "image": "📏",
+    "explanation": "'Grand' et 'petit' sont des antonymes."
+  },
+  {
+    "question": "Quel mot de la même famille que 'lait' ?",
+    "options": ["laitier", "boire", "blanc", "vache"],
+    "answer": "laitier",
+    "image": "🥛",
+    "explanation": "'Lait' et 'laitier' sont de la même famille de mots."
+  },
+  {
+    "question": "Quel mot veut dire le contraire de 'chaud' ?",
+    "options": ["froid", "tiède", "brûlant", "doux"],
+    "answer": "froid",
+    "image": "❄️",
+    "explanation": "'Chaud' et 'froid' sont des antonymes."
+  },
+  {
+    "question": "Quel animal vit dans l'eau ?",
+    "options": ["poisson", "chien", "chat", "oiseau"],
+    "answer": "poisson",
+    "image": "🐟",
+    "explanation": "Le poisson est un animal aquatique."
+  },
+  {
+    "question": "Quel mot veut dire 'très fatigué' ?",
+    "options": ["épuisé", "content", "joyeux", "calme"],
+    "answer": "épuisé",
+    "image": "😴",
+    "explanation": "'Épuisé' veut dire très fatigué."
+  },
+  {
+    "question": "Où trouve-t-on des livres ?",
+    "options": ["bibliothèque", "boulangerie", "boucherie", "pharmacie"],
+    "answer": "bibliothèque",
+    "image": "📚",
+    "explanation": "On trouve des livres à la bibliothèque."
+  },
+  {
+    "question": "Quel est le contraire de 'jour' ?",
+    "options": ["nuit", "soir", "matin", "midi"],
+    "answer": "nuit",
+    "image": "🌙",
+    "explanation": "'Jour' et 'nuit' sont des antonymes."
+  },
+  {
+    "question": "Qui fait le pain ?",
+    "options": ["boulanger", "boucher", "coiffeur", "docteur"],
+    "answer": "boulanger",
+    "image": "🥖",
+    "explanation": "Le boulanger fabrique le pain."
+  },
+  {
+    "question": "Quel mot de la famille de 'fleur' ?",
+    "options": ["fleuriste", "jardin", "arbre", "feuille"],
+    "answer": "fleuriste",
+    "image": "🌸",
+    "explanation": "'Fleur' et 'fleuriste' sont de la même famille."
+  }
+]
