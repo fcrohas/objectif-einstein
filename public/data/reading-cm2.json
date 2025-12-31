@@ -1,0 +1,38 @@
+{
+  "title": "Le voyage dans le temps de Léo",
+  "text": [
+    "Léo avait toujours été fasciné par l'histoire et les sciences. Ce matin-là, en visitant le musée des sciences avec sa classe, il découvrit une salle secrète qu'aucun de ses camarades ne semblait remarquer. Poussé par la curiosité, il s'y glissa discrètement pendant que le groupe admirait une exposition sur les dinosaures.",
+    "La salle était remplie d'objets étranges et mystérieux. Au centre trônait une machine extraordinaire, couverte de cadrans lumineux et de boutons multicolores. Une inscription gravée sur le socle indiquait : 'Machine temporelle expérimentale - Ne pas toucher'. Évidemment, Léo ne put résister à la tentation.",
+    "Il appuya sur le bouton central, et immédiatement, la machine se mit à vibrer. Une lumière aveuglante l'enveloppa, et quand il rouvrit les yeux, il se trouvait dans un endroit complètement différent. Il était toujours dans un musée, mais tout paraissait ancien : les visiteurs portaient des vêtements démodés, et les voitures qu'il apercevait par la fenêtre ressemblaient à celles des années 1950.",
+    "Léo comprit qu'il avait voyagé dans le passé. Au début paniqué, il se souvint que sa grand-mère lui avait souvent parlé de cette époque. Il décida d'explorer prudemment, observant les différences avec son époque. Les gens semblaient plus calmes, il n'y avait pas de smartphones, et les enfants jouaient dans la rue avec des cerceaux et des billes.",
+    "Après avoir passé quelques heures fascinantes dans le passé, Léo retrouva la machine. Cette fois-ci, il appuya sur le bouton avec précaution et parvint à revenir à son époque. Personne ne s'était aperçu de son absence. Il décida de garder cette aventure secrète, mais son regard sur le monde avait changé. Il appréciait maintenant davantage la technologie moderne tout en comprenant que chaque époque avait son charme unique."
+  ],
+  "wordCount": 320,
+  "questions": [
+    {
+      "question": "Où Léo fait-il sa découverte ?",
+      "options": ["Dans une salle secrète du musée", "Dans sa chambre", "À l'école", "Dans la rue"],
+      "answer": "Dans une salle secrète du musée"
+    },
+    {
+      "question": "Qu'est-ce que Léo trouve dans la salle secrète ?",
+      "options": ["Une machine temporelle", "Un trésor", "Des livres anciens", "Des dinosaures"],
+      "answer": "Une machine temporelle"
+    },
+    {
+      "question": "À quelle époque Léo voyage-t-il ?",
+      "options": ["Les années 1950", "Le Moyen Âge", "L'Antiquité", "Le futur"],
+      "answer": "Les années 1950"
+    },
+    {
+      "question": "Avec quoi les enfants jouaient-ils à cette époque ?",
+      "options": ["Des cerceaux et des billes", "Des smartphones", "Des jeux vidéo", "Des tablettes"],
+      "answer": "Des cerceaux et des billes"
+    },
+    {
+      "question": "Quelle leçon Léo tire-t-il de son aventure ?",
+      "options": ["Chaque époque a son charme unique", "Le passé est mieux que le présent", "Il faut toujours obéir", "Les musées sont ennuyeux"],
+      "answer": "Chaque époque a son charme unique"
+    }
+  ]
+}

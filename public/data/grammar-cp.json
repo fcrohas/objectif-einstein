@@ -1,0 +1,77 @@
+[
+  {
+    "category": "Les mots",
+    "question": "Quel est le nom d'un animal ?",
+    "example": "Le chat miaule.",
+    "options": ["chat", "miaule", "le"],
+    "answer": "chat",
+    "explanation": "Le chat est un animal, c'est un nom."
+  },
+  {
+    "category": "Les mots",
+    "question": "Quel est le nom d'une personne ?",
+    "example": "Papa lit un livre.",
+    "options": ["papa", "lit", "livre"],
+    "answer": "papa",
+    "explanation": "Papa désigne une personne, c'est un nom."
+  },
+  {
+    "category": "Le genre",
+    "question": "Est-ce que 'chat' est masculin ou féminin ?",
+    "options": ["masculin", "féminin"],
+    "answer": "masculin",
+    "explanation": "On dit 'un chat', donc c'est masculin."
+  },
+  {
+    "category": "Le genre",
+    "question": "Est-ce que 'maison' est masculin ou féminin ?",
+    "options": ["masculin", "féminin"],
+    "answer": "féminin",
+    "explanation": "On dit 'une maison', donc c'est féminin."
+  },
+  {
+    "category": "Le nombre",
+    "question": "Combien y a-t-il de chats ?",
+    "example": "Les chats jouent.",
+    "options": ["un seul", "plusieurs"],
+    "answer": "plusieurs",
+    "explanation": "'Les chats' avec un 's' = plusieurs chats."
+  },
+  {
+    "category": "La phrase",
+    "question": "Quel mot manque ?",
+    "example": "Le chien ... dans le jardin.",
+    "options": ["court", "maison", "rouge"],
+    "answer": "court",
+    "explanation": "'Le chien court' : le verbe dit ce que fait le chien."
+  },
+  {
+    "category": "La phrase",
+    "question": "Qui fait l'action ?",
+    "example": "Léa mange une pomme.",
+    "options": ["Léa", "mange", "pomme"],
+    "answer": "Léa",
+    "explanation": "Léa est celle qui mange, c'est elle qui fait l'action."
+  },
+  {
+    "category": "Les déterminants",
+    "question": "Quel mot va devant 'arbre' ?",
+    "options": ["un", "une", "des"],
+    "answer": "un",
+    "explanation": "On dit 'un arbre' (masculin)."
+  },
+  {
+    "category": "Les déterminants",
+    "question": "Quel mot va devant 'fleur' ?",
+    "options": ["un", "une", "le"],
+    "answer": "une",
+    "explanation": "On dit 'une fleur' (féminin)."
+  },
+  {
+    "category": "L'ordre des mots",
+    "question": "Quelle phrase est correcte ?",
+    "options": ["Le chat dort.", "Dort le chat.", "Chat le dort."],
+    "answer": "Le chat dort.",
+    "explanation": "L'ordre correct : sujet + verbe."
+  }
+]

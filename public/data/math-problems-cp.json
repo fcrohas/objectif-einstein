@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Marie a 3 billes. Son ami Tom lui en donne 2 de plus.",
+    "question": "Combien de billes a Marie maintenant ?",
+    "answer": "5",
+    "explanation": "3 + 2 = 5 billes"
+  },
+  {
+    "text": "Il y a 5 oiseaux sur une branche. 2 oiseaux s'envolent.",
+    "question": "Combien d'oiseaux restent sur la branche ?",
+    "answer": "3",
+    "explanation": "5 - 2 = 3 oiseaux"
+  },
+  {
+    "text": "Paul a 4 bonbons. Julie a 3 bonbons.",
+    "question": "Combien ont-ils de bonbons en tout ?",
+    "answer": "7",
+    "explanation": "4 + 3 = 7 bonbons"
+  },
+  {
+    "text": "Léa a 8 crayons. Elle en prête 3 à son amie.",
+    "question": "Combien de crayons lui reste-t-il ?",
+    "answer": "5",
+    "explanation": "8 - 3 = 5 crayons"
+  },
+  {
+    "text": "Dans une boîte, il y a 6 pommes rouges et 2 pommes vertes.",
+    "question": "Combien y a-t-il de pommes en tout ?",
+    "answer": "8",
+    "explanation": "6 + 2 = 8 pommes"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "title": "Le chat et la souris",
+  "text": [
+    "Il était une fois un petit chat gris. Il vivait dans une jolie maison.",
+    "Un jour, il voit une souris. La souris est toute petite. Elle a peur du chat.",
+    "Le chat court après la souris. Mais la souris est rapide ! Elle se cache dans un trou.",
+    "Le chat attend devant le trou. Il attend, il attend... Mais la souris ne sort pas.",
+    "Finalement, le chat part dormir. La souris peut sortir !"
+  ],
+  "wordCount": 73,
+  "questions": [
+    {
+      "question": "De quelle couleur est le chat ?",
+      "options": ["Gris", "Noir", "Blanc", "Roux"],
+      "answer": "Gris"
+    },
+    {
+      "question": "Où vit le chat ?",
+      "options": ["Dans une maison", "Dans la forêt", "Dans un arbre", "Dans un jardin"],
+      "answer": "Dans une maison"
+    },
+    {
+      "question": "Comment est la souris ?",
+      "options": ["Toute petite", "Très grosse", "Moyenne", "Grande"],
+      "answer": "Toute petite"
+    },
+    {
+      "question": "Où se cache la souris ?",
+      "options": ["Dans un trou", "Sous le lit", "Dans un placard", "Dehors"],
+      "answer": "Dans un trou"
+    },
+    {
+      "question": "Que fait le chat à la fin ?",
+      "options": ["Il part dormir", "Il mange", "Il joue", "Il court"],
+      "answer": "Il part dormir"
+    }
+  ]
+}

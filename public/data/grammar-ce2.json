@@ -1,0 +1,81 @@
+[
+  {
+    "category": "Les natures de mots",
+    "question": "Quelle est la nature de 'rapidement' ?",
+    "example": "Il court rapidement.",
+    "options": ["adverbe", "verbe", "adjectif", "nom"],
+    "answer": "adverbe",
+    "explanation": "'Rapidement' est un adverbe : il précise comment on court."
+  },
+  {
+    "category": "Les fonctions",
+    "question": "Quelle est la fonction de 'le livre' ?",
+    "example": "Paul lit le livre.",
+    "options": ["COD", "sujet", "verbe"],
+    "answer": "COD",
+    "explanation": "'Le livre' est Complément d'Objet Direct : Paul lit quoi ? Le livre."
+  },
+  {
+    "category": "Les groupes nominaux",
+    "question": "Quel est le groupe nominal ?",
+    "example": "Une petite fille joue.",
+    "options": ["Une petite fille", "joue", "petite"],
+    "answer": "Une petite fille",
+    "explanation": "Le groupe nominal = déterminant + adjectif + nom."
+  },
+  {
+    "category": "La conjugaison",
+    "question": "À quel temps est le verbe 'mangeait' ?",
+    "example": "Il mangeait une pomme.",
+    "options": ["imparfait", "présent", "futur"],
+    "answer": "imparfait",
+    "explanation": "'Mangeait' est à l'imparfait (passé)."
+  },
+  {
+    "category": "Le sujet",
+    "question": "Quel est le sujet du verbe 'aiment' ?",
+    "example": "Les enfants aiment jouer.",
+    "options": ["Les enfants", "aiment", "jouer"],
+    "answer": "Les enfants",
+    "explanation": "Les enfants : c'est eux qui font l'action d'aimer."
+  },
+  {
+    "category": "L'accord du verbe",
+    "question": "Quelle phrase est correcte ?",
+    "options": ["Les chiens aboient.", "Les chiens aboie.", "Le chiens aboient."],
+    "answer": "Les chiens aboient.",
+    "explanation": "Pluriel : 'Les chiens' (sujet pluriel) = 'aboient' (verbe au pluriel)."
+  },
+  {
+    "category": "L'adjectif qualificatif",
+    "question": "Où est l'adjectif qualificatif ?",
+    "example": "Un grand jardin fleuri.",
+    "options": ["grand et fleuri", "jardin", "un"],
+    "answer": "grand et fleuri",
+    "explanation": "'Grand' et 'fleuri' sont des adjectifs qui qualifient 'jardin'."
+  },
+  {
+    "category": "Les pronoms",
+    "question": "Par quel pronom peut-on remplacer 'Marie et Julie' ?",
+    "example": "Marie et Julie jouent.",
+    "options": ["elles", "ils", "elle"],
+    "answer": "elles",
+    "explanation": "Marie et Julie = deux filles = elles (féminin pluriel)."
+  },
+  {
+    "category": "Les compléments",
+    "question": "Quelle est la fonction de 'dans le parc' ?",
+    "example": "Les enfants jouent dans le parc.",
+    "options": ["complément de lieu", "sujet", "COD"],
+    "answer": "complément de lieu",
+    "explanation": "'Dans le parc' indique où se passe l'action : complément de lieu."
+  },
+  {
+    "category": "La phrase",
+    "question": "Quel type de phrase ?",
+    "example": "Viens ici !",
+    "options": ["impérative", "interrogative", "déclarative"],
+    "answer": "impérative",
+    "explanation": "La phrase impérative donne un ordre ou un conseil."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Le périmètre d'un carré de côté 12 cm est :",
+    "options": ["48 cm", "144 cm", "24 cm", "36 cm"],
+    "answer": "48 cm",
+    "image": "🟦"
+  },
+  {
+    "question": "L'aire d'un rectangle de longueur 15 m et largeur 8 m est :",
+    "options": ["120 m²", "46 m²", "23 m²", "60 m²"],
+    "answer": "120 m²",
+    "image": "▭"
+  },
+  {
+    "question": "Le volume d'un cube de 5 cm d'arête est :",
+    "options": ["125 cm³", "25 cm³", "75 cm³", "100 cm³"],
+    "answer": "125 cm³",
+    "image": "📦"
+  },
+  {
+    "question": "La somme des angles d'un triangle est toujours égale à :",
+    "options": ["180°", "90°", "360°", "270°"],
+    "answer": "180°",
+    "image": "🔺"
+  },
+  {
+    "question": "Le diamètre d'un cercle est le double de :",
+    "options": ["Son rayon", "Sa circonférence", "Son aire", "Son périmètre"],
+    "answer": "Son rayon",
+    "image": "⭕"
+  },
+  {
+    "question": "L'aire d'un carré de côté 9 cm est :",
+    "options": ["81 cm²", "36 cm²", "18 cm²", "27 cm²"],
+    "answer": "81 cm²",
+    "image": "🟦"
+  },
+  {
+    "question": "Un pavé droit de dimensions 10×4×3 cm a un volume de :",
+    "options": ["120 cm³", "40 cm³", "30 cm³", "17 cm³"],
+    "answer": "120 cm³",
+    "image": "📦"
+  },
+  {
+    "question": "Combien de faces a un cube ?",
+    "options": ["6", "8", "12", "4"],
+    "answer": "6",
+    "image": "📦"
+  },
+  {
+    "question": "Un triangle isocèle a :",
+    "options": ["2 côtés égaux", "3 côtés égaux", "Aucun côté égal", "4 côtés égaux"],
+    "answer": "2 côtés égaux",
+    "image": "🔺"
+  },
+  {
+    "question": "Le périmètre d'un triangle de côtés 5, 7 et 8 cm est :",
+    "options": ["20 cm", "15 cm", "12 cm", "25 cm"],
+    "answer": "20 cm",
+    "image": "🔺"
+  }
+]

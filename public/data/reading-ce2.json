@@ -1,0 +1,38 @@
+{
+  "title": "L'aventure de Clara dans la forêt",
+  "text": [
+    "Clara adorait se promener dans la forêt près de chez elle. Aujourd'hui, elle avait décidé d'explorer un nouveau sentier qu'elle n'avait jamais emprunté.",
+    "Le chemin était étroit et sinueux. De chaque côté, de grands arbres formaient une voûte verte au-dessus de sa tête. Les oiseaux chantaient joyeusement. Clara avançait prudemment, observant tout ce qui l'entourait.",
+    "Soudain, elle aperçut quelque chose qui brillait derrière un buisson. Intriguée, elle s'approcha doucement. C'était un magnifique papillon aux ailes bleues et argentées ! Clara n'en avait jamais vu d'aussi beau.",
+    "Elle décida de le suivre. Le papillon volait de fleur en fleur, l'emmenant de plus en plus profond dans la forêt. Après quelques minutes, Clara réalisa qu'elle ne reconnaissait plus l'endroit où elle se trouvait.",
+    "Heureusement, elle se souvint des conseils de son père : il faut toujours marquer son chemin. Elle avait laissé des petits cailloux blancs tout le long du sentier. En les suivant, elle retrouva facilement le chemin du retour. Quelle aventure !"
+  ],
+  "wordCount": 180,
+  "questions": [
+    {
+      "question": "Que fait Clara aujourd'hui de spécial ?",
+      "options": ["Elle explore un nouveau sentier", "Elle reste à la maison", "Elle va à l'école", "Elle rend visite à des amis"],
+      "answer": "Elle explore un nouveau sentier"
+    },
+    {
+      "question": "Qu'est-ce que Clara découvre derrière le buisson ?",
+      "options": ["Un papillon magnifique", "Un trésor", "Un petit animal", "Des fleurs rares"],
+      "answer": "Un papillon magnifique"
+    },
+    {
+      "question": "De quelle couleur sont les ailes du papillon ?",
+      "options": ["Bleues et argentées", "Rouges et jaunes", "Vertes et dorées", "Noires et blanches"],
+      "answer": "Bleues et argentées"
+    },
+    {
+      "question": "Qu'est-ce que Clara utilise pour retrouver son chemin ?",
+      "options": ["Des petits cailloux blancs", "Une boussole", "Un plan", "Des flèches"],
+      "answer": "Des petits cailloux blancs"
+    },
+    {
+      "question": "Qui a donné ce conseil à Clara ?",
+      "options": ["Son père", "Sa mère", "Sa grand-mère", "Son professeur"],
+      "answer": "Son père"
+    }
+  ]
+}

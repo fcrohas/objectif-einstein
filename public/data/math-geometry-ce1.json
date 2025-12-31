@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Un triangle qui a un angle droit s'appelle :",
+    "options": ["Triangle rectangle", "Triangle équilatéral", "Triangle isocèle", "Triangle quelconque"],
+    "answer": "Triangle rectangle",
+    "image": "📐"
+  },
+  {
+    "question": "Combien de sommets a un carré ?",
+    "options": ["4", "3", "5", "0"],
+    "answer": "4",
+    "image": "🟦"
+  },
+  {
+    "question": "Quelle est la formule du périmètre d'un carré de côté c ?",
+    "options": ["4 × c", "c × c", "2 × c", "c + c"],
+    "answer": "4 × c",
+    "image": "📏"
+  },
+  {
+    "question": "Un rectangle a 2 longueurs de 10 cm et 2 largeurs de 5 cm. Quel est son périmètre ?",
+    "options": ["30 cm", "50 cm", "15 cm", "20 cm"],
+    "answer": "30 cm",
+    "image": "▭"
+  },
+  {
+    "question": "Combien de côtés a un hexagone ?",
+    "options": ["6", "5", "7", "8"],
+    "answer": "6",
+    "image": "⬡"
+  }
+]

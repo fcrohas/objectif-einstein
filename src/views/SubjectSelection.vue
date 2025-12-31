@@ -50,7 +50,7 @@ const subjectsByLevel = {
       name: 'Mathématiques',
       icon: '🔢',
       description: 'Additions et soustractions',
-      exerciseCount: 2
+      exerciseCount: 5
     },
     {
       id: 'french',
@@ -58,6 +58,13 @@ const subjectsByLevel = {
       icon: '✏️',
       description: 'Orthographe par thèmes',
       exerciseCount: 6
+    },
+    {
+      id: 'reading',
+      name: 'Lecture Fluide',
+      icon: '📖',
+      description: 'Lire et comprendre un texte',
+      exerciseCount: 1
     },
     {
       id: 'history',
@@ -80,7 +87,7 @@ const subjectsByLevel = {
       name: 'Mathématiques',
       icon: '🔢',
       description: 'Additions, soustractions et multiplications',
-      exerciseCount: 3
+      exerciseCount: 6
     },
     {
       id: 'french',
@@ -88,6 +95,20 @@ const subjectsByLevel = {
       icon: '✏️',
       description: 'Orthographe par thèmes',
       exerciseCount: 6
+    },
+    {
+      id: 'reading',
+      name: 'Lecture Fluide',
+      icon: '📖',
+      description: 'Lire et comprendre un texte',
+      exerciseCount: 1
+    },
+    {
+      id: 'grammar',
+      name: 'Grammaire',
+      icon: '📝',
+      description: 'Noms, verbes et adjectifs',
+      exerciseCount: 1
     },
     {
       id: 'history',
@@ -110,13 +131,27 @@ const subjectsByLevel = {
       name: 'Mathématiques',
       icon: '🔢',
       description: 'Toutes les opérations',
-      exerciseCount: 3
+      exerciseCount: 6
     },
     {
       id: 'french',
       name: 'Français',
       icon: '✏️',
       description: 'Orthographe et vocabulaire',
+      exerciseCount: 1
+    },
+    {
+      id: 'reading',
+      name: 'Lecture Fluide',
+      icon: '📖',
+      description: 'Lire et comprendre un texte',
+      exerciseCount: 1
+    },
+    {
+      id: 'grammar',
+      name: 'Grammaire',
+      icon: '📝',
+      description: 'Fonctions et groupes nominaux',
       exerciseCount: 1
     },
     {
@@ -150,6 +185,20 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'reading',
+      name: 'Lecture Fluide',
+      icon: '📖',
+      description: 'Lire et comprendre un texte',
+      exerciseCount: 1
+    },
+    {
+      id: 'grammar',
+      name: 'Grammaire',
+      icon: '📝',
+      description: 'Propositions et compléments',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -177,7 +226,15 @@ const subjectsByLevel = {
       name: 'Français',
       icon: '✏️',
       description: 'Orthographe complexe',
-      exerciseCount: 1    },
+      exerciseCount: 1
+    },
+    {
+      id: 'reading',
+      name: 'Lecture Fluide',
+      icon: '📖',
+      description: 'Lire et comprendre un texte',
+      exerciseCount: 1
+    },
     {
       id: 'history',
       name: 'Histoire',

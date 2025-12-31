@@ -1,0 +1,62 @@
+[
+  {
+    "question": "L'aire d'un triangle de base 10 cm et hauteur 6 cm est :",
+    "options": ["30 cm²", "60 cm²", "16 cm²", "20 cm²"],
+    "answer": "30 cm²",
+    "image": "🔺"
+  },
+  {
+    "question": "Le volume d'un pavé 12×5×4 cm est :",
+    "options": ["240 cm³", "60 cm³", "21 cm³", "120 cm³"],
+    "answer": "240 cm³",
+    "image": "📦"
+  },
+  {
+    "question": "Un cercle de rayon 5 cm a un diamètre de :",
+    "options": ["10 cm", "5 cm", "15 cm", "2,5 cm"],
+    "answer": "10 cm",
+    "image": "⭕"
+  },
+  {
+    "question": "L'aire d'un carré de périmètre 40 cm est :",
+    "options": ["100 cm²", "40 cm²", "20 cm²", "160 cm²"],
+    "answer": "100 cm²",
+    "image": "🟦"
+  },
+  {
+    "question": "Combien d'arêtes a un cube ?",
+    "options": ["12", "6", "8", "10"],
+    "answer": "12",
+    "image": "📦"
+  },
+  {
+    "question": "Le périmètre d'un rectangle d'aire 24 cm² et de longueur 8 cm est :",
+    "options": ["22 cm", "24 cm", "16 cm", "32 cm"],
+    "answer": "22 cm",
+    "image": "▭"
+  },
+  {
+    "question": "Un agrandissement d'échelle 3 multiplie les longueurs par :",
+    "options": ["3", "9", "6", "2"],
+    "answer": "3",
+    "image": "📏"
+  },
+  {
+    "question": "L'aire d'un triangle rectangle de côtés 6 et 8 cm (angle droit) est :",
+    "options": ["24 cm²", "48 cm²", "14 cm²", "12 cm²"],
+    "answer": "24 cm²",
+    "image": "📐"
+  },
+  {
+    "question": "Un cube de 1 dm d'arête a un volume de :",
+    "options": ["1 L", "1 cm³", "10 L", "100 mL"],
+    "answer": "1 L",
+    "image": "📦"
+  },
+  {
+    "question": "Si on double les dimensions d'un carré, son aire est multipliée par :",
+    "options": ["4", "2", "8", "16"],
+    "answer": "4",
+    "image": "🟦"
+  }
+]

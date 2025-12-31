@@ -1,0 +1,33 @@
+[
+  {
+    "text": "Dans une classe, il y a 12 filles et 15 garçons.",
+    "question": "Combien y a-t-il d'élèves en tout ?",
+    "answer": "27",
+    "explanation": "12 + 15 = 27 élèves"
+  },
+  {
+    "text": "Un paquet contient 24 bonbons. Julie en mange 8.",
+    "question": "Combien de bonbons reste-t-il ?",
+    "answer": "16",
+    "explanation": "24 - 8 = 16 bonbons"
+  },
+  {
+    "text": "Papa achète 5 paquets de 3 yaourts chacun.",
+    "question": "Combien de yaourts a-t-il achetés en tout ?",
+    "answer": "15",
+    "explanation": "5 × 3 = 15 yaourts"
+  },
+  {
+    "text": "Marie a 35 euros. Elle achète un livre à 12 euros et un cahier à 5 euros.",
+    "question": "Combien d'argent lui reste-t-il ?",
+    "answer": "18",
+    "unit": "euros",
+    "explanation": "35 - 12 - 5 = 18 euros"
+  },
+  {
+    "text": "Un fermier a 18 poules. Chaque poule pond 2 œufs par jour.",
+    "question": "Combien d'œufs aura-t-il en une journée ?",
+    "answer": "36",
+    "explanation": "18 × 2 = 36 œufs"
+  }
+]

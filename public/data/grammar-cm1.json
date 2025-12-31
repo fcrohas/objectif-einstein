@@ -1,0 +1,81 @@
+[
+  {
+    "category": "Les compléments",
+    "question": "Quelle est la fonction de 'à sa sœur' ?",
+    "example": "Paul parle à sa sœur.",
+    "options": ["COI", "COD", "sujet"],
+    "answer": "COI",
+    "explanation": "'À sa sœur' est COI (Complément d'Objet Indirect) : Paul parle à qui ?"
+  },
+  {
+    "category": "Les propositions",
+    "question": "Combien y a-t-il de verbes conjugués ?",
+    "example": "Je mange et je bois.",
+    "options": ["2", "1", "3"],
+    "answer": "2",
+    "explanation": "'Mange' et 'bois' sont deux verbes conjugués = 2 propositions."
+  },
+  {
+    "category": "Les pronoms",
+    "question": "Que remplace 'en' ?",
+    "example": "Des pommes ? J'en veux trois.",
+    "options": ["des pommes", "trois", "veux"],
+    "answer": "des pommes",
+    "explanation": "'En' remplace 'des pommes' : J'en veux = Je veux des pommes."
+  },
+  {
+    "category": "La voix passive",
+    "question": "Quelle phrase est à la voix passive ?",
+    "options": ["Le chat est attrapé par le chien.", "Le chat attrape le chien.", "Le chat court vite."],
+    "answer": "Le chat est attrapé par le chien.",
+    "explanation": "Voix passive : le sujet subit l'action (être + participe passé)."
+  },
+  {
+    "category": "Les compléments circonstanciels",
+    "question": "Quelle est la fonction de 'demain' ?",
+    "example": "Nous partirons demain.",
+    "options": ["CC de temps", "CC de lieu", "COD"],
+    "answer": "CC de temps",
+    "explanation": "'Demain' indique quand : complément circonstanciel de temps."
+  },
+  {
+    "category": "Les modes",
+    "question": "À quel mode est 'finir' ?",
+    "example": "Il faut finir ce travail.",
+    "options": ["infinitif", "indicatif", "impératif"],
+    "answer": "infinitif",
+    "explanation": "'Finir' est à l'infinitif (forme non conjuguée du verbe)."
+  },
+  {
+    "category": "L'attribut du sujet",
+    "question": "Quelle est la fonction de 'content' ?",
+    "example": "Paul est content.",
+    "options": ["attribut du sujet", "COD", "COI"],
+    "answer": "attribut du sujet",
+    "explanation": "'Content' est attribut du sujet (après le verbe être)."
+  },
+  {
+    "category": "Les déterminants",
+    "question": "Quelle est la nature de 'plusieurs' ?",
+    "example": "Plusieurs enfants jouent.",
+    "options": ["déterminant indéfini", "déterminant possessif", "déterminant démonstratif"],
+    "answer": "déterminant indéfini",
+    "explanation": "'Plusieurs' est un déterminant indéfini (quantité imprécise)."
+  },
+  {
+    "category": "La conjugaison",
+    "question": "À quel temps est 'aurait mangé' ?",
+    "example": "Il aurait mangé s'il avait eu faim.",
+    "options": ["conditionnel passé", "futur antérieur", "imparfait"],
+    "answer": "conditionnel passé",
+    "explanation": "'Aurait mangé' = conditionnel passé (auxiliaire au conditionnel + participe passé)."
+  },
+  {
+    "category": "Les expansions du nom",
+    "question": "Quelle est la nature de 'qui court' ?",
+    "example": "Le chien qui court est rapide.",
+    "options": ["proposition subordonnée relative", "COD", "adjectif"],
+    "answer": "proposition subordonnée relative",
+    "explanation": "'Qui court' est une proposition relative qui complète 'le chien'."
+  }
+]

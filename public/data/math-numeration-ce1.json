@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Quel nombre vient juste après 99 ?",
+    "options": ["100", "98", "101", "90"],
+    "answer": "100",
+    "image": "🔢"
+  },
+  {
+    "question": "Combien y a-t-il de dizaines dans 350 ?",
+    "options": ["35", "3", "5", "350"],
+    "answer": "35",
+    "image": "🔟"
+  },
+  {
+    "question": "Quel est le nombre le plus proche de 500 ?",
+    "options": ["498", "450", "600", "400"],
+    "answer": "498",
+    "image": "📊"
+  },
+  {
+    "question": "Comment écrit-on deux-cent-trente-cinq en chiffres ?",
+    "options": ["235", "253", "325", "523"],
+    "answer": "235",
+    "image": "✍️"
+  },
+  {
+    "question": "Quelle est la valeur du chiffre 7 dans 472 ?",
+    "options": ["70", "7", "700", "10"],
+    "answer": "70",
+    "image": "🔢"
+  },
+  {
+    "question": "Range du plus petit au plus grand : 125, 215, 152",
+    "options": ["125, 152, 215", "215, 152, 125", "152, 125, 215", "125, 215, 152"],
+    "answer": "125, 152, 215",
+    "image": "📊"
+  },
+  {
+    "question": "Quel nombre est entre 400 et 500 ?",
+    "options": ["450", "380", "510", "600"],
+    "answer": "450",
+    "image": "🎯"
+  },
+  {
+    "question": "Combien y a-t-il d'unités dans 478 ?",
+    "options": ["8", "7", "4", "478"],
+    "answer": "8",
+    "image": "🔢"
+  },
+  {
+    "question": "300 + 50 + 6 = ?",
+    "options": ["356", "365", "3056", "30056"],
+    "answer": "356",
+    "image": "➕"
+  },
+  {
+    "question": "Quel nombre complète : 250 + ? = 300",
+    "options": ["50", "25", "100", "150"],
+    "answer": "50",
+    "image": "❓"
+  }
+]

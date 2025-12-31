@@ -1,0 +1,81 @@
+[
+  {
+    "category": "L'analyse grammaticale",
+    "question": "Quelle est la classe grammaticale de 'cependant' ?",
+    "example": "Il pleut, cependant je sors.",
+    "options": ["conjonction de coordination", "adverbe", "préposition"],
+    "answer": "conjonction de coordination",
+    "explanation": "'Cependant' relie deux propositions : c'est une conjonction."
+  },
+  {
+    "category": "Les propositions",
+    "question": "Quelle est la nature de 'que tu viennes' ?",
+    "example": "Je veux que tu viennes.",
+    "options": ["proposition subordonnée conjonctive", "proposition indépendante", "proposition relative"],
+    "answer": "proposition subordonnée conjonctive",
+    "explanation": "'Que tu viennes' est introduite par 'que' : subordonnée conjonctive COD."
+  },
+  {
+    "category": "Les modes et temps",
+    "question": "À quel mode est 'vienne' ?",
+    "example": "Je veux que tu vienne demain.",
+    "options": ["subjonctif", "indicatif", "conditionnel"],
+    "answer": "subjonctif",
+    "explanation": "Après 'vouloir que' on utilise le subjonctif : 'que tu viennes'."
+  },
+  {
+    "category": "Les compléments",
+    "question": "Quelle est la fonction de 'avec courage' ?",
+    "example": "Il affronte ses peurs avec courage.",
+    "options": ["CC de manière", "CC de temps", "COI"],
+    "answer": "CC de manière",
+    "explanation": "'Avec courage' indique comment il affronte : CC de manière."
+  },
+  {
+    "category": "Les pronoms relatifs",
+    "question": "Que remplace 'dont' ?",
+    "example": "Le livre dont je parle est génial.",
+    "options": ["du livre (de + lequel)", "le livre", "je parle"],
+    "answer": "du livre (de + lequel)",
+    "explanation": "'Dont' remplace 'de + quelque chose' : je parle du livre."
+  },
+  {
+    "category": "L'accord du participe passé",
+    "question": "Quelle phrase est correcte ?",
+    "options": ["Les fleurs que j'ai cueillies.", "Les fleurs que j'ai cueilli.", "Les fleurs que j'ai cueillie."],
+    "answer": "Les fleurs que j'ai cueillies.",
+    "explanation": "COD placé avant : accord avec 'les fleurs' (féminin pluriel)."
+  },
+  {
+    "category": "Les types de phrases",
+    "question": "Quel est le type de cette phrase ?",
+    "example": "Comme ce paysage est beau !",
+    "options": ["exclamative", "interrogative", "déclarative"],
+    "answer": "exclamative",
+    "explanation": "La phrase exprime un sentiment fort : phrase exclamative."
+  },
+  {
+    "category": "Les discours",
+    "question": "Quel type de discours ?",
+    "example": "Il dit : « Je viendrai demain. »",
+    "options": ["discours direct", "discours indirect", "discours indirect libre"],
+    "answer": "discours direct",
+    "explanation": "Les guillemets et les deux-points marquent le discours direct."
+  },
+  {
+    "category": "Les valeurs des temps",
+    "question": "Quelle valeur a l'imparfait ici ?",
+    "example": "Si j'étais riche, je voyagerais.",
+    "options": ["hypothèse", "description", "habitude"],
+    "answer": "hypothèse",
+    "explanation": "L'imparfait après 'si' exprime une hypothèse irréelle."
+  },
+  {
+    "category": "Les figures de style",
+    "question": "Quelle figure de style ?",
+    "example": "Ses yeux sont deux étoiles.",
+    "options": ["métaphore", "comparaison", "personnification"],
+    "answer": "métaphore",
+    "explanation": "Métaphore : comparaison sans outil de comparaison (comme, tel que...)."
+  }
+]

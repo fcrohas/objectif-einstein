@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Quel nombre vient après 5 ?",
+    "options": ["6", "4", "7", "3"],
+    "answer": "6",
+    "image": "🔢"
+  },
+  {
+    "question": "Quel nombre vient avant 10 ?",
+    "options": ["9", "11", "8", "10"],
+    "answer": "9",
+    "image": "🔢"
+  },
+  {
+    "question": "Quel est le plus grand nombre ?",
+    "options": ["15", "8", "12", "9"],
+    "answer": "15",
+    "image": "📊"
+  },
+  {
+    "question": "Quel est le plus petit nombre ?",
+    "options": ["3", "7", "5", "9"],
+    "answer": "3",
+    "image": "📊"
+  },
+  {
+    "question": "Combien y a-t-il de dizaines dans 20 ?",
+    "options": ["2", "20", "0", "10"],
+    "answer": "2",
+    "image": "🔟"
+  },
+  {
+    "question": "Quel nombre est entre 7 et 9 ?",
+    "options": ["8", "6", "10", "7"],
+    "answer": "8",
+    "image": "🔢"
+  },
+  {
+    "question": "Combien font 10 + 10 ?",
+    "options": ["20", "100", "11", "0"],
+    "answer": "20",
+    "image": "➕"
+  },
+  {
+    "question": "Quelle est la bonne écriture du nombre dix-sept ?",
+    "options": ["17", "71", "16", "18"],
+    "answer": "17",
+    "image": "✍️"
+  },
+  {
+    "question": "Combien y a-t-il d'unités dans 14 ?",
+    "options": ["4", "1", "14", "10"],
+    "answer": "4",
+    "image": "🔢"
+  },
+  {
+    "question": "Quel nombre complète : 5 + ? = 10",
+    "options": ["5", "15", "10", "0"],
+    "answer": "5",
+    "image": "❓"
+  }
+]

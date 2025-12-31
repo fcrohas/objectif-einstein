@@ -1,0 +1,62 @@
+[
+  {
+    "question": "25% de 200 = ?",
+    "options": ["50", "25", "100", "75"],
+    "answer": "50",
+    "image": "%"
+  },
+  {
+    "question": "0,75 = ?/4",
+    "options": ["3", "1", "2", "4"],
+    "answer": "3",
+    "image": "🔢"
+  },
+  {
+    "question": "3,5 × 100 = ?",
+    "options": ["350", "35", "3 500", "3,05"],
+    "answer": "350",
+    "image": "✖️"
+  },
+  {
+    "question": "45,6 ÷ 10 = ?",
+    "options": ["4,56", "456", "0,456", "45,06"],
+    "answer": "4,56",
+    "image": "➗"
+  },
+  {
+    "question": "Quel est le nombre décimal entre 7,2 et 7,3 ?",
+    "options": ["7,25", "7,4", "7,1", "8"],
+    "answer": "7,25",
+    "image": "🎯"
+  },
+  {
+    "question": "5/8 est égal à :",
+    "options": ["0,625", "0,58", "0,8", "0,5"],
+    "answer": "0,625",
+    "image": "🔢"
+  },
+  {
+    "question": "Si 3 objets coûtent 12 euros, combien coûtent 5 objets ?",
+    "options": ["20 euros", "15 euros", "18 euros", "25 euros"],
+    "answer": "20 euros",
+    "image": "💶"
+  },
+  {
+    "question": "15% de 80 = ?",
+    "options": ["12", "15", "10", "20"],
+    "answer": "12",
+    "image": "%"
+  },
+  {
+    "question": "123 456 789 : combien y a-t-il de millions ?",
+    "options": ["123", "456", "789", "1"],
+    "answer": "123",
+    "image": "🔢"
+  },
+  {
+    "question": "2,4 × 2,5 = ?",
+    "options": ["6", "4,9", "5", "12"],
+    "answer": "6",
+    "image": "✖️"
+  }
+]

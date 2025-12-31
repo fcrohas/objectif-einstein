@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Un carré de côté 5 cm a un périmètre de :",
+    "options": ["20 cm", "25 cm", "10 cm", "15 cm"],
+    "answer": "20 cm",
+    "image": "🟦"
+  },
+  {
+    "question": "L'aire d'un rectangle de longueur 6 cm et largeur 4 cm est :",
+    "options": ["24 cm²", "20 cm²", "10 cm²", "12 cm²"],
+    "answer": "24 cm²",
+    "image": "▭"
+  },
+  {
+    "question": "Combien y a-t-il de côtés dans un octogone ?",
+    "options": ["8", "6", "7", "9"],
+    "answer": "8",
+    "image": "⭕"
+  },
+  {
+    "question": "Deux droites qui ne se rencontrent jamais sont :",
+    "options": ["Parallèles", "Perpendiculaires", "Sécantes", "Obliques"],
+    "answer": "Parallèles",
+    "image": "📏"
+  },
+  {
+    "question": "Un triangle qui a tous ses côtés égaux s'appelle :",
+    "options": ["Triangle équilatéral", "Triangle rectangle", "Triangle isocèle", "Triangle quelconque"],
+    "answer": "Triangle équilatéral",
+    "image": "🔺"
+  },
+  {
+    "question": "Un angle droit mesure :",
+    "options": ["90°", "180°", "45°", "60°"],
+    "answer": "90°",
+    "image": "📐"
+  },
+  {
+    "question": "L'aire d'un carré de côté 7 cm est :",
+    "options": ["49 cm²", "28 cm²", "14 cm²", "35 cm²"],
+    "answer": "49 cm²",
+    "image": "🟦"
+  },
+  {
+    "question": "Le périmètre d'un rectangle de longueur 8 cm et largeur 3 cm est :",
+    "options": ["22 cm", "24 cm", "11 cm", "16 cm"],
+    "answer": "22 cm",
+    "image": "▭"
+  },
+  {
+    "question": "Combien d'axes de symétrie a un carré ?",
+    "options": ["4", "2", "1", "8"],
+    "answer": "4",
+    "image": "🔄"
+  },
+  {
+    "question": "Quelle figure n'a aucun axe de symétrie ?",
+    "options": ["Un triangle quelconque", "Un carré", "Un rectangle", "Un cercle"],
+    "answer": "Un triangle quelconque",
+    "image": "🔺"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "category": "Les noms",
+    "question": "Quel est le nom commun ?",
+    "example": "Mon chien s'appelle Rex.",
+    "options": ["chien", "Rex", "appelle"],
+    "answer": "chien",
+    "explanation": "Le chien est un nom commun (tous les chiens). Rex est un nom propre (un chien en particulier)."
+  },
+  {
+    "category": "Les noms",
+    "question": "Quel est le nom propre ?",
+    "example": "Marie joue dans le parc.",
+    "options": ["Marie", "joue", "parc"],
+    "answer": "Marie",
+    "explanation": "Marie est un nom propre (prénom), il commence par une majuscule."
+  },
+  {
+    "category": "Les verbes",
+    "question": "Quel est le verbe ?",
+    "example": "Les enfants courent vite.",
+    "options": ["enfants", "courent", "vite"],
+    "answer": "courent",
+    "explanation": "Le verbe dit ce que font les enfants : courent."
+  },
+  {
+    "category": "Les adjectifs",
+    "question": "Quel mot décrit le chat ?",
+    "example": "Le chat noir dort.",
+    "options": ["chat", "noir", "dort"],
+    "answer": "noir",
+    "explanation": "'Noir' est un adjectif qui décrit le chat."
+  },
+  {
+    "category": "Le pluriel",
+    "question": "Comment écrire 'chat' au pluriel ?",
+    "options": ["chats", "chates", "chat"],
+    "answer": "chats",
+    "explanation": "On ajoute un 's' pour faire le pluriel : chats."
+  },
+  {
+    "category": "Le féminin",
+    "question": "Comment dire 'petit' au féminin ?",
+    "options": ["petite", "petits", "petit"],
+    "answer": "petite",
+    "explanation": "On ajoute un 'e' au féminin : petite."
+  },
+  {
+    "category": "Le sujet",
+    "question": "Qui fait l'action ?",
+    "example": "Le chat attrape la souris.",
+    "options": ["Le chat", "attrape", "la souris"],
+    "answer": "Le chat",
+    "explanation": "Le chat est le sujet : c'est lui qui fait l'action."
+  },
+  {
+    "category": "Les déterminants",
+    "question": "Quel type de mot est 'le' ?",
+    "example": "Le soleil brille.",
+    "options": ["un déterminant", "un verbe", "un nom"],
+    "answer": "un déterminant",
+    "explanation": "'Le' est un déterminant (article défini)."
+  },
+  {
+    "category": "La phrase",
+    "question": "Où est le verbe ?",
+    "example": "Les oiseaux chantent dans l'arbre.",
+    "options": ["oiseaux", "chantent", "arbre"],
+    "answer": "chantent",
+    "explanation": "Le verbe est 'chantent' : il dit ce que font les oiseaux."
+  },
+  {
+    "category": "L'accord",
+    "question": "Quelle phrase est correcte ?",
+    "options": ["Les fleurs sont belles.", "Les fleurs sont beau.", "Les fleur sont belles."],
+    "answer": "Les fleurs sont belles.",
+    "explanation": "Pluriel + féminin : 'fleurs' et 'belles' s'accordent."
+  }
+]

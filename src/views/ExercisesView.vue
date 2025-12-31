@@ -52,6 +52,25 @@
           exercise-type="division"
           title="Divisions"
         />
+
+        <MathProblemExercise 
+          v-if="activeTab === 'problemes'"
+          :level="level"
+        />
+
+        <QCMExercise 
+          v-if="activeTab === 'numeration'"
+          :level="level"
+          subject="math-numeration"
+          title="Numération"
+        />
+
+        <QCMExercise 
+          v-if="activeTab === 'geometrie'"
+          :level="level"
+          subject="math-geometry"
+          title="Géométrie"
+        />
       </div>
     </div>
 
@@ -162,6 +181,22 @@
       </div>
     </div>
 
+    <div v-else-if="subject === 'reading'" class="exercises-section">
+      <div class="exercise-container">
+        <ReadingExercise 
+          :level="level"
+        />
+      </div>
+    </div>
+
+    <div v-else-if="subject === 'grammar'" class="exercises-section">
+      <div class="exercise-container">
+        <GrammarExercise 
+          :level="level"
+        />
+      </div>
+    </div>
+
     <div class="progress-link">
       <router-link to="/progression" class="btn-progress">
         📊 Voir ma progression
@@ -176,6 +211,9 @@ import { useRoute } from 'vue-router'
 import MathExercise from '../components/MathExercise.vue'
 import SpellingExercise from '../components/SpellingExercise.vue'
 import QCMExercise from '../components/QCMExercise.vue'
+import ReadingExercise from '../components/ReadingExercise.vue'
+import GrammarExercise from '../components/GrammarExercise.vue'
+import MathProblemExercise from '../components/MathProblemExercise.vue'
 import { progressStore } from '../utils/progressStore'
 
 const route = useRoute()
@@ -195,6 +233,8 @@ const subjectData = computed(() => {
   const subjects = {
     math: { name: 'Mathématiques', icon: '🔢' },
     french: { name: 'Français', icon: '✏️' },
+    reading: { name: 'Lecture Fluide', icon: '📖' },
+    grammar: { name: 'Grammaire', icon: '📝' },
     history: { name: 'Histoire', icon: '📜' },
     geography: { name: 'Géographie', icon: '🗺️' }
   }
@@ -204,15 +244,18 @@ const subjectData = computed(() => {
 const mathTabs = computed(() => {
   const tabs = [
     { id: 'addition', label: 'Additions', icon: '➕' },
-    { id: 'soustraction', label: 'Soustractions', icon: '➖' }
+    { id: 'soustraction', label: 'Soustractions', icon: '➖' },
+    { id: 'problemes', label: 'Problèmes', icon: '🧮' },
+    { id: 'numeration', label: 'Numération', icon: '🔢' },
+    { id: 'geometrie', label: 'Géométrie', icon: '📐' }
   ]
   
   if (['ce1', 'ce2', 'cm1', 'cm2'].includes(level.value)) {
-    tabs.push({ id: 'multiplication', label: 'Multiplications', icon: '✖️' })
+    tabs.splice(2, 0, { id: 'multiplication', label: 'Multiplications', icon: '✖️' })
   }
   
   if (['cm1', 'cm2'].includes(level.value)) {
-    tabs.push({ id: 'division', label: 'Divisions', icon: '➗' })
+    tabs.splice(3, 0, { id: 'division', label: 'Divisions', icon: '➗' })
   }
   
   return tabs

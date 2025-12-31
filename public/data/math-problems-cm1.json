@@ -1,0 +1,35 @@
+[
+  {
+    "text": "Un rectangle a une longueur de 15 cm et une largeur de 8 cm.",
+    "question": "Quel est son périmètre ?",
+    "answer": "46",
+    "unit": "cm",
+    "explanation": "Périmètre = (15 + 8) × 2 = 46 cm"
+  },
+  {
+    "text": "Une classe de 28 élèves part en voyage. Les cars peuvent transporter 45 personnes chacun. Il faut aussi 4 accompagnateurs.",
+    "question": "Combien de personnes monteront dans les cars ?",
+    "answer": "32",
+    "explanation": "28 élèves + 4 accompagnateurs = 32 personnes"
+  },
+  {
+    "text": "Un commerçant achète 150 kg de pommes à 2 euros le kilo. Il les revend à 3 euros le kilo.",
+    "question": "Quel bénéfice fait-il sur toutes les pommes ?",
+    "answer": "150",
+    "unit": "euros",
+    "explanation": "(3 - 2) × 150 = 150 euros de bénéfice"
+  },
+  {
+    "text": "Une bouteille contient 1,5 litre d'eau. On verse l'eau dans des verres de 25 cl.",
+    "question": "Combien de verres peut-on remplir ? (1L = 100cl)",
+    "answer": "6",
+    "explanation": "1,5L = 150cl. 150 ÷ 25 = 6 verres"
+  },
+  {
+    "text": "Un rectangle a une longueur de 12 cm et une largeur de 5 cm.",
+    "question": "Quelle est son aire en cm² ?",
+    "answer": "60",
+    "unit": "cm²",
+    "explanation": "Aire = 12 × 5 = 60 cm²"
+  }
+]

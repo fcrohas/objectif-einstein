@@ -1,0 +1,38 @@
+{
+  "title": "La rentrée de Tom",
+  "text": [
+    "C'est le jour de la rentrée. Tom se réveille tôt. Il est un peu inquiet mais aussi content.",
+    "Sa maman lui prépare un bon petit déjeuner. Tom met son nouveau cartable sur son dos. Il est rouge et noir, exactement comme il le voulait.",
+    "Dans la cour de l'école, Tom retrouve ses amis. Léa lui fait un grand sourire. Lucas lui tape dans la main. Ils sont tous dans la même classe cette année !",
+    "La maîtresse s'appelle Madame Dubois. Elle a l'air gentille. Elle demande à chaque élève de se présenter.",
+    "Tom raconte qu'il aime le football et les dinosaures. Quand la récréation arrive, tous les enfants sortent jouer ensemble. Tom est maintenant très content de sa rentrée."
+  ],
+  "wordCount": 120,
+  "questions": [
+    {
+      "question": "Comment se sent Tom au début de l'histoire ?",
+      "options": ["Inquiet mais content", "Très triste", "Très en colère", "Endormi"],
+      "answer": "Inquiet mais content"
+    },
+    {
+      "question": "De quelle couleur est le cartable de Tom ?",
+      "options": ["Rouge et noir", "Bleu et blanc", "Vert et jaune", "Tout noir"],
+      "answer": "Rouge et noir"
+    },
+    {
+      "question": "Comment s'appelle la maîtresse ?",
+      "options": ["Madame Dubois", "Madame Dupont", "Madame Martin", "Madame Laurent"],
+      "answer": "Madame Dubois"
+    },
+    {
+      "question": "Qu'est-ce que Tom aime ?",
+      "options": ["Le football et les dinosaures", "Le basket et les voitures", "La danse et le chant", "La peinture et la musique"],
+      "answer": "Le football et les dinosaures"
+    },
+    {
+      "question": "Comment se sent Tom à la fin ?",
+      "options": ["Très content", "Toujours inquiet", "Fatigué", "Triste"],
+      "answer": "Très content"
+    }
+  ]
+}

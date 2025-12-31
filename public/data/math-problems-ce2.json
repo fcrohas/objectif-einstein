@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Un magasin vend des boîtes de 12 chocolats. Il en vend 8 boîtes dans la journée.",
+    "question": "Combien de chocolats a-t-il vendus ?",
+    "answer": "96",
+    "explanation": "12 × 8 = 96 chocolats"
+  },
+  {
+    "text": "Une école organise une sortie. Il y a 125 élèves et 8 accompagnateurs.",
+    "question": "Combien de personnes participent à la sortie ?",
+    "answer": "133",
+    "explanation": "125 + 8 = 133 personnes"
+  },
+  {
+    "text": "Paul a 250 euros dans sa tirelire. Il achète un jeu vidéo à 45 euros.",
+    "question": "Combien d'argent lui reste-t-il ?",
+    "answer": "205",
+    "unit": "euros",
+    "explanation": "250 - 45 = 205 euros"
+  },
+  {
+    "text": "Pour faire un gâteau, il faut 250g de farine. Maman veut faire 3 gâteaux.",
+    "question": "Combien de grammes de farine lui faut-il ?",
+    "answer": "750",
+    "unit": "g",
+    "explanation": "250 × 3 = 750 grammes"
+  },
+  {
+    "text": "Un train de 180 passagers arrive en gare. 65 personnes descendent et 42 montent.",
+    "question": "Combien de passagers y a-t-il maintenant dans le train ?",
+    "answer": "157",
+    "explanation": "180 - 65 + 42 = 157 passagers"
+  }
+]

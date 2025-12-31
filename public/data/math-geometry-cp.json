@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Quelle forme a 3 côtés ?",
+    "options": ["Triangle", "Carré", "Rectangle", "Cercle"],
+    "answer": "Triangle",
+    "image": "🔺"
+  },
+  {
+    "question": "Quelle forme a 4 côtés égaux ?",
+    "options": ["Carré", "Triangle", "Cercle", "Rectangle"],
+    "answer": "Carré",
+    "image": "🟦"
+  },
+  {
+    "question": "Quelle forme n'a pas de coins ?",
+    "options": ["Cercle", "Carré", "Triangle", "Rectangle"],
+    "answer": "Cercle",
+    "image": "🔵"
+  },
+  {
+    "question": "Combien de côtés a un rectangle ?",
+    "options": ["4", "3", "5", "0"],
+    "answer": "4",
+    "image": "▭"
+  },
+  {
+    "question": "Quelle forme ressemble à une porte ?",
+    "options": ["Rectangle", "Cercle", "Triangle", "Carré"],
+    "answer": "Rectangle",
+    "image": "🚪"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "title": "Le mystère de la bibliothèque",
+  "text": [
+    "Depuis plusieurs jours, des événements étranges se produisaient à la bibliothèque municipale. Des livres changeaient mystérieusement de place pendant la nuit, et personne ne comprenait comment c'était possible.",
+    "Madame Leblanc, la bibliothécaire, était perplexe. Elle avait tout essayé : fermer à clé toutes les portes et fenêtres, vérifier plusieurs fois par jour le rangement des livres, mais rien n'y faisait. Chaque matin, une nouvelle section était désorganisée.",
+    "Un soir, Paul et sa sœur Emma décidèrent de mener leur propre enquête. Ils se cachèrent dans la bibliothèque juste avant la fermeture, derrière le grand rayon de l'encyclopédie. Leur cœur battait vite à l'idée de découvrir le mystère.",
+    "Vers minuit, ils entendirent un bruit étrange : clic, clic, clic. Une petite ombre se déplaçait entre les rayonnages. Paul sortit discrètement sa lampe de poche et éclaira l'intrus. C'était un raton laveur ! L'animal s'était introduit dans la bibliothèque par une fenêtre mal fermée au sous-sol.",
+    "Le raton laveur adorait apparemment les livres illustrés et les déplaçait pour regarder les images. Le lendemain, Paul et Emma racontèrent leur découverte à Madame Leblanc. Après avoir réparé la fenêtre, elle décida d'installer une petite bibliothèque dehors, spécialement pour le raton laveur. Tout le monde était content, surtout le petit animal qui pouvait continuer à admirer des images !"
+  ],
+  "wordCount": 240,
+  "questions": [
+    {
+      "question": "Quel est le problème à la bibliothèque ?",
+      "options": ["Des livres changent de place la nuit", "Des livres disparaissent", "La porte ne ferme plus", "Il y a trop de bruit"],
+      "answer": "Des livres changent de place la nuit"
+    },
+    {
+      "question": "Comment s'appelle la bibliothécaire ?",
+      "options": ["Madame Leblanc", "Madame Lenoir", "Madame Lebrun", "Madame Leroy"],
+      "answer": "Madame Leblanc"
+    },
+    {
+      "question": "Où se cachent Paul et Emma ?",
+      "options": ["Derrière le rayon de l'encyclopédie", "Sous un bureau", "Dans un placard", "Derrière les rideaux"],
+      "answer": "Derrière le rayon de l'encyclopédie"
+    },
+    {
+      "question": "Qui est le mystérieux intrus ?",
+      "options": ["Un raton laveur", "Un chat", "Un écureuil", "Un fantôme"],
+      "answer": "Un raton laveur"
+    },
+    {
+      "question": "Quelle solution trouve Madame Leblanc ?",
+      "options": ["Elle installe une bibliothèque dehors", "Elle appelle la police", "Elle met des caméras", "Elle change les serrures"],
+      "answer": "Elle installe une bibliothèque dehors"
+    }
+  ]
+}

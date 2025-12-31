@@ -1,0 +1,37 @@
+[
+  {
+    "text": "Un terrain rectangulaire mesure 45 m de long et 28 m de large. On veut l'entourer d'une clôture.",
+    "question": "Quelle longueur de clôture faut-il ?",
+    "answer": "146",
+    "unit": "m",
+    "explanation": "Périmètre = (45 + 28) × 2 = 146 mètres"
+  },
+  {
+    "text": "Dans un magasin, un article coûte 80 euros. Il y a une réduction de 25%.",
+    "question": "Quel est le nouveau prix après réduction ?",
+    "answer": "60",
+    "unit": "euros",
+    "explanation": "25% de 80 = 20 euros. 80 - 20 = 60 euros"
+  },
+  {
+    "text": "Un cycliste parcourt 24 km en 1h30. Il roule toujours à la même vitesse.",
+    "question": "Quelle distance parcourt-il en 1 heure ?",
+    "answer": "16",
+    "unit": "km",
+    "explanation": "1h30 = 1,5h. 24 ÷ 1,5 = 16 km/h"
+  },
+  {
+    "text": "Une piscine rectangulaire mesure 25 m de long, 12 m de large et 2 m de profondeur.",
+    "question": "Quel est son volume en m³ ?",
+    "answer": "600",
+    "unit": "m³",
+    "explanation": "Volume = 25 × 12 × 2 = 600 m³"
+  },
+  {
+    "text": "Pour faire 8 crêpes, il faut 500g de farine. Je veux faire 20 crêpes.",
+    "question": "Combien de grammes de farine me faut-il ?",
+    "answer": "1250",
+    "unit": "g",
+    "explanation": "20 ÷ 8 = 2,5. Donc 500 × 2,5 = 1250g"
+  }
+]
