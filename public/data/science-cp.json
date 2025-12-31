@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Combien y a-t-il de saisons dans une année ?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "image": "🌸",
+    "explanation": "Il y a 4 saisons : le printemps, l'été, l'automne et l'hiver."
+  },
+  {
+    "question": "Avec quel sens peut-on sentir une fleur ?",
+    "options": ["La vue", "L'odorat", "Le toucher", "Le goût"],
+    "answer": "L'odorat",
+    "image": "👃",
+    "explanation": "On sent avec le nez, c'est le sens de l'odorat."
+  },
+  {
+    "question": "Quel animal pond des œufs ?",
+    "options": ["Le chien", "Le chat", "La poule", "La vache"],
+    "answer": "La poule",
+    "image": "🐔",
+    "explanation": "La poule est un oiseau qui pond des œufs."
+  },
+  {
+    "question": "De quelle couleur sont les feuilles en été ?",
+    "options": ["Rouges", "Jaunes", "Vertes", "Marron"],
+    "answer": "Vertes",
+    "image": "🌿",
+    "explanation": "En été, les feuilles sont vertes car elles fabriquent de la chlorophylle."
+  },
+  {
+    "question": "Que fait le soleil ?",
+    "options": ["Il éclaire et chauffe", "Il pleut", "Il neige", "Il fait du vent"],
+    "answer": "Il éclaire et chauffe",
+    "image": "☀️",
+    "explanation": "Le soleil nous donne de la lumière et de la chaleur."
+  },
+  {
+    "question": "Quel animal vit dans l'eau ?",
+    "options": ["Le lion", "Le poisson", "L'oiseau", "Le lapin"],
+    "answer": "Le poisson",
+    "image": "🐟",
+    "explanation": "Le poisson respire dans l'eau grâce à ses branchies."
+  },
+  {
+    "question": "Combien de sens avons-nous ?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "image": "👀",
+    "explanation": "Nous avons 5 sens : la vue, l'ouïe, l'odorat, le goût et le toucher."
+  },
+  {
+    "question": "Que devient la chenille ?",
+    "options": ["Un oiseau", "Un papillon", "Une abeille", "Une coccinelle"],
+    "answer": "Un papillon",
+    "image": "🦋",
+    "explanation": "La chenille se transforme en papillon : c'est la métamorphose."
+  },
+  {
+    "question": "De quoi a besoin une plante pour pousser ?",
+    "options": ["De l'eau et de la lumière", "Du chocolat", "Des jouets", "De la musique"],
+    "answer": "De l'eau et de la lumière",
+    "image": "🌱",
+    "explanation": "Une plante a besoin d'eau, de lumière et de terre pour grandir."
+  },
+  {
+    "question": "Quand fait-il nuit ?",
+    "options": ["Le matin", "À midi", "Le soir", "L'après-midi"],
+    "answer": "Le soir",
+    "image": "🌙",
+    "explanation": "Il fait nuit quand le soleil est caché, le soir et la nuit."
+  }
+]

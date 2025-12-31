@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Combien de planètes y a-t-il dans le système solaire ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8",
+    "image": "🪐",
+    "explanation": "Il y a 8 planètes : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus et Neptune."
+  },
+  {
+    "question": "Qu'est-ce qu'une source d'énergie renouvelable ?",
+    "options": ["Le pétrole", "Le charbon", "L'énergie solaire", "L'essence"],
+    "answer": "L'énergie solaire",
+    "image": "☀️",
+    "explanation": "Les énergies renouvelables se renouvellent naturellement : soleil, vent, eau."
+  },
+  {
+    "question": "Comment s'appelle la reproduction sans mâle ni femelle chez certaines plantes ?",
+    "options": ["La multiplication", "La reproduction sexuée", "La reproduction asexuée", "La photosynthèse"],
+    "answer": "La reproduction asexuée",
+    "image": "🌱",
+    "explanation": "Certaines plantes se reproduisent seules par bouturage ou marcottage."
+  },
+  {
+    "question": "Quelle est la planète la plus proche du Soleil ?",
+    "options": ["Vénus", "Terre", "Mercure", "Mars"],
+    "answer": "Mercure",
+    "image": "☄️",
+    "explanation": "Mercure est la planète la plus proche du Soleil."
+  },
+  {
+    "question": "Comment fonctionne un circuit électrique simple ?",
+    "options": ["Avec de l'eau", "Avec un générateur, des fils et un récepteur", "Avec du vent", "Avec de la lumière"],
+    "answer": "Avec un générateur, des fils et un récepteur",
+    "image": "🔌",
+    "explanation": "Un circuit électrique a besoin d'une pile, de fils conducteurs et d'un appareil."
+  },
+  {
+    "question": "Qu'est-ce que la chaîne alimentaire ?",
+    "options": ["Un collier", "Le chemin de l'énergie entre les êtres vivants", "Une route", "Un jeu"],
+    "answer": "Le chemin de l'énergie entre les êtres vivants",
+    "image": "🦁",
+    "explanation": "La chaîne alimentaire montre qui mange qui : plante → herbivore → carnivore."
+  },
+  {
+    "question": "Que produit la Lune pour éclairer la nuit ?",
+    "options": ["Sa propre lumière", "Elle réfléchit la lumière du Soleil", "De l'électricité", "Rien"],
+    "answer": "Elle réfléchit la lumière du Soleil",
+    "image": "🌙",
+    "explanation": "La Lune ne produit pas de lumière, elle réfléchit celle du Soleil."
+  },
+  {
+    "question": "Comment se forme un fossile ?",
+    "options": ["Par la pluie", "Par la transformation d'un être vivant en pierre", "Par le vent", "Par le feu"],
+    "answer": "Par la transformation d'un être vivant en pierre",
+    "image": "🦴",
+    "explanation": "Les fossiles sont des traces d'êtres vivants transformés en pierre sur des millions d'années."
+  },
+  {
+    "question": "Qu'est-ce que l'évaporation ?",
+    "options": ["L'eau qui gèle", "L'eau liquide qui devient vapeur", "L'eau qui tombe", "L'eau qui bout"],
+    "answer": "L'eau liquide qui devient vapeur",
+    "image": "💨",
+    "explanation": "L'évaporation est le passage de l'eau liquide à l'état gazeux (vapeur)."
+  },
+  {
+    "question": "Quel est le rôle du cerveau ?",
+    "options": ["Pomper le sang", "Respirer", "Commander tout le corps", "Digérer"],
+    "answer": "Commander tout le corps",
+    "image": "🧠",
+    "explanation": "Le cerveau contrôle toutes les actions du corps : bouger, penser, sentir."
+  }
+]

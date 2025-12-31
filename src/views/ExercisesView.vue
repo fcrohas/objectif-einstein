@@ -233,6 +233,16 @@
       </div>
     </div>
 
+    <div v-else-if="subject === 'science'" class="exercises-section">
+      <div class="exercise-container">
+        <QCMExercise 
+          :level="level"
+          subject="science"
+          title="Sciences"
+        />
+      </div>
+    </div>
+
     <div class="progress-link">
       <router-link to="/progression" class="btn-progress">
         📊 Voir ma progression
@@ -296,6 +306,7 @@ const subjectData = computed(() => {
     grammar: { name: 'Grammaire', icon: '📝' },
     conjugation: { name: 'Conjugaison', icon: '🔤' },
     vocabulary: { name: 'Vocabulaire', icon: '📚' },
+    science: { name: 'Sciences', icon: '🔬' },
     history: { name: 'Histoire', icon: '📜' },
     geography: { name: 'Géographie', icon: '🗺️' }
   }

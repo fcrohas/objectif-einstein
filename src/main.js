@@ -6,6 +6,8 @@ import ProfileSelection from './views/ProfileSelection.vue'
 import Home from './views/Home.vue'
 import LevelView from './views/LevelView.vue'
 import SubjectSelection from './views/SubjectSelection.vue'
+import LessonsSelection from './views/LessonsSelection.vue'
+import LessonViewer from './components/LessonViewer.vue'
 import ExercisesView from './views/ExercisesView.vue'
 import ProgressDashboard from './components/ProgressDashboard.vue'
 import { profileStore } from './utils/profileStore'
@@ -33,6 +35,18 @@ const router = createRouter({
       path: '/niveau/:level/matières',
       name: 'SubjectSelection',
       component: SubjectSelection,
+      props: true
+    },
+    {
+      path: '/niveau/:level/leçons',
+      name: 'LessonsSelection',
+      component: LessonsSelection,
+      props: true
+    },
+    {
+      path: '/niveau/:level/lecon/:subject',
+      name: 'LessonView',
+      component: LessonViewer,
       props: true
     },
     {

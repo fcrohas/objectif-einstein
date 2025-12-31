@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Qu'est-ce qui produit l'électricité dans une centrale électrique ?",
+    "options": ["Le vent", "Un alternateur", "Le soleil", "La lune"],
+    "answer": "Un alternateur",
+    "image": "⚡",
+    "explanation": "L'alternateur transforme l'énergie mécanique en électricité dans les centrales."
+  },
+  {
+    "question": "Comment se forment les volcans ?",
+    "options": ["Par la pluie", "Par le magma qui remonte", "Par le vent", "Par les tremblements de terre"],
+    "answer": "Par le magma qui remonte",
+    "image": "🌋",
+    "explanation": "Le magma (roche en fusion) remonte et forme un volcan en surface."
+  },
+  {
+    "question": "Qu'est-ce que l'effet de serre ?",
+    "options": ["Une serre de jardin", "Le réchauffement de l'atmosphère", "Le froid", "La pluie"],
+    "answer": "Le réchauffement de l'atmosphère",
+    "image": "🌡️",
+    "explanation": "L'effet de serre retient la chaleur du soleil et réchauffe la planète."
+  },
+  {
+    "question": "Quelle est la différence entre un conducteur et un isolant ?",
+    "options": ["La couleur", "Le conducteur laisse passer l'électricité", "Le poids", "La taille"],
+    "answer": "Le conducteur laisse passer l'électricité",
+    "image": "🔋",
+    "explanation": "Les conducteurs (métal) laissent passer l'électricité, les isolants (plastique) non."
+  },
+  {
+    "question": "Comment s'appelle la couche qui protège la Terre des rayons du Soleil ?",
+    "options": ["L'atmosphère", "La couche d'ozone", "Les nuages", "L'air"],
+    "answer": "La couche d'ozone",
+    "image": "🌍",
+    "explanation": "La couche d'ozone dans l'atmosphère nous protège des rayons ultraviolets dangereux."
+  },
+  {
+    "question": "Qu'est-ce qu'une énergie fossile ?",
+    "options": ["Un os", "Le pétrole, le charbon, le gaz", "Le vent", "Le soleil"],
+    "answer": "Le pétrole, le charbon, le gaz",
+    "image": "🛢️",
+    "explanation": "Les énergies fossiles proviennent de restes d'êtres vivants enfouis depuis des millions d'années."
+  },
+  {
+    "question": "Pourquoi dit-on que la Terre tourne ?",
+    "options": ["Elle tourne autour du Soleil en 1 an", "Elle ne tourne pas", "Elle tourne en 1 jour", "Elle tourne autour de la Lune"],
+    "answer": "Elle tourne autour du Soleil en 1 an",
+    "image": "🌏",
+    "explanation": "La Terre fait le tour du Soleil en 365 jours (1 an) et tourne sur elle-même en 24h (1 jour)."
+  },
+  {
+    "question": "Qu'est-ce que la biodiversité ?",
+    "options": ["Les différents types de vélos", "La diversité des êtres vivants", "Les couleurs", "Les saisons"],
+    "answer": "La diversité des êtres vivants",
+    "image": "🦋",
+    "explanation": "La biodiversité est la variété de toutes les formes de vie sur Terre."
+  },
+  {
+    "question": "Comment un séisme se produit-il ?",
+    "options": ["À cause du vent", "Par le déplacement des plaques terrestres", "À cause de la pluie", "Par le soleil"],
+    "answer": "Par le déplacement des plaques terrestres",
+    "image": "📊",
+    "explanation": "Les séismes sont causés par le mouvement des plaques tectoniques sous terre."
+  },
+  {
+    "question": "Qu'est-ce que le développement durable ?",
+    "options": ["Construire vite", "Protéger l'environnement pour les générations futures", "Gagner de l'argent", "Voyager"],
+    "answer": "Protéger l'environnement pour les générations futures",
+    "image": "♻️",
+    "explanation": "Le développement durable permet de répondre aux besoins actuels sans compromettre l'avenir."
+  }
+]

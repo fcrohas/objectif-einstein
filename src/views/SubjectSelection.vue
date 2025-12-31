@@ -88,6 +88,13 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'science',
+      name: 'Sciences',
+      icon: '🔬',
+      description: 'Les saisons et les sens',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -143,6 +150,13 @@ const subjectsByLevel = {
       name: 'Vocabulaire',
       icon: '📚',
       description: 'Familles de mots et champs lexicaux',
+      exerciseCount: 1
+    },
+    {
+      id: 'science',
+      name: 'Sciences',
+      icon: '🔬',
+      description: 'Le vivant et la matière',
       exerciseCount: 1
     },
     {
@@ -204,6 +218,13 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'science',
+      name: 'Sciences',
+      icon: '🔬',
+      description: 'Le corps humain et l\'alimentation',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -262,6 +283,13 @@ const subjectsByLevel = {
       exerciseCount: 1
     },
     {
+      id: 'science',
+      name: 'Sciences',
+      icon: '🔬',
+      description: 'L\'énergie et le système solaire',
+      exerciseCount: 1
+    },
+    {
       id: 'history',
       name: 'Histoire',
       icon: '📜',
@@ -317,6 +345,13 @@ const subjectsByLevel = {
       name: 'Vocabulaire',
       icon: '📚',
       description: 'Registres de langue et rhétorique',
+      exerciseCount: 1
+    },
+    {
+      id: 'science',
+      name: 'Sciences',
+      icon: '🔬',
+      description: 'L\'électricité et l\'environnement',
       exerciseCount: 1
     },
     {

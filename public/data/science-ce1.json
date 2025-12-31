@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Quels sont les trois états de l'eau ?",
+    "options": ["Solide, liquide, gazeux", "Chaud, tiède, froid", "Salé, sucré, acide", "Propre, sale, trouble"],
+    "answer": "Solide, liquide, gazeux",
+    "image": "💧",
+    "explanation": "L'eau existe sous trois états : la glace (solide), l'eau liquide et la vapeur (gazeux)."
+  },
+  {
+    "question": "Comment s'appelle le bébé de la grenouille ?",
+    "options": ["Un poussin", "Un têtard", "Un chaton", "Un agneau"],
+    "answer": "Un têtard",
+    "image": "🐸",
+    "explanation": "Le têtard vit dans l'eau et se transforme en grenouille."
+  },
+  {
+    "question": "Que mange un animal herbivore ?",
+    "options": ["De la viande", "Des plantes", "Des cailloux", "Du plastique"],
+    "answer": "Des plantes",
+    "image": "🐰",
+    "explanation": "Les herbivores mangent uniquement des végétaux (herbe, feuilles, fruits)."
+  },
+  {
+    "question": "Quelle partie de la plante pousse sous la terre ?",
+    "options": ["Les feuilles", "Les fleurs", "Les racines", "Les fruits"],
+    "answer": "Les racines",
+    "image": "🌱",
+    "explanation": "Les racines poussent dans la terre et servent à nourrir la plante."
+  },
+  {
+    "question": "À quelle température l'eau gèle-t-elle ?",
+    "options": ["À 0°C", "À 10°C", "À 100°C", "À 50°C"],
+    "answer": "À 0°C",
+    "image": "❄️",
+    "explanation": "L'eau se transforme en glace à 0 degré Celsius."
+  },
+  {
+    "question": "Quel est l'organe qui nous permet de respirer ?",
+    "options": ["Le cœur", "Les poumons", "L'estomac", "Le cerveau"],
+    "answer": "Les poumons",
+    "image": "🫁",
+    "explanation": "Les poumons permettent de prendre l'oxygène de l'air et de rejeter le CO2."
+  },
+  {
+    "question": "Que devient l'eau quand elle s'évapore ?",
+    "options": ["De la glace", "De la vapeur", "Du sel", "Du sucre"],
+    "answer": "De la vapeur",
+    "image": "☁️",
+    "explanation": "Quand l'eau chauffe, elle se transforme en vapeur invisible."
+  },
+  {
+    "question": "Comment s'appelle un animal qui mange de tout ?",
+    "options": ["Herbivore", "Carnivore", "Omnivore", "Insectivore"],
+    "answer": "Omnivore",
+    "image": "🐻",
+    "explanation": "Un omnivore mange des plantes ET de la viande (comme l'homme ou l'ours)."
+  },
+  {
+    "question": "Quel organe fait circuler le sang dans notre corps ?",
+    "options": ["Les poumons", "Le cœur", "Le foie", "Les reins"],
+    "answer": "Le cœur",
+    "image": "❤️",
+    "explanation": "Le cœur pompe le sang et l'envoie dans tout le corps."
+  },
+  {
+    "question": "Pourquoi les feuilles tombent-elles en automne ?",
+    "options": ["Parce qu'elles sont malades", "Pour protéger l'arbre du froid", "Parce qu'il pleut", "Pour faire joli"],
+    "answer": "Pour protéger l'arbre du froid",
+    "image": "🍂",
+    "explanation": "Les arbres perdent leurs feuilles pour économiser de l'énergie en hiver."
+  }
+]

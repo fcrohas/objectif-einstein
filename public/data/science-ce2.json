@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Combien d'os y a-t-il environ dans le corps humain adulte ?",
+    "options": ["50", "100", "206", "500"],
+    "answer": "206",
+    "image": "🦴",
+    "explanation": "Le squelette humain adulte contient environ 206 os."
+  },
+  {
+    "question": "Quelle partie de la plante fabrique la nourriture ?",
+    "options": ["Les racines", "Les feuilles", "Les fleurs", "Les tiges"],
+    "answer": "Les feuilles",
+    "image": "🍃",
+    "explanation": "Les feuilles fabriquent la nourriture grâce à la photosynthèse avec la lumière."
+  },
+  {
+    "question": "Dans quelle catégorie d'aliments trouve-t-on les protéines ?",
+    "options": ["Les fruits", "La viande et le poisson", "Le pain", "Les bonbons"],
+    "answer": "La viande et le poisson",
+    "image": "🥩",
+    "explanation": "Les protéines sont essentielles et se trouvent dans la viande, le poisson et les œufs."
+  },
+  {
+    "question": "Quel gaz respirons-nous pour vivre ?",
+    "options": ["Le dioxyde de carbone", "L'oxygène", "L'azote", "L'hélium"],
+    "answer": "L'oxygène",
+    "image": "🌬️",
+    "explanation": "Nous respirons l'oxygène de l'air, indispensable à la vie."
+  },
+  {
+    "question": "Comment s'appelle le cycle de l'eau ?",
+    "options": ["Le cycle des saisons", "Le cycle de l'eau", "Le cycle lunaire", "Le cycle solaire"],
+    "answer": "Le cycle de l'eau",
+    "image": "🌊",
+    "explanation": "L'eau s'évapore, forme des nuages, retombe en pluie : c'est le cycle de l'eau."
+  },
+  {
+    "question": "Quel est le rôle des dents ?",
+    "options": ["Respirer", "Mâcher les aliments", "Sentir", "Entendre"],
+    "answer": "Mâcher les aliments",
+    "image": "🦷",
+    "explanation": "Les dents coupent et broient les aliments pour faciliter la digestion."
+  },
+  {
+    "question": "Qu'est-ce que la photosynthèse ?",
+    "options": ["Prendre des photos", "Fabriquer de la nourriture avec la lumière", "Dormir la nuit", "Boire de l'eau"],
+    "answer": "Fabriquer de la nourriture avec la lumière",
+    "image": "☀️",
+    "explanation": "Les plantes utilisent la lumière du soleil pour fabriquer leur nourriture."
+  },
+  {
+    "question": "Pourquoi doit-on manger varié ?",
+    "options": ["Pour grandir", "Pour avoir tous les nutriments", "Pour être content", "Pour avoir faim"],
+    "answer": "Pour avoir tous les nutriments",
+    "image": "🥗",
+    "explanation": "Chaque aliment apporte des nutriments différents nécessaires au corps."
+  },
+  {
+    "question": "Quel organe permet de digérer les aliments ?",
+    "options": ["Le cerveau", "L'estomac", "Les poumons", "Le cœur"],
+    "answer": "L'estomac",
+    "image": "🫃",
+    "explanation": "L'estomac transforme les aliments en nutriments que le corps peut utiliser."
+  },
+  {
+    "question": "Comment les plantes se reproduisent-elles ?",
+    "options": ["Par les racines", "Par les graines", "Par les feuilles", "Par l'eau"],
+    "answer": "Par les graines",
+    "image": "🌻",
+    "explanation": "Les fleurs produisent des graines qui donnent naissance à de nouvelles plantes."
+  }
+]

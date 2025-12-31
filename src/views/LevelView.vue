@@ -12,6 +12,9 @@
       <button @click="goToSubjects" class="btn-start">
         🎓 Commencer les exercices
       </button>
+      <button @click="goToLessons" class="btn-lessons">
+        📖 Voir les leçons
+      </button>
     </div>
 
     <div class="activities-section">
@@ -259,6 +262,10 @@ const levelData = computed(() => {
 function goToSubjects() {
   router.push(`/niveau/${route.params.level}/matières`)
 }
+
+function goToLessons() {
+  router.push(`/niveau/${route.params.level}/leçons`)
+}
 </script>
 
 <style scoped>
@@ -304,6 +311,10 @@ function goToSubjects() {
 .cta-section {
   text-align: center;
   margin: 3rem 0;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn-start {
@@ -322,6 +333,24 @@ function goToSubjects() {
 .btn-start:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-lessons {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+.btn-lessons:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);
 }
 
 .activities-section {
