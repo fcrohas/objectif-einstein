@@ -3,6 +3,7 @@
     <div class="hero">
       <h1>Bienvenue sur Objectif Einstein ! 🚀</h1>
       <p class="subtitle">Un voyage d'apprentissage du CP au CM2</p>
+      <ProgressSummary />
     </div>
 
     <div class="levels-grid">
@@ -27,6 +28,7 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
+import ProgressSummary from '../components/ProgressSummary.vue'
 
 const router = useRouter()
 

@@ -29,21 +29,73 @@
       </div>
     </div>
 
-    <div class="progress-section">
-      <h2>Progression</h2>
-      <div class="progress-info">
-        <p>Les activités interactives seront bientôt disponibles !</p>
-        <p>En attendant, explore les différentes matières proposées.</p>
+    <div class="exercises-section">
+      <h2>🎮 Exercices interactifs</h2>
+      
+      <div class="exercise-tabs">
+        <button 
+          v-for="tab in exerciseTabs" 
+          :key="tab.id"
+          @click="activeTab = tab.id"
+          class="tab-btn"
+          :class="{ active: activeTab === tab.id }"
+        >
+          {{ tab.icon }} {{ tab.label }}
+        </button>
+      </div>
+
+      <div class="exercise-container">
+        <MathExercise 
+          v-if="activeTab === 'math-addition'"
+          :level="route.params.level"
+          exercise-type="addition"
+          title="Additions"
+        />
+        
+        <MathExercise 
+          v-if="activeTab === 'math-soustraction'"
+          :level="route.params.level"
+          exercise-type="soustraction"
+          title="Soustractions"
+        />
+
+        <MathExercise 
+          v-if="activeTab === 'math-multiplication' && ['ce1', 'ce2', 'cm1', 'cm2'].includes(route.params.level)"
+          :level="route.params.level"
+          exercise-type="multiplication"
+          title="Multiplications"
+        />
+
+        <MathExercise 
+          v-if="activeTab === 'math-division' && ['cm1', 'cm2'].includes(route.params.level)"
+          :level="route.params.level"
+          exercise-type="division"
+          title="Divisions"
+        />
+
+        <WordGame 
+          v-if="activeTab === 'french'"
+          :level="route.params.level"
+          title="Jeu des mots mélangés"
+        />
+
+        <ProgressDashboard 
+          v-if="activeTab === 'progress'"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
+import MathExercise from '../components/MathExercise.vue'
+import WordGame from '../components/WordGame.vue'
+import ProgressDashboard from '../components/ProgressDashboard.vue'
 
 const route = useRoute()
+const activeTab = ref('math-addition')
 
 const levelsData = {
   cp: {
@@ -256,6 +308,30 @@ const levelsData = {
 const levelData = computed(() => {
   return levelsData[route.params.level] || levelsData.cp
 })
+
+const exerciseTabs = computed(() => {
+  const tabs = [
+    { id: 'math-addition', label: 'Additions', icon: '➕' },
+    { id: 'math-soustraction', label: 'Soustractions', icon: '➖' }
+  ]
+  
+  // Ajouter multiplications pour CE1+
+  if (['ce1', 'ce2', 'cm1', 'cm2'].includes(route.params.level)) {
+    tabs.push({ id: 'math-multiplication', label: 'Multiplications', icon: '✖️' })
+  }
+  
+  // Ajouter divisions pour CM1+
+  if (['cm1', 'cm2'].includes(route.params.level)) {
+    tabs.push({ id: 'math-division', label: 'Divisions', icon: '➗' })
+  }
+  
+  tabs.push(
+    { id: 'french', label: 'Français', icon: '📝' },
+    { id: 'progress', label: 'Ma progression', icon: '📊' }
+  )
+  
+  return tabs
+})
 </script>
 
 <style scoped>
@@ -365,24 +441,47 @@ const levelData = computed(() => {
   font-weight: bold;
 }
 
-.progress-section {
+.exercises-section {
   margin: 3rem 0;
-  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-  padding: 2rem;
-  border-radius: 12px;
 }
 
-.progress-section h2 {
+.exercises-section h2 {
   color: #667eea;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.progress-info {
-  color: #666;
+.exercise-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-.progress-info p {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.tab-btn:hover {
+  background: #667eea15;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.exercise-container {
+  min-height: 400px;
 }
 </style>
